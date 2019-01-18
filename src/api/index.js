@@ -4,21 +4,23 @@ export const dblpQuery = (keyword, venue) => (
 
 let KEY = 0;
 
-export const normalize = (data) => {
-  const { hit: results } = data.result.hits;
+export const normalize = data => (
+  data.map(({ result }) => {
+    const { hit } = result.hits;
 
-  if (!results) {
-    return [];
-  }
+    if (!hit) {
+      return [];
+    }
 
-  return results.map(({ info }) => ({
-    key: KEY++,
-    title: info.title,
-    venue: info.venue,
-    year: info.year,
-    url: info.ee,
-  }));
-};
+    return hit.map(({ info }) => ({
+      key: KEY++,
+      title: info.title,
+      venue: info.venue,
+      year: info.year,
+      url: info.ee,
+    }));
+  }).flat()
+);
 
 export const VENUES_LIST = [
   'ASPLOS',

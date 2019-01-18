@@ -18,19 +18,21 @@ const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query');
 const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'data');
 const requestError = makeActionCreator(ActionTypes.REQUEST_ERROR, 'error');
 
-export const fetchData = (keyword, venue) => (dispatch) => {
-  const query = dblpQuery(keyword, venue);
-  dispatch(requestData(query));
+export const fetchData = (keyword, venues) => (dispatch) => {
+  dispatch(requestData(venues));
 
-  return fetch(query)
-    .then((res) => {
-      if (!res.ok) {
-        dispatch(requestError(new Error('Bad Request')));
-        return null;
-      }
+  return Promise.all(venues.map(venue => fetch(dblpQuery(keyword, venue))))
+    .then(responses => (
+      Promise.all(
+        responses.map((response) => {
+          if (response.ok) {
+            return response.json();
+          }
 
-      return res.json();
-    })
+          return null;
+        }),
+      )
+    ))
     .then((data) => {
       if (!data) {
         dispatch(requestError(new Error('Bad Request')));

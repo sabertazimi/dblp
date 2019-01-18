@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 import { Input } from 'antd';
 
 import * as Actions from '../actions';
+import { VENUES_LIST } from '../api';
 
 const { Search } = Input;
 
 const SearchBar = ({ fetchData }) => {
-  const onSearch = value => fetchData(value, 'ISCA');
+  const onSearch = value => fetchData(value, VENUES_LIST);
 
   return (
     <Search
@@ -19,7 +20,7 @@ const SearchBar = ({ fetchData }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  fetchData: (keyword, venue) => (dispatch(Actions.fetchData(keyword, venue))),
+  fetchData: (keyword, venues) => (dispatch(Actions.fetchData(keyword, venues))),
 });
 
 export default connect(null, mapDispatchToProps)(SearchBar);

@@ -8,19 +8,34 @@ const Result = ({ error, isLoading, data }) => {
       title: 'Title',
       dataIndex: 'title',
       key: 'title',
-      sorter: (a, b) => a.title.localeCompare(b.title),
+      sorter: (a, b) => (
+        a.title.localeCompare(b.title)
+        || a.venue.localeCompare(b.venue)
+        || b.year.localeCompare(a.year)
+        || a.url.localeCompare(b.url)
+      ),
     },
     {
       title: 'Venue',
       dataIndex: 'venue',
       key: 'venue',
-      sorter: (a, b) => a.venue.localeCompare(b.venue),
+      sorter: (a, b) => (
+        a.venue.localeCompare(b.venue)
+        || b.year.localeCompare(a.year)
+        || a.title.localeCompare(b.title)
+        || a.url.localeCompare(b.url)
+      ),
     },
     {
       title: 'Year',
       dataIndex: 'year',
       key: 'year',
-      sorter: (a, b) => a.year.localeCompare(b.year),
+      sorter: (a, b) => (
+        b.year.localeCompare(a.year)
+        || a.venue.localeCompare(b.venue)
+        || a.title.localeCompare(b.title)
+        || a.url.localeCompare(b.url)
+      ),
     },
     {
       title: 'Url',
@@ -31,7 +46,12 @@ const Result = ({ error, isLoading, data }) => {
           {url}
         </a>
       ),
-      sorter: (a, b) => a.url.localeCompare(b.url),
+      sorter: (a, b) => (
+        a.url.localeCompare(b.url)
+        || a.venue.localeCompare(b.venue)
+        || b.year.localeCompare(a.year)
+        || a.title.localeCompare(b.title)
+      ),
     },
   ];
 
