@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Layout, BackTop } from 'antd';
 
 import { SearchBar, Result, Filter } from './containers';
 
@@ -36,6 +36,12 @@ const App = () => (
           }}
         >
           <Result />
+          <BackTop
+            style={{
+              right: '1em',
+              bottom: '1em',
+            }}
+          />
         </Content>
       </Layout>
     </Layout>
