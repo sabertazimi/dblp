@@ -48,7 +48,7 @@ const Result = ({
       dataIndex: 'url',
       key: 'url',
       render: url => (
-        <a href={url}>
+        <a href={url} target="_blank" rel="noopener noreferrer nofollow">
           {url}
         </a>
       ),
