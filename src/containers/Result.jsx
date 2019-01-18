@@ -88,9 +88,10 @@ const Result = ({
       dataSource={dataSource}
       loading={isLoading}
       pagination={{
-        defaultPageSize: 30,
+        defaultPageSize: 40,
         hideOnSinglePage: true,
-        pageSizeOptions: ['10', '20', '30', '40', '50'],
+        pageSizeOptions: ['20', '40', '60', '80', '100'],
+        showTotal: (total, range) => `${range[0]}-${range[1]} of ${total} items`,
         showQuickJumper: true,
         showSizeChanger: true,
       }}

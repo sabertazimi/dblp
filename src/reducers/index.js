@@ -12,7 +12,7 @@ const createReducer = (initialState, handlers) => (state = initialState, action)
 };
 
 const filter = createReducer({
-  venues: VENUES_LIST,
+  venues: VENUES_LIST.slice(0, 30),
   year: 0,
 }, {
   [ActionTypes.FILTER_VENUE]: (state, { payload }) => {
