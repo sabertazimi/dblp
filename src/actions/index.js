@@ -12,8 +12,7 @@ const makeActionCreator = (type, ...argNames) => (...args) => {
   return action;
 };
 
-export const select = makeActionCreator(ActionTypes.SELECT, 'venue');
-export const deselect = makeActionCreator(ActionTypes.DESLECT, 'venue');
+export const filter = makeActionCreator(ActionTypes.FILTER, 'venues');
 
 const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query');
 const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'data');

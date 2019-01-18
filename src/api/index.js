@@ -20,15 +20,9 @@ export const normalize = (data) => {
   }));
 };
 
-export const dblpConference = [
-  {
-    short: 'ISCA',
-    venue: 'ISCA',
-    full: 'International Symposium on Computer Architecture',
-  },
-  {
-    short: 'arxiv.org',
-    venue: 'CoRR',
-    full: 'The Computing Research Repository',
-  },
+export const VENUES_LIST = [
+  'ASPLOS',
+  'HPCA',
+  'ISCA',
+  'MICRO',
 ];

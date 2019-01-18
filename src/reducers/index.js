@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import * as ActionTypes from '../constants';
+import { VENUES_LIST } from '../api';
 
 const createReducer = (initialState, handlers) => (state = initialState, action) => {
   if (Object.prototype.hasOwnProperty.call(handlers, action.type)) {
@@ -9,23 +10,13 @@ const createReducer = (initialState, handlers) => (state = initialState, action)
   return state;
 };
 
-const selectReducer = createReducer({ selection: [] }, {
-  [ActionTypes.SELECT]: (state, action) => {
-    const { selection } = state;
-    const { venue } = action.payload;
+const filterReducer = createReducer({ venues: VENUES_LIST }, {
+  [ActionTypes.FILTER]: (state, action) => {
+    const { venues } = action.payload;
 
     return {
       ...state,
-      selection: [...new Set(selection.push(venue))], // remove duplicate venue with Set
-    };
-  },
-  [ActionTypes.DESLECT]: (state, action) => {
-    const { selection } = state;
-    const { venue } = action.payload;
-
-    return {
-      ...state,
-      selection: selection.filter(select => select !== venue),
+      venues,
     };
   },
 });
@@ -59,7 +50,7 @@ const dataReducer = createReducer({ error: null, isLoading: false, data: [] }, {
 });
 
 const createRootReducer = () => combineReducers({
-  selectReducer,
+  filterReducer,
   dataReducer,
 });
 
