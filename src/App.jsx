@@ -1,10 +1,13 @@
 import React from 'react';
 
+import { SearchBar, Result } from './containers';
+
 import './index.scss';
 
 const App = () => (
   <div>
-    Hello World!
+    <SearchBar />
+    <Result />
   </div>
 );
 
