@@ -13,13 +13,16 @@ const Filter = ({ venues, filter }) => {
       style={{
         width: '100%',
       }}
+      defaultValue={venues}
       onChange={onChange}
     >
       <Row type="flex" justify="center" align="middle">
         {
           VENUES_LIST.map(venue => (
             <Col span={24} key={venue}>
-              <Checkbox value={venue} checked={venues.includes(venue)}>
+              <Checkbox
+                value={venue}
+              >
                 {venue}
               </Checkbox>
             </Col>
