@@ -12,7 +12,8 @@ const makeActionCreator = (type, ...argNames) => (...args) => {
   return action;
 };
 
-export const filter = makeActionCreator(ActionTypes.FILTER_VENUE, 'venues');
+export const filterVenue = makeActionCreator(ActionTypes.FILTER_VENUE, 'venues');
+export const filterYear = makeActionCreator(ActionTypes.FILTER_YEAR, 'year');
 
 const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query');
 const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'items');

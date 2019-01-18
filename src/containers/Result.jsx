@@ -7,6 +7,7 @@ const Result = ({
   isLoading,
   items,
   venues,
+  year,
 }) => {
   const columns = [
     {
@@ -68,7 +69,10 @@ const Result = ({
     );
   }
 
-  const dataSource = items.filter(item => venues.includes(item.venue));
+  const dataSource = items.filter(item => (
+    venues.includes(item.venue)
+    && parseInt(item.year, 10) >= year
+  ));
 
   return (
     <Table
@@ -88,7 +92,7 @@ const Result = ({
 
 const mapStateToProps = state => ({
   ...state.data,
-  venues: state.filter.venues,
+  ...state.filter,
 });
 
 export default connect(mapStateToProps)(Result);

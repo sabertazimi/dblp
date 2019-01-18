@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Input } from 'antd';
+import { Input, Icon } from 'antd';
 
 import * as Actions from '../actions';
 import { VENUES_LIST } from '../api';
@@ -8,13 +8,13 @@ import { VENUES_LIST } from '../api';
 const { Search } = Input;
 
 const SearchBar = ({ fetchData }) => {
-  const onSearch = value => fetchData(value, VENUES_LIST);
+  const onSearch = value => value && fetchData(value, VENUES_LIST);
 
   return (
     <Search
       placeholder="input search text"
       onSearch={onSearch}
-      enterButton
+      enterButton={<Icon type="rocket" />}
     />
   );
 };

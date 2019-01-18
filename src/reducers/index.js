@@ -13,6 +13,7 @@ const createReducer = (initialState, handlers) => (state = initialState, action)
 
 const filter = createReducer({
   venues: VENUES_LIST,
+  year: 0,
 }, {
   [ActionTypes.FILTER_VENUE]: (state, action) => {
     const { venues } = action.payload;
@@ -22,6 +23,15 @@ const filter = createReducer({
       venues,
     };
   },
+  [ActionTypes.FILTER_YEAR]: (state, action) => {
+    const { year } = action.payload;
+
+    return {
+      ...state,
+      year,
+    };
+  },
+
 });
 
 const data = createReducer({

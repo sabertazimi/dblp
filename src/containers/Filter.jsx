@@ -1,44 +1,71 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Checkbox, Row, Col } from 'antd';
+import {
+  InputNumber,
+  Checkbox,
+  Divider,
+  Row,
+  Col,
+} from 'antd';
 
 import * as Actions from '../actions';
 import { VENUES_LIST } from '../api';
 
-const Filter = ({ venues, filter }) => {
-  const onChange = checkedValues => filter(checkedValues);
+const Filter = ({
+  venues,
+  filterVenue,
+  year,
+  filterYear,
+}) => {
+  const onYearChange = value => filterYear(value);
+  const onVenuesChange = checkedValues => filterVenue(checkedValues);
 
   return (
-    <Checkbox.Group
-      style={{
-        width: '100%',
-      }}
-      defaultValue={venues}
-      onChange={onChange}
-    >
-      <Row type="flex" justify="center" align="middle">
-        {
-          VENUES_LIST.map(venue => (
-            <Col span={24} key={venue}>
-              <Checkbox
-                value={venue}
-              >
-                {venue}
-              </Checkbox>
-            </Col>
-          ))
-        }
-      </Row>
-    </Checkbox.Group>
+    <div>
+      <Divider orientation="left">
+        Year
+      </Divider>
+      <InputNumber
+        min={0}
+        max={new Date().getFullYear()}
+        defaultValue={year}
+        onChange={onYearChange}
+      />
+      <Divider orientation="left">
+        Venues
+      </Divider>
+      <Checkbox.Group
+        style={{
+          width: '100%',
+        }}
+        defaultValue={venues}
+        onChange={onVenuesChange}
+      >
+        <Row type="flex" justify="center" align="middle">
+          {
+            VENUES_LIST.map(venue => (
+              <Col span={24} key={venue}>
+                <Checkbox
+                  value={venue}
+                >
+                  {venue}
+                </Checkbox>
+              </Col>
+            ))
+          }
+        </Row>
+      </Checkbox.Group>
+    </div>
   );
 };
 
 const mapStateToProps = state => ({
-  venues: state.filter.venues,
+  ...state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
-  filter: venues => (dispatch(Actions.filter(venues))),
+  filterVenue: venues => (dispatch(Actions.filterVenue(venues))),
+  filterYear: year => (dispatch(Actions.filterYear(year))),
 });
 
 export default connect(
