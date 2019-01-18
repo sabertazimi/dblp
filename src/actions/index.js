@@ -15,7 +15,7 @@ const makeActionCreator = (type, ...argNames) => (...args) => {
 export const filter = makeActionCreator(ActionTypes.FILTER_VENUE, 'venues');
 
 const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query');
-const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'data');
+const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'items');
 const requestError = makeActionCreator(ActionTypes.REQUEST_ERROR, 'error');
 
 export const fetchData = (keyword, venues) => (dispatch) => {

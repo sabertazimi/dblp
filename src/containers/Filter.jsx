@@ -34,7 +34,7 @@ const Filter = ({ venues, filter }) => {
 };
 
 const mapStateToProps = state => ({
-  venues: state.venues,
+  venues: state.filter.venues,
 });
 
 const mapDispatchToProps = dispatch => ({

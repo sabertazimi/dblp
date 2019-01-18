@@ -2,7 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Table } from 'antd';
 
-const Result = ({ error, isLoading, data }) => {
+const Result = ({
+  error,
+  isLoading,
+  items,
+  venues,
+}) => {
   const columns = [
     {
       title: 'Title',
@@ -63,10 +68,12 @@ const Result = ({ error, isLoading, data }) => {
     );
   }
 
+  const dataSource = items.filter(item => venues.includes(item.venue));
+
   return (
     <Table
       columns={columns}
-      dataSource={data}
+      dataSource={dataSource}
       loading={isLoading}
       pagination={{
         defaultPageSize: 30,
@@ -80,9 +87,8 @@ const Result = ({ error, isLoading, data }) => {
 };
 
 const mapStateToProps = state => ({
-  error: state.error,
-  isLoading: state.isLoading,
-  data: state.data,
+  ...state.data,
+  venues: state.filter.venues,
 });
 
 export default connect(mapStateToProps)(Result);
