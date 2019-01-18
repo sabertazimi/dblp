@@ -15,12 +15,6 @@ const Result = ({ error, isLoading, data }) => {
       dataIndex: 'venue',
       key: 'venue',
       sorter: (a, b) => a.venue.localeCompare(b.venue),
-      filters: [
-        {
-          text: 'ISCA',
-          value: 'ISCA',
-        },
-      ],
     },
     {
       title: 'Year',
