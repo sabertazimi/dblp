@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import * as ActionTypes from '../constants';
 import { VENUES_LIST } from '../api';
 
@@ -10,18 +9,12 @@ const createReducer = (initialState, handlers) => (state = initialState, action)
   return state;
 };
 
-const filterReducer = createReducer({ venues: VENUES_LIST }, {
-  [ActionTypes.FILTER]: (state, action) => {
-    const { venues } = action.payload;
-
-    return {
-      ...state,
-      venues,
-    };
-  },
-});
-
-const dataReducer = createReducer({ error: null, isLoading: false, data: [] }, {
+const dataReducer = createReducer({
+  error: null,
+  isLoading: false,
+  data: [],
+  venues: VENUES_LIST,
+}, {
   [ActionTypes.REQUEST_DATA]: state => ({
     ...state,
     error: null,
@@ -47,11 +40,16 @@ const dataReducer = createReducer({ error: null, isLoading: false, data: [] }, {
       data: [],
     };
   },
+  [ActionTypes.FILTER_VENUE]: (state, action) => {
+    const { venues } = action.payload;
+
+    return {
+      ...state,
+      venues,
+    };
+  },
 });
 
-const createRootReducer = () => combineReducers({
-  filterReducer,
-  dataReducer,
-});
+const createRootReducer = () => dataReducer;
 
 export default createRootReducer;

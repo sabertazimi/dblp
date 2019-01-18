@@ -80,7 +80,9 @@ const Result = ({ error, isLoading, data }) => {
 };
 
 const mapStateToProps = state => ({
-  ...state.dataReducer,
+  error: state.error,
+  isLoading: state.isLoading,
+  data: state.data,
 });
 
 export default connect(mapStateToProps)(Result);
