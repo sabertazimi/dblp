@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Table, Alert } from 'antd';
 
+import { venueTitle } from '../api';
+
 const Result = ({
   error,
   isLoading,
@@ -75,7 +77,10 @@ const Result = ({
   const dataSource = items.filter(item => (
     venues.includes(item.venue)
     && parseInt(item.year, 10) >= year
-  ));
+  )).map(item => ({
+    ...item,
+    venue: venueTitle(item.venue),
+  }));
 
   return (
     <Table

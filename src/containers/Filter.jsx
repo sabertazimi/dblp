@@ -9,7 +9,7 @@ import {
 } from 'antd';
 
 import * as Actions from '../actions';
-import { VENUES_LIST } from '../api';
+import { VENUES_LIST, venueTitle } from '../api';
 
 const Filter = ({
   venues,
@@ -48,7 +48,7 @@ const Filter = ({
                 <Checkbox
                   value={venue}
                 >
-                  {venue}
+                  { venueTitle(venue) }
                 </Checkbox>
               </Col>
             ))
