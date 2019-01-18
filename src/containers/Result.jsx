@@ -5,22 +5,22 @@ import { Table } from 'antd';
 const Result = ({ error, isLoading, data }) => {
   const columns = [
     {
-      Title: 'Title',
+      title: 'Title',
       dataIndex: 'title',
       key: 'title',
     },
     {
-      Title: 'Venue',
+      title: 'Venue',
       dataIndex: 'venue',
       key: 'venue',
     },
     {
-      Title: 'Year',
+      title: 'Year',
       dataIndex: 'year',
       key: 'year',
     },
     {
-      Title: 'Url',
+      title: 'Url',
       dataIndex: 'url',
       key: 'url',
       render: url => (
@@ -39,22 +39,19 @@ const Result = ({ error, isLoading, data }) => {
     );
   }
 
-  if (isLoading) {
-    return (
-      <h2>
-        Loading ...
-      </h2>
-    );
-  }
-
-  if (data && data.length) {
-    return (<Table rowKey="uid" columns={columns} dataSource={data} />);
-  }
-
   return (
-    <h2>
-      No Data
-    </h2>
+    <Table
+      columns={columns}
+      dataSource={data}
+      loading={isLoading}
+      pagination={{
+        defaultPageSize: 30,
+        hideOnSinglePage: true,
+        pageSizeOptions: ['10', '20', '30', '40', '50'],
+        showQuickJumper: true,
+        showSizeChanger: true,
+      }}
+    />
   );
 };
 

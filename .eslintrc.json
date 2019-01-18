@@ -5,6 +5,7 @@
     "node": true
   },
   "rules": {
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "no-plusplus": 0 
   }
 }

@@ -2,6 +2,8 @@ export const dblpQuery = (keyword, venue) => (
   `http://dblp.org/search/publ/api?q=${keyword} venue:${venue}:&format=json&h=999`
 );
 
+let KEY = 0;
+
 export const normalize = (data) => {
   const { hit: results } = data.result.hits;
 
@@ -10,7 +12,7 @@ export const normalize = (data) => {
   }
 
   return results.map(({ info }) => ({
-    key: info.key,
+    key: KEY++,
     title: info.title,
     venue: info.venue,
     year: info.year,
