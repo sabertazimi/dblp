@@ -1,5 +1,5 @@
 export const dblpQuery = (keyword, venue) => (
-  `http://dblp.org/search/publ/api?q=${keyword} venue:${venue}:&format=json&h=999`
+  `https://dblp.org/search/publ/api?q=${keyword} venue:${venue}:&format=json&h=999`
 );
 
 let KEY = 0;
