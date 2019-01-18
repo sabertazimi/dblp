@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - "stable"
+
+cache:
+  directories:
+  - node_modules
+
+before_install:
+  - sudo apt-get install -y sshpass
+
+script:
+  - npm install
+  - npm run lint
+  - npm run build
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: master
