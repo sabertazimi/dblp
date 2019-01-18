@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Table } from 'antd';
+import { Table, Alert } from 'antd';
 
 const Result = ({
   error,
@@ -63,9 +63,12 @@ const Result = ({
 
   if (error) {
     return (
-      <h2>
-        Data Error
-      </h2>
+      <Alert
+        message="Error"
+        description="Bad request - please retry."
+        type="error"
+        showIcon
+      />
     );
   }
 

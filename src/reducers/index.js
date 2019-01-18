@@ -15,16 +15,16 @@ const filter = createReducer({
   venues: VENUES_LIST,
   year: 0,
 }, {
-  [ActionTypes.FILTER_VENUE]: (state, action) => {
-    const { venues } = action.payload;
+  [ActionTypes.FILTER_VENUE]: (state, { payload }) => {
+    const { venues } = payload;
 
     return {
       ...state,
       venues,
     };
   },
-  [ActionTypes.FILTER_YEAR]: (state, action) => {
-    const { year } = action.payload;
+  [ActionTypes.FILTER_YEAR]: (state, { payload }) => {
+    const { year } = payload;
 
     return {
       ...state,
@@ -45,8 +45,8 @@ const data = createReducer({
     isLoading: true,
     items: [],
   }),
-  [ActionTypes.RECEIVE_DATA]: (state, action) => {
-    const { items } = action.payload;
+  [ActionTypes.RECEIVE_DATA]: (state, { payload }) => {
+    const { items } = payload;
 
     return {
       ...state,
@@ -55,8 +55,8 @@ const data = createReducer({
       items,
     };
   },
-  [ActionTypes.REQUEST_ERROR]: (state, action) => {
-    const { error } = action.payload;
+  [ActionTypes.REQUEST_ERROR]: (state, { payload }) => {
+    const { error } = payload;
 
     return {
       ...state,
