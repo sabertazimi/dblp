@@ -83,6 +83,8 @@ export const VENUES_LIST = [
   'RTSS',
 ];
 
+export const DEFAULT_VENUES_LIST = VENUES_LIST.slice(0, 30);
+
 const VENUES_TITLE = {
   'USENIX Annual Technical Conference': 'ATC',
   'SIGMOD Conference': 'SIGMOD',
@@ -95,4 +97,13 @@ const VENUES_TITLE = {
   'ACM Multimedia': 'MM',
 };
 
-export const venueTitle = venue => (VENUES_TITLE[venue] || venue);
+export const getVenueTitle = venue => (VENUES_TITLE[venue] || venue);
+export const getFilteredData = (items, { venues, year }) => (
+  items.filter(item => (
+    venues.includes(item.venue)
+    && parseInt(item.year, 10) >= year
+  )).map(item => ({
+    ...item,
+    venue: getVenueTitle(item.venue),
+  }))
+);

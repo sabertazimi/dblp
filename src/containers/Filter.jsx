@@ -9,7 +9,7 @@ import {
 } from 'antd';
 
 import * as Actions from '../actions';
-import { VENUES_LIST, venueTitle } from '../api';
+import { VENUES_LIST, getVenueTitle } from '../api';
 
 const Filter = ({
   venues,
@@ -21,7 +21,12 @@ const Filter = ({
   const onVenuesChange = checkedValues => filterVenue(checkedValues);
 
   return (
-    <div>
+    <div
+      style={{
+        paddingLeft: '1em',
+        paddingBottom: '1em',
+      }}
+    >
       <Divider orientation="left">
         Year
       </Divider>
@@ -48,7 +53,7 @@ const Filter = ({
                 <Checkbox
                   value={venue}
                 >
-                  { venueTitle(venue) }
+                  { getVenueTitle(venue) }
                 </Checkbox>
               </Col>
             ))

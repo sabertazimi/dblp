@@ -1,7 +1,7 @@
 
 import { combineReducers } from 'redux';
 import * as ActionTypes from '../constants';
-import { VENUES_LIST } from '../api';
+import { DEFAULT_VENUES_LIST } from '../api';
 
 const createReducer = (initialState, handlers) => (state = initialState, action) => {
   if (Object.prototype.hasOwnProperty.call(handlers, action.type)) {
@@ -12,7 +12,7 @@ const createReducer = (initialState, handlers) => (state = initialState, action)
 };
 
 const filter = createReducer({
-  venues: VENUES_LIST.slice(0, 30),
+  venues: DEFAULT_VENUES_LIST,
   year: 0,
 }, {
   [ActionTypes.FILTER_VENUE]: (state, { payload }) => {

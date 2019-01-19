@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Table, Alert } from 'antd';
 
-import { venueTitle } from '../api';
+import { getFilteredData } from '../api';
 
 const Result = ({
   error,
@@ -74,13 +74,7 @@ const Result = ({
     );
   }
 
-  const dataSource = items.filter(item => (
-    venues.includes(item.venue)
-    && parseInt(item.year, 10) >= year
-  )).map(item => ({
-    ...item,
-    venue: venueTitle(item.venue),
-  }));
+  const dataSource = getFilteredData(items, { venues, year });
 
   return (
     <Table
