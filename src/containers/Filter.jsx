@@ -6,6 +6,8 @@ import {
   Divider,
   Row,
   Col,
+  Icon,
+  Menu,
 } from 'antd';
 
 import * as Actions from '../actions';
@@ -16,9 +18,39 @@ const Filter = ({
   filterVenue,
   year,
   filterYear,
+  collapsed,
 }) => {
   const onYearChange = value => filterYear(value);
   const onVenuesChange = checkedValues => filterVenue(checkedValues);
+
+  if (collapsed) {
+    return (
+      <Menu mode="inline">
+        <Menu.Item key="1">
+          <Icon type="clock-circle" />
+          <span>
+            Year
+          </span>
+        </Menu.Item>
+        {
+          [...Array(9).keys()].map(number => (
+            <Menu.Item key={number + 2}>
+              <Icon type="ellipsis" />
+              <span>
+                { `Venue ${number + 1}` }
+              </span>
+            </Menu.Item>
+          ))
+        }
+        <Menu.Item key="11">
+          <Icon type="ellipsis" />
+          <span>
+            Venue 10
+          </span>
+        </Menu.Item>
+      </Menu>
+    );
+  }
 
   return (
     <div
