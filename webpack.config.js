@@ -4,8 +4,31 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const devMode = process.env.NODE_ENV !== 'production';
+
+const plugins = [
+  new CleanWebpackPlugin('build'),
+  new HtmlWebpackPlugin({
+    hash: true,
+    template: './src/index.html',
+    filename: './index.html',
+  }),
+  new MiniCssExtractPlugin({
+    filename: devMode ? '[name].css' : '[name].[hash].css',
+    chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+  }),
+  new StyleLintPlugin(),
+];
+
+if (devMode) {
+  plugins.push(
+    new BundleAnalyzerPlugin({
+      analyzerPort: 3333,
+    }),
+  );
+}
 
 module.exports = {
   entry: {
@@ -52,19 +75,7 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CleanWebpackPlugin('build'),
-    new HtmlWebpackPlugin({
-      hash: true,
-      template: './src/index.html',
-      filename: './index.html',
-    }),
-    new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    }),
-    new StyleLintPlugin(),
-  ],
+  plugins,
   resolve: {
     extensions: ['.js', '.jsx'],
   },
