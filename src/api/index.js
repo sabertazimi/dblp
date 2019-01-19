@@ -98,6 +98,7 @@ const VENUES_TITLE = {
 };
 
 export const getVenueTitle = venue => (VENUES_TITLE[venue] || venue);
+
 export const getFilteredData = (items, { venues, year }) => (
   items.filter(item => (
     venues.includes(item.venue)
@@ -107,3 +108,21 @@ export const getFilteredData = (items, { venues, year }) => (
     venue: getVenueTitle(item.venue),
   }))
 );
+
+export const getStatisticsData = (items, { venues, year }) => {
+  const filteredItems = getFilteredData(items, { venues, year });
+  const statisticsData = {};
+
+  filteredItems.forEach(({ venue }) => {
+    if (!statisticsData[venue]) {
+      statisticsData[venue] = 0;
+    }
+
+    statisticsData[venue] += 1;
+  });
+
+  return Object.keys(statisticsData).map(key => ({
+    venue: key,
+    count: statisticsData[key],
+  }));
+};

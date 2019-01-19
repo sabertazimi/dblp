@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
-import { Layout, BackTop } from 'antd';
+import {
+  Row,
+  Col,
+  Layout,
+  BackTop,
+} from 'antd';
 
-import { SearchBar, Result, Filter } from './containers';
+import {
+  SearchBar,
+  StatisticsBar,
+  Result,
+  Filter,
+} from './containers';
 
 import './index.scss';
 
@@ -25,7 +35,14 @@ export default class App extends Component {
     return (
       <Layout>
         <Header className="header">
-          <SearchBar />
+          <Row gutter={16}>
+            <Col span={20}>
+              <SearchBar />
+            </Col>
+            <Col>
+              <StatisticsBar />
+            </Col>
+          </Row>
         </Header>
         <Layout>
           <Sider
