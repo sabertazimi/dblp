@@ -13,7 +13,7 @@ const createReducer = (initialState, handlers) => (state = initialState, action)
 
 const filter = createReducer({
   venues: DEFAULT_VENUES_LIST,
-  year: 0,
+  year: new Date().getFullYear() - 7,
 }, {
   [ActionTypes.FILTER_VENUE]: (state, { payload }) => {
     const { venues } = payload;
