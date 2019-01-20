@@ -22,82 +22,200 @@ export const normalize = data => (
   }).flat()
 );
 
-export const VENUES_LIST = [
-  'ASPLOS',
-  'HPCA',
-  'ISCA',
-  'MICRO',
-  'USENIX Annual Technical Conference',
-  'SC',
-  'PPOPP',
-  'OSDI',
-  'SOSP',
-  'PVLDB',
-  'SIGMOD Conference',
-  'IEEE Trans. Parallel Distrib. Syst.',
-  'ACM Trans. Comput. Syst.',
-  'TOS',
-  'FPGA',
-  'EuroSys',
-  'ICS',
-  'PACT',
-  'IPDPS',
-  'DATE',
-  'CGO',
-  'ICPP',
-  'SoCC',
-  'TACO',
-  'ICDE',
-  'ICSE',
-  'KDD',
-  'SIGIR',
-  'FAST',
-  'NSDI',
-  'SIGCOMM',
-  'MobiCom',
-  'INFOCOM',
-  'AAAI',
-  'CVPR',
-  'ICCV',
-  'ICML',
-  'IJCAI',
-  'NeurIPS',
-  'ACL',
-  'ACM Conference on Computer and Communications Security',
-  'CRYPTO',
-  'IEEE Symposium on Security and Privacy',
-  'USENIX Security Symposium',
-  'EUROCRYPT',
-  'ACM Trans. Graph.',
-  'ACM Multimedia',
-  'CHI',
-  'VR',
-  'UbiComp',
-  'PLDI',
-  'POPL',
-  'FOCS',
-  'STOC',
-  'LICS',
-  'CAV',
-  'WWW',
-  'RTSS',
+export const VenuesDB = [
+  {
+    venue: 'ASPLOS',
+  },
+  {
+    venue: 'HPCA',
+  },
+  {
+    venue: 'ISCA',
+  },
+  {
+    venue: 'MICRO',
+  },
+  {
+    venue: 'USENIX Annual Technical Conference',
+    title: 'ATC',
+  },
+  {
+    venue: 'SC',
+  },
+  {
+    venue: 'PPOPP',
+  },
+  {
+    venue: 'OSDI',
+  },
+  {
+    venue: 'SOSP',
+  },
+  {
+    venue: 'PVLDB',
+  },
+  {
+    venue: 'SIGMOD Conference',
+    title: 'SIGMOD',
+  },
+  {
+    venue: 'IEEE Trans. Parallel Distrib. Syst.',
+    title: 'TPDS',
+  },
+  {
+    venue: 'ACM Trans. Comput. Syst.',
+    title: 'TOCS',
+  },
+  {
+    venue: 'TOS',
+  },
+  {
+    venue: 'FPGA',
+  },
+  {
+    venue: 'EuroSys',
+  },
+  {
+    venue: 'ICS',
+  },
+  {
+    venue: 'PACT',
+  },
+  {
+    venue: 'IPDPS',
+  },
+  {
+    venue: 'DATE',
+  },
+  {
+    venue: 'CGO',
+  },
+  {
+    venue: 'ICPP',
+  },
+  {
+    venue: 'SoCC',
+  },
+  {
+    venue: 'TACO',
+  },
+  {
+    venue: 'ICDE',
+  },
+  {
+    venue: 'ICSE',
+  },
+  {
+    venue: 'KDD',
+  },
+  {
+    venue: 'SIGIR',
+  },
+  {
+    venue: 'FAST',
+  },
+  {
+    venue: 'NSDI',
+  },
+  {
+    venue: 'SIGCOMM',
+  },
+  {
+    venue: 'MobiCom',
+  },
+  {
+    venue: 'INFOCOM',
+  },
+  {
+    venue: 'AAAI',
+  },
+  {
+    venue: 'CVPR',
+  },
+  {
+    venue: 'ICCV',
+  },
+  {
+    venue: 'ICML',
+  },
+  {
+    venue: 'IJCAI',
+  },
+  {
+    venue: 'NeurIPS',
+  },
+  {
+    venue: 'ACL',
+  },
+  {
+    venue: 'ACM Conference on Computer and Communications Security',
+    title: 'CCS',
+  },
+  {
+    venue: 'CRYPTO',
+  },
+  {
+    venue: 'IEEE Symposium on Security and Privacy',
+    title: 'S&P',
+  },
+  {
+    venue: 'USENIX Security Symposium',
+    title: 'Security',
+  },
+  {
+    venue: 'EUROCRYPT',
+  },
+  {
+    venue: 'ACM Trans. Graph.',
+    title: 'SIGGRAPH',
+  },
+  {
+    venue: 'ACM Multimedia',
+    title: 'MM',
+  },
+  {
+    venue: 'CHI',
+  },
+  {
+    venue: 'VR',
+  },
+  {
+    venue: 'UbiComp',
+  },
+  {
+    venue: 'PLDI',
+  },
+  {
+    venue: 'POPL',
+  },
+  {
+    venue: 'FOCS',
+  },
+  {
+    venue: 'STOC',
+  },
+  {
+    venue: 'LICS',
+  },
+  {
+    venue: 'CAV',
+  },
+  {
+    venue: 'WWW',
+  },
+  {
+    venue: 'RTSS',
+  },
 ];
 
+const getVenueItem = venueName => (
+  VenuesDB.find(({ venue }) => venue === venueName)
+);
+
+export const VENUES_LIST = VenuesDB.map(({ venue }) => venue);
 export const DEFAULT_VENUES_LIST = VENUES_LIST.slice(0, 30);
 
-const VENUES_TITLE = {
-  'USENIX Annual Technical Conference': 'ATC',
-  'SIGMOD Conference': 'SIGMOD',
-  'IEEE Trans. Parallel Distrib. Syst.': 'TPDS',
-  'ACM Trans. Comput. Syst.': 'TOCS',
-  'ACM Conference on Computer and Communications Security': 'CCS',
-  'IEEE Symposium on Security and Privacy': 'S&P',
-  'USENIX Security Symposium': 'Security',
-  'ACM Trans. Graph.': 'SIGGRAPH',
-  'ACM Multimedia': 'MM',
-};
-
-export const getVenueTitle = venue => (VENUES_TITLE[venue] || venue);
+export const getVenueTitle = venue => (getVenueItem(venue).title || venue);
 
 export const getFilteredData = (items, { venues, year }) => (
   items.filter(item => (
