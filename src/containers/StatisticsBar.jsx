@@ -75,7 +75,7 @@ const StatisticsModal = ({
           stroke: '#fff',
         }}
         label={[
-          'percent',
+          'count',
           {
             formatter: (val, item) => (
               `${item.point.venue}: ${val}`
