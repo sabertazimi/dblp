@@ -7,14 +7,6 @@ import {
   Modal,
   Empty,
 } from 'antd';
-import {
-  Chart,
-  Tooltip,
-  Axis,
-  Coord,
-  Pie,
-} from 'viser-react';
-import DataSet from '@antv/data-set';
 
 import { getStatisticsData } from '../api';
 
@@ -46,44 +38,12 @@ const StatisticsModal = ({
     return (<Empty />);
   }
 
-  const dv = new DataSet.View().source(statisticsData);
-
-  dv.transform({
-    type: 'percent',
-    field: 'count',
-    dimension: 'venue',
-    as: 'percent',
-  });
-
-  const { rows: data } = dv;
-
-  const scale = [{
-    dataKey: 'percent',
-    min: 0,
-    formatter: '.0%',
-  }];
+  console.log(statisticsData);
 
   return (
-    <Chart forceFit height={400} data={data} scale={scale}>
-      <Tooltip showTitle={false} />
-      <Axis />
-      <Coord type="theta" radius={0.75} innerRadius={0.6} />
-      <Pie
-        position="percent"
-        color="venue"
-        style={{
-          stroke: '#fff',
-        }}
-        label={[
-          'count',
-          {
-            formatter: (val, item) => (
-              `${item.point.venue}: ${val}`
-            ),
-          },
-        ]}
-      />
-    </Chart>
+    <div>
+      ant
+    </div>
   );
 };
 
