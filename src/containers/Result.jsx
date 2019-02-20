@@ -1,6 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Table, Alert } from 'antd';
+import {
+  List,
+  Table,
+  Alert,
+} from 'antd';
 
 import { Responsive } from '../components';
 import { getFilteredData } from '../api';
@@ -76,13 +80,34 @@ const Result = ({
   }
 
   const dataSource = getFilteredData(items, { venues, year });
+  const sortedDataSource = dataSource.sort((a, b) => (
+    b.year.localeCompare(a.year)
+      || a.venue.localeCompare(b.venue)
+      || a.title.localeCompare(b.title)
+      || a.url.localeCompare(b.url)
+  ));
 
   return (
     <React.Fragment>
-      <Responsive maxWidth={767}>
-        ListView
+      <Responsive maxWidth={1079}>
+        <List
+          itemLayout="vertical"
+          dataSource={sortedDataSource}
+          renderItem={item => (
+            <List.Item
+              key={item.title}
+            >
+              <List.Item.Meta
+                description={`${item.venue} ${item.year}`}
+              />
+              <a href={item.url}>
+                {item.title}
+              </a>
+            </List.Item>
+          )}
+        />
       </Responsive>
-      <Responsive minWidth={768}>
+      <Responsive minWidth={1080}>
         <Table
           columns={columns}
           dataSource={dataSource}
