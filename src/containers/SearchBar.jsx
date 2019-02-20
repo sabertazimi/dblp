@@ -7,14 +7,15 @@ import { VENUES_LIST } from '../api';
 
 const { Search } = Input;
 
-const SearchBar = ({ fetchData }) => {
+const SearchBar = ({ fetchData, style }) => {
   const onSearch = value => value && fetchData(value, VENUES_LIST);
 
   return (
     <Search
+      style={style}
       placeholder="input search text"
       onSearch={onSearch}
-      enterButton={<Icon type="rocket" />}
+      enterButton={<Icon type="search" />}
     />
   );
 };

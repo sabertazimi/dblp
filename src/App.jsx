@@ -36,17 +36,52 @@ export default class App extends Component {
 
     return (
       <Layout>
-        <Header className="header">
-          <Row gutter={16}>
-            <Col span={20}>
-              <SearchBar />
-            </Col>
-            <Col>
-              <Responsive minWidth={1080}>
+        <Header
+          className="header"
+          style={{
+            position: 'relative',
+          }}
+        >
+          <Responsive maxWidth={1079}>
+            <SearchBar
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                color: '#000',
+                paddingLeft: '5px',
+                paddingRight: '5px',
+              }}
+            />
+          </Responsive>
+          <Responsive minWidth={1080}>
+            <Row
+              type="flex"
+              gutter={16}
+              align="middle"
+            >
+              <Col
+                span={16}
+                style={{
+                  position: 'relative',
+                }}
+              >
+                <SearchBar
+                  style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    color: '#000',
+                  }}
+                />
+              </Col>
+              <Col>
                 <StatisticsBar />
-              </Responsive>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </Responsive>
         </Header>
         <Layout>
           <Sider
