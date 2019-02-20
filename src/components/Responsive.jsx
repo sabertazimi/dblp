@@ -27,6 +27,7 @@ export default class Responsive extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize);
+    this.handleUpdate();
   }
 
   componentWillUnmount() {
@@ -74,9 +75,9 @@ export default class Responsive extends Component {
 
     if (visible) {
       return (
-        <div {...this.props}>
+        <React.Fragment>
           {children}
-        </div>
+        </React.Fragment>
       );
     }
 

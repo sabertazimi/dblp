@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Table, Alert } from 'antd';
 
+import { Responsive } from '../components';
 import { getFilteredData } from '../api';
 
 const Result = ({
@@ -77,19 +78,26 @@ const Result = ({
   const dataSource = getFilteredData(items, { venues, year });
 
   return (
-    <Table
-      columns={columns}
-      dataSource={dataSource}
-      loading={isLoading}
-      pagination={{
-        defaultPageSize: 40,
-        hideOnSinglePage: true,
-        pageSizeOptions: ['20', '40', '60', '80', '100'],
-        showTotal: (total, range) => `${range[0]}-${range[1]} of ${total} items`,
-        showQuickJumper: true,
-        showSizeChanger: true,
-      }}
-    />
+    <React.Fragment>
+      <Responsive maxWidth={767}>
+        ListView
+      </Responsive>
+      <Responsive minWidth={768}>
+        <Table
+          columns={columns}
+          dataSource={dataSource}
+          loading={isLoading}
+          pagination={{
+            defaultPageSize: 40,
+            hideOnSinglePage: true,
+            pageSizeOptions: ['20', '40', '60', '80', '100'],
+            showTotal: (total, range) => `${range[0]}-${range[1]} of ${total} items`,
+            showQuickJumper: true,
+            showSizeChanger: true,
+          }}
+        />
+      </Responsive>
+    </React.Fragment>
   );
 };
 

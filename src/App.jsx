@@ -6,6 +6,8 @@ import {
   BackTop,
 } from 'antd';
 
+import { Responsive } from './components';
+
 import {
   SearchBar,
   StatisticsBar,
@@ -40,7 +42,9 @@ export default class App extends Component {
               <SearchBar />
             </Col>
             <Col>
-              <StatisticsBar />
+              <Responsive minWidth={1080}>
+                <StatisticsBar />
+              </Responsive>
             </Col>
           </Row>
         </Header>
