@@ -100,7 +100,7 @@ const Result = ({
               <List.Item.Meta
                 description={`${item.venue} ${item.year}`}
               />
-              <a href={item.url}>
+              <a href={item.url} target="_blank" rel="noopener noreferrer nofollow">
                 {item.title}
               </a>
             </List.Item>
