@@ -6,7 +6,7 @@ An awesome DBLP search application
 
 ## Venues Support
 
-> Add new venue in `src/api/index.js` `VENUES_LIST`
+> Add new venue in `src/api/index.js` `VenuesDB`
 
 - ASPLOS
 - HPCA
