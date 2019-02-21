@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {
-  List,
-  Table,
-  Alert,
-} from 'antd';
+import { Alert } from 'antd';
 
-import { Responsive } from '../components';
+import {
+  Responsive,
+  ListResult,
+  TableResult,
+} from '../components';
+
 import { getFilteredData } from '../api';
 
 const Result = ({
@@ -16,58 +17,6 @@ const Result = ({
   venues,
   year,
 }) => {
-  const columns = [
-    {
-      title: 'Title',
-      dataIndex: 'title',
-      key: 'title',
-      sorter: (a, b) => (
-        a.title.localeCompare(b.title)
-        || a.venue.localeCompare(b.venue)
-        || b.year.localeCompare(a.year)
-        || a.url.localeCompare(b.url)
-      ),
-    },
-    {
-      title: 'Venue',
-      dataIndex: 'venue',
-      key: 'venue',
-      sorter: (a, b) => (
-        a.venue.localeCompare(b.venue)
-        || b.year.localeCompare(a.year)
-        || a.title.localeCompare(b.title)
-        || a.url.localeCompare(b.url)
-      ),
-    },
-    {
-      title: 'Year',
-      dataIndex: 'year',
-      key: 'year',
-      sorter: (a, b) => (
-        b.year.localeCompare(a.year)
-        || a.venue.localeCompare(b.venue)
-        || a.title.localeCompare(b.title)
-        || a.url.localeCompare(b.url)
-      ),
-    },
-    {
-      title: 'Url',
-      dataIndex: 'url',
-      key: 'url',
-      render: url => (
-        <a href={url} target="_blank" rel="noopener noreferrer nofollow">
-          {url}
-        </a>
-      ),
-      sorter: (a, b) => (
-        a.url.localeCompare(b.url)
-        || a.venue.localeCompare(b.venue)
-        || b.year.localeCompare(a.year)
-        || a.title.localeCompare(b.title)
-      ),
-    },
-  ];
-
   if (error) {
     return (
       <Alert
@@ -90,37 +39,10 @@ const Result = ({
   return (
     <React.Fragment>
       <Responsive maxWidth={1079}>
-        <List
-          itemLayout="vertical"
-          dataSource={sortedDataSource}
-          renderItem={item => (
-            <List.Item
-              key={item.title}
-            >
-              <List.Item.Meta
-                description={`${item.venue} ${item.year}`}
-              />
-              <a href={item.url} target="_blank" rel="noopener noreferrer nofollow">
-                {item.title}
-              </a>
-            </List.Item>
-          )}
-        />
+        <ListResult isLoading={isLoading} dataSource={sortedDataSource} />
       </Responsive>
       <Responsive minWidth={1080}>
-        <Table
-          columns={columns}
-          dataSource={dataSource}
-          loading={isLoading}
-          pagination={{
-            defaultPageSize: 40,
-            hideOnSinglePage: true,
-            pageSizeOptions: ['20', '40', '60', '80', '100'],
-            showTotal: (total, range) => `${range[0]}-${range[1]} of ${total} items`,
-            showQuickJumper: true,
-            showSizeChanger: true,
-          }}
-        />
+        <TableResult isLoading={isLoading} dataSource={dataSource} />
       </Responsive>
     </React.Fragment>
   );
