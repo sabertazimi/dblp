@@ -49,8 +49,6 @@ const StatisticsModal = ({
     },
   ];
 
-  console.log(statisticsData);
-
   return (
     <Table
       rowKey={item => item.venue}
