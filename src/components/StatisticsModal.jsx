@@ -49,11 +49,15 @@ const StatisticsModal = ({
     },
   ];
 
+  console.log(statisticsData);
+
   return (
     <Table
+      rowKey={item => item.venue}
       columns={columns}
       dataSource={statisticsData}
       loading={isLoading}
+      size="small"
       pagination={{
         defaultPageSize: 40,
         hideOnSinglePage: true,
@@ -62,7 +66,6 @@ const StatisticsModal = ({
         showQuickJumper: true,
         showSizeChanger: true,
       }}
-      size="small"
     />
   );
 };

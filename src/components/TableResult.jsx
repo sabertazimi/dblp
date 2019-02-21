@@ -60,6 +60,7 @@ const TableResult = ({
 
   return (
     <Table
+      rowKey={item => item.title}
       columns={columns}
       dataSource={dataSource}
       loading={isLoading}
