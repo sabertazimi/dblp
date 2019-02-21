@@ -1,11 +1,19 @@
 import Header from './Header';
 import Footer from './Footer';
 import Responsive from './Responsive';
-import Filter from './Filter';
+import YearFilter from './YearFilter';
+import VenuesFilter from './VenuesFilter';
+import ListResult from './ListResult';
+import TableResult from './TableResult';
+import StatisticsModal from './StatisticsModal';
 
 export {
   Header,
   Footer,
   Responsive,
-  Filter,
+  YearFilter,
+  VenuesFilter,
+  ListResult,
+  TableResult,
+  StatisticsModal,
 };
