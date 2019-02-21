@@ -23,14 +23,23 @@ const Filter = ({
       indeterminate={indeterminate}
       onChange={onCheckAllChange}
       checked={checkAll}
+      style={
+        checkAll ? {
+          color: '#1890ff',
+        } : {
+          color: 'rgba(0, 0, 0, 0.65)',
+        }
+      }
     >
-      Check all
+      <b>
+        Check All
+      </b>
     </Checkbox>
     <Checkbox.Group
       style={{
         width: '100%',
       }}
-      defaultValue={venues}
+      value={venues}
       onChange={onVenuesChange}
     >
       <Row type="flex" justify="center" align="middle">
