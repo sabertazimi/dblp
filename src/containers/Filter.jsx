@@ -19,7 +19,7 @@ class Filter extends React.Component {
   onYearChange = (value) => {
     const { filterYear } = this.props;
     filterYear(value);
-  };
+  }
 
   onVenuesChange = (checkedValues) => {
     const { filterVenue } = this.props;
@@ -29,7 +29,7 @@ class Filter extends React.Component {
       indeterminate: !!checkedValues.length && (checkedValues.length < VENUES_LIST.length),
       checkAll: checkedValues.length === VENUES_LIST.length,
     });
-  };
+  }
 
   onCheckAllChange = (event) => {
     const { filterVenue } = this.props;
@@ -39,7 +39,7 @@ class Filter extends React.Component {
       indeterminate: false,
       checkAll: event.target.checked,
     });
-  };
+  }
 
   render() {
     const { year, venues, collapsed } = this.props;

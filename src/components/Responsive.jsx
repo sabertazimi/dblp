@@ -14,16 +14,9 @@ const isVisible = (width, { maxWidth, minWidth }) => (
 );
 
 export default class Responsive extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      visible: true,
-    };
-
-    this.handleResize = this.handleResize.bind(this);
-    this.handleUpdate = this.handleUpdate.bind(this);
-  }
+  state = {
+    visible: true,
+  };
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize);
@@ -35,7 +28,7 @@ export default class Responsive extends Component {
     cancelAnimationFrame(this.frameId);
   }
 
-  getWidth() {
+  getWidth = () => {
     const { getWidth: gw } = this.props;
 
     if (gw) {
@@ -45,14 +38,14 @@ export default class Responsive extends Component {
     return window.innerWidth || 0;
   }
 
-  handleResize(event) {
+  handleResize = (event) => {
     if (this.ticking) return;
 
     this.ticking = true;
     this.frameId = requestAnimationFrame(() => this.handleUpdate(event));
   }
 
-  handleUpdate(event) {
+  handleUpdate = (event) => {
     this.ticking = false;
 
     const { onUpdate } = this.props;

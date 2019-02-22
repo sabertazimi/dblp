@@ -5,26 +5,18 @@ import { Button, Modal } from 'antd';
 import { StatisticsModal } from '../components';
 
 class StatisticsBar extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    loading: false,
+    visible: false,
+  };
 
-    this.state = {
-      loading: false,
-      visible: false,
-    };
-
-    this.showStatistics = this.showStatistics.bind(this);
-    this.handleExport = this.handleExport.bind(this);
-    this.handleClose = this.handleClose.bind(this);
-  }
-
-  showStatistics() {
+  showStatistics = () => {
     this.setState({
       visible: true,
     });
   }
 
-  handleExport() {
+  handleExport = () => {
     this.setState({ loading: true });
 
     setTimeout(() => {
@@ -32,7 +24,7 @@ class StatisticsBar extends Component {
     }, 3000);
   }
 
-  handleClose() {
+  handleClose = () => {
     this.setState({
       visible: false,
     });
