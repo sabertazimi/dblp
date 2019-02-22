@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Alert,
   Empty,
-  Table,
+  List,
 } from 'antd';
 
 import { getStatisticsData } from '../api';
@@ -31,39 +31,24 @@ const StatisticsModal = ({
     return (<Empty />);
   }
 
-  const columns = [
-    {
-      title: 'Venue',
-      dataIndex: 'venue',
-      key: 'venue',
-      sorter: (a, b) => (a.venue.localeCompare(b.venue)),
-    },
-    {
-      title: 'Count',
-      dataIndex: 'count',
-      key: 'count',
-      sorter: (a, b) => (
-        a.count - b.count
-        || a.venue.localeCompare(b.venue)
-      ),
-    },
-  ];
+  const sortedData = statisticsData.sort((a, b) => (
+    b.count - a.count || a.venue.localeCompare(b.venue)
+  ));
 
   return (
-    <Table
-      rowKey={item => item.venue}
-      columns={columns}
-      dataSource={statisticsData}
+    <List
+      dataSource={sortedData}
       loading={isLoading}
-      size="small"
-      pagination={{
-        defaultPageSize: 40,
-        hideOnSinglePage: true,
-        pageSizeOptions: ['20', '40', '60', '80', '100'],
-        showTotal: (total, range) => `${range[0]}-${range[1]} of ${total} items`,
-        showQuickJumper: true,
-        showSizeChanger: true,
-      }}
+      renderItem={item => (
+        <List.Item
+          key={item.venue}
+        >
+          <List.Item.Meta
+            description={item.venue}
+          />
+          {item.count}
+        </List.Item>
+      )}
     />
   );
 };
