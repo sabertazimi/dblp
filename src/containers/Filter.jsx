@@ -11,25 +11,17 @@ import { VENUES_LIST } from '../api';
 import * as Actions from '../actions';
 
 class Filter extends React.Component {
-  constructor(props) {
-    super(props);
+  state = {
+    indeterminate: true,
+    checkAll: false,
+  };
 
-    this.state = {
-      indeterminate: true,
-      checkAll: false,
-    };
-
-    this.onYearChange = this.onYearChange.bind(this);
-    this.onVenuesChange = this.onVenuesChange.bind(this);
-    this.onCheckAllChange = this.onCheckAllChange.bind(this);
-  }
-
-  onYearChange(value) {
+  onYearChange = (value) => {
     const { filterYear } = this.props;
     filterYear(value);
-  }
+  };
 
-  onVenuesChange(checkedValues) {
+  onVenuesChange = (checkedValues) => {
     const { filterVenue } = this.props;
     filterVenue(checkedValues);
 
@@ -37,9 +29,9 @@ class Filter extends React.Component {
       indeterminate: !!checkedValues.length && (checkedValues.length < VENUES_LIST.length),
       checkAll: checkedValues.length === VENUES_LIST.length,
     });
-  }
+  };
 
-  onCheckAllChange(event) {
+  onCheckAllChange = (event) => {
     const { filterVenue } = this.props;
     filterVenue(event.target.checked ? VENUES_LIST : []);
 
@@ -47,7 +39,7 @@ class Filter extends React.Component {
       indeterminate: false,
       checkAll: event.target.checked,
     });
-  }
+  };
 
   render() {
     const { year, venues, collapsed } = this.props;
