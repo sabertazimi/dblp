@@ -7,9 +7,11 @@ import configureStore from './store';
 
 const store = configureStore();
 
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root'),
-);
+setTimeout(() => {
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById('root'),
+  );
+}, 1500);
