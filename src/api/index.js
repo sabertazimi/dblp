@@ -97,6 +97,9 @@ export const VenuesDB = [
     venue: 'SoCC',
   },
   {
+    venue: 'DAC',
+  },
+  {
     venue: 'TACO',
   },
   {
