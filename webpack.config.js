@@ -8,45 +8,20 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
-const plugins = [
-  new CleanWebpackPlugin('build'),
-  new HtmlWebpackPlugin({
-    hash: true,
-    template: './src/index.html',
-    filename: './index.html',
-  }),
-  new MiniCssExtractPlugin({
-    filename: devMode ? '[name].css' : '[name].[hash].css',
-    chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-  }),
-  new StyleLintPlugin(),
-];
-
-if (devMode) {
-  plugins.push(
-    new BundleAnalyzerPlugin({
-      analyzerPort: 3333,
-    }),
-  );
-}
-
 module.exports = {
   entry: {
-    main: './src/index.jsx',
+    main: './src/index.jsx'
   },
   output: {
     filename: '[name].[chunkhash].js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build')
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader',
-          'eslint-loader',
-        ],
+        use: ['babel-loader', 'eslint-loader']
       },
       {
         test: /\.html$/,
@@ -54,10 +29,10 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              minimize: !devMode,
-            },
-          },
-        ],
+              minimize: !devMode
+            }
+          }
+        ]
       },
       {
         test: /\.(css|scss)$/,
@@ -66,18 +41,34 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              minimize: !devMode,
-            },
+              minimize: !devMode
+            }
           },
           'postcss-loader',
-          'sass-loader',
-        ],
-      },
-    ],
+          'sass-loader'
+        ]
+      }
+    ]
   },
-  plugins,
+  plugins: [
+    new CleanWebpackPlugin('build'),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/index.html',
+      filename: './index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+    }),
+    new StyleLintPlugin(),
+    devMode &&
+      new BundleAnalyzerPlugin({
+        analyzerPort: 3333
+      })
+  ].filter(Boolean),
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx']
   },
-  devtool: 'source-map',
+  devtool: 'source-map'
 };
