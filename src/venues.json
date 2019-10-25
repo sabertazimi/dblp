@@ -1,0 +1,191 @@
+[
+  {
+    "venue": "ASPLOS"
+  },
+  {
+    "venue": "HPCA"
+  },
+  {
+    "venue": "ISCA"
+  },
+  {
+    "venue": "MICRO"
+  },
+  {
+    "venue": "USENIX Annual Technical Conference",
+    "title": "ATC"
+  },
+  {
+    "venue": "SC"
+  },
+  {
+    "venue": "PPOPP"
+  },
+  {
+    "venue": "OSDI"
+  },
+  {
+    "venue": "SOSP"
+  },
+  {
+    "venue": "PVLDB"
+  },
+  {
+    "venue": "SIGMOD Conference",
+    "title": "SIGMOD"
+  },
+  {
+    "venue": "IEEE Trans. Parallel Distrib. Syst.",
+    "title": "TPDS"
+  },
+  {
+    "venue": "ACM Trans. Comput. Syst.",
+    "title": "TOCS"
+  },
+  {
+    "venue": "TOS"
+  },
+  {
+    "venue": "FPGA"
+  },
+  {
+    "venue": "EuroSys"
+  },
+  {
+    "venue": "ICS"
+  },
+  {
+    "venue": "PACT"
+  },
+  {
+    "venue": "IPDPS"
+  },
+  {
+    "venue": "DATE"
+  },
+  {
+    "venue": "CGO"
+  },
+  {
+    "venue": "ICPP"
+  },
+  {
+    "venue": "SoCC"
+  },
+  {
+    "venue": "DAC"
+  },
+  {
+    "venue": "SPAA"
+  },
+  {
+    "venue": "TACO"
+  },
+  {
+    "venue": "ICDE"
+  },
+  {
+    "venue": "ICSE"
+  },
+  {
+    "venue": "KDD"
+  },
+  {
+    "venue": "SIGIR"
+  },
+  {
+    "venue": "FAST"
+  },
+  {
+    "venue": "NSDI"
+  },
+  {
+    "venue": "SIGCOMM"
+  },
+  {
+    "venue": "MobiCom"
+  },
+  {
+    "venue": "INFOCOM"
+  },
+  {
+    "venue": "AAAI"
+  },
+  {
+    "venue": "CVPR"
+  },
+  {
+    "venue": "ICCV"
+  },
+  {
+    "venue": "ICML"
+  },
+  {
+    "venue": "IJCAI"
+  },
+  {
+    "venue": "NeurIPS"
+  },
+  {
+    "venue": "ACL"
+  },
+  {
+    "venue": "ACM Conference on Computer and Communications Security",
+    "title": "CCS"
+  },
+  {
+    "venue": "CRYPTO"
+  },
+  {
+    "venue": "IEEE Symposium on Security and Privacy",
+    "title": "S&P"
+  },
+  {
+    "venue": "USENIX Security Symposium",
+    "title": "Security"
+  },
+  {
+    "venue": "EUROCRYPT"
+  },
+  {
+    "venue": "ACM Trans. Graph.",
+    "title": "SIGGRAPH"
+  },
+  {
+    "venue": "ACM Multimedia",
+    "title": "MM"
+  },
+  {
+    "venue": "CHI"
+  },
+  {
+    "venue": "VR"
+  },
+  {
+    "venue": "UbiComp"
+  },
+  {
+    "venue": "PLDI"
+  },
+  {
+    "venue": "POPL"
+  },
+  {
+    "venue": "FOCS"
+  },
+  {
+    "venue": "STOC"
+  },
+  {
+    "venue": "LICS"
+  },
+  {
+    "venue": "CAV"
+  },
+  {
+    "venue": "WWW"
+  },
+  {
+    "venue": "RTSS"
+  }
+]
