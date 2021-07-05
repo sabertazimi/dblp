@@ -29,7 +29,6 @@ jobs:
       with:
         submodules: true
         fetch-depth: 1
-
     - name: Setup
       uses: actions/setup-node@v2
       with:
@@ -37,12 +36,16 @@ jobs:
         architecture: ${{ matrix.architecture }}
         registry-url: https://registry.npmjs.org/
         cache: 'npm'
-
     - name: Installation and Building Work
       run: |
           npm ci
           npm run lint
           npm run build
+    - name: Archive Production Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: build
     # - run: npm run build --if-present
     # - run: npm test
   
@@ -52,6 +55,10 @@ jobs:
     needs: build
 
     steps:
+    - name: Download Production Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: dist
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
