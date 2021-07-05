@@ -10,6 +10,8 @@ on:
 
 jobs:
   build:
+    name: Node ${{ matrix.node-version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os:
@@ -19,10 +21,6 @@ jobs:
         architecture:
         - x64
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    runs-on: ${{ matrix.os }}
-    name: Node ${{ matrix.node-version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -36,9 +34,18 @@ jobs:
         architecture: ${{ matrix.architecture }}
         registry-url: https://registry.npmjs.org/
         cache: 'npm'
-    - name: Installation and building work
+    - name: Installation
+      run: npm ci
+    - name: NPM audit
+      uses: oke-py/npm-audit-action@v1.7.3
+      with:
+        audit_level: moderate
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        issue_assignees: sabertazimi
+        issue_labels: vulnerability,test
+        dedupe_issues: true
+    - name: Building work
       run: |
-          npm ci
           npm run lint
           npm run build
     - name: Archive production artifacts
@@ -53,7 +60,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Deployment
     needs: build
-
     steps:
     - name: Download production artifacts
       uses: actions/download-artifact@v2
@@ -75,3 +81,4 @@ jobs:
     # - run: npm publish
     #   env:
     #     NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
