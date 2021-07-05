@@ -1,6 +1,6 @@
 # dblp
 
-[![Build Status](https://travis-ci.org/sabertazimi/dblp.svg?branch=master)](https://travis-ci.org/sabertazimi/dblp)
+[![Continuous Integration](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml/badge.svg)](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml)
 
 An awesome DBLP search application
 
