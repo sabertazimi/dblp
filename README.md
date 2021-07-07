@@ -1,6 +1,10 @@
 # dblp
 
-[![Continuous Integration](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml/badge.svg)](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml)
+[![Author](https://img.shields.io/badge/author-sabertaz-lightgrey?style=for-the-badge)](https://github.com/sabertazimi)
+[![LICENSE](https://img.shields.io/github/license/sabertazimi/dblp?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/dblp/master/LICENSE)
+
+[![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/dblp?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/dblp)
+[![Continuous Integration](https://img.shields.io/github/checks-status/sabertazimi/dblp/master?label=Continuous%20Integration&style=for-the-badge&logo=GitHub)](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml)
 
 An awesome DBLP search application
 
@@ -66,3 +70,10 @@ An awesome DBLP search application
 - CAV
 - WWW
 - RTSS
+
+## Contact
+
+[![Email](https://img.shields.io/badge/-Gmail-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sabertazimi@gmail.com)
+[![Twitter](https://img.shields.io/badge/-Twitter-1da1f2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/sabertazimi)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sabertazimi)
+
