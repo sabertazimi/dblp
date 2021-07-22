@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --port 2333 --mode development --open",
+    "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "lint": "stylelint ./src/**/*.scss && eslint --ext .js --ext .jsx ./src"
   },
