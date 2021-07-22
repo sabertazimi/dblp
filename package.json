@@ -40,7 +40,7 @@
     "babel-plugin-import": "^1.13.3",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^7.0.3",
-    "css-loader": "^0.28.11",
+    "css-loader": "^3.6.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-loader": "^2.1.0",
