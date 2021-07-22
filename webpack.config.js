@@ -38,12 +38,7 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              minimize: !devMode
-            }
-          },
+          'css-loader',
           'postcss-loader',
           'sass-loader'
         ]
