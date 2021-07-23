@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Table } from 'antd';
 
@@ -44,7 +43,7 @@ const TableResult = ({
       title: 'Url',
       dataIndex: 'url',
       key: 'url',
-      render: url => (
+      render: (url) => (
         <a href={url} target="_blank" rel="noopener noreferrer nofollow">
           {url}
         </a>
@@ -60,7 +59,7 @@ const TableResult = ({
 
   return (
     <Table
-      rowKey={item => item.title}
+      rowKey={(item) => item.title}
       columns={columns}
       dataSource={dataSource}
       loading={isLoading}

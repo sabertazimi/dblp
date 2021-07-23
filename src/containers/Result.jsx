@@ -37,18 +37,18 @@ const Result = ({
   ));
 
   return (
-    <React.Fragment>
+    <>
       <Responsive maxWidth={1079}>
         <ListResult isLoading={isLoading} dataSource={sortedDataSource} />
       </Responsive>
       <Responsive minWidth={1080}>
         <TableResult isLoading={isLoading} dataSource={dataSource} />
       </Responsive>
-    </React.Fragment>
+    </>
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   ...state.data,
   ...state.filter,
 });

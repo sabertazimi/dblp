@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { List } from 'antd';
 
@@ -10,7 +9,7 @@ const ListResult = ({
     itemLayout="vertical"
     dataSource={dataSource}
     loading={isLoading}
-    renderItem={item => (
+    renderItem={(item) => (
       <List.Item
         key={item.title}
       >

@@ -8,7 +8,7 @@ import { VENUES_LIST } from '../api';
 const { Search } = Input;
 
 const SearchBar = ({ fetchData, style }) => {
-  const onSearch = value => value && fetchData(value, VENUES_LIST);
+  const onSearch = (value) => value && fetchData(value, VENUES_LIST);
 
   return (
     <Search
@@ -20,7 +20,7 @@ const SearchBar = ({ fetchData, style }) => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   fetchData: (keyword, venues) => (dispatch(Actions.fetchData(keyword, venues))),
 });
 

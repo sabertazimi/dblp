@@ -15,7 +15,7 @@ const Filter = ({
   onVenuesChange,
   onCheckAllChange,
 }) => (
-  <React.Fragment>
+  <>
     <Divider orientation="left">
       Venues
     </Divider>
@@ -44,7 +44,7 @@ const Filter = ({
     >
       <Row type="flex" justify="center" align="middle">
         {
-          VENUES_LIST.map(venue => (
+          VENUES_LIST.map((venue) => (
             <Col span={24} key={venue}>
               <Checkbox
                 value={venue}
@@ -56,7 +56,7 @@ const Filter = ({
         }
       </Row>
     </Checkbox.Group>
-  </React.Fragment>
+  </>
 );
 
 export default Filter;

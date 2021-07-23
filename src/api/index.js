@@ -1,4 +1,3 @@
-
 import venuesData from '../venues.json';
 
 export const dblpQuery = (keyword, venue) => (
@@ -7,7 +6,7 @@ export const dblpQuery = (keyword, venue) => (
 
 let KEY = 0;
 
-export const normalize = data => (
+export const normalize = (data) => (
   data.map(({ result }) => {
     const { hit } = result.hits;
 
@@ -27,20 +26,20 @@ export const normalize = data => (
 
 export const VenuesDB = venuesData;
 
-const getVenueItem = venueName => (
+const getVenueItem = (venueName) => (
   VenuesDB.find(({ venue }) => venue === venueName)
 );
 
 export const VENUES_LIST = VenuesDB.map(({ venue }) => venue);
 export const DEFAULT_VENUES_LIST = VENUES_LIST.slice(0, 30);
 
-export const getVenueTitle = venue => (getVenueItem(venue).title || venue);
+export const getVenueTitle = (venue) => (getVenueItem(venue).title || venue);
 
 export const getFilteredData = (items, { venues, year }) => (
-  items.filter(item => (
+  items.filter((item) => (
     venues.includes(item.venue)
     && parseInt(item.year, 10) >= year
-  )).map(item => ({
+  )).map((item) => ({
     ...item,
     venue: getVenueTitle(item.venue),
   }))
@@ -58,7 +57,7 @@ export const getStatisticsData = (items, { venues, year }) => {
     statisticsData[venue] += 1;
   });
 
-  return Object.keys(statisticsData).map(key => ({
+  return Object.keys(statisticsData).map((key) => ({
     venue: key,
     count: statisticsData[key],
   }));

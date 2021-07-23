@@ -1,4 +1,3 @@
-
 import { combineReducers } from 'redux';
 import * as ActionTypes from '../constants';
 import { DEFAULT_VENUES_LIST } from '../api';
@@ -39,7 +38,7 @@ const data = createReducer({
   isLoading: false,
   items: [],
 }, {
-  [ActionTypes.REQUEST_DATA]: state => ({
+  [ActionTypes.REQUEST_DATA]: (state) => ({
     ...state,
     error: null,
     isLoading: true,

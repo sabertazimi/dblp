@@ -12,7 +12,10 @@ const makeActionCreator = (type, ...argNames) => (...args) => {
   return action;
 };
 
-export const filterVenue = makeActionCreator(ActionTypes.FILTER_VENUE, 'venues');
+export const filterVenue = makeActionCreator(
+  ActionTypes.FILTER_VENUE,
+  'venues',
+);
 export const filterYear = makeActionCreator(ActionTypes.FILTER_YEAR, 'year');
 
 const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query');
@@ -22,20 +25,20 @@ const requestError = makeActionCreator(ActionTypes.REQUEST_ERROR, 'error');
 export const fetchData = (keyword, venues) => (dispatch) => {
   dispatch(requestData(venues));
 
-  return Promise.all(venues.map(venue => fetch(dblpQuery(keyword, venue), {
-    method: 'GET',
-    mode: 'cors',
-  })))
-    .then(responses => (
-      Promise.all(
-        responses.map((response) => {
-          if (response.ok) {
-            return response.json();
-          }
+  return Promise.all(
+    venues.map((venue) => fetch(dblpQuery(keyword, venue), {
+      method: 'GET',
+      mode: 'cors',
+    })),
+  )
+    .then((responses) => Promise.all(
+      responses.map((response) => {
+        if (response.ok) {
+          return response.json();
+        }
 
-          return null;
-        }),
-      )
+        return null;
+      }),
     ))
     .then((data) => {
       if (!data) {

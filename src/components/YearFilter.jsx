@@ -8,7 +8,7 @@ const YearFilter = ({
   year,
   onYearChange,
 }) => (
-  <React.Fragment>
+  <>
     <Divider orientation="left">
       Year
     </Divider>
@@ -18,7 +18,7 @@ const YearFilter = ({
       defaultValue={year}
       onChange={onYearChange}
     />
-  </React.Fragment>
+  </>
 );
 
 export default YearFilter;

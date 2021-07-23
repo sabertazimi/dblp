@@ -39,7 +39,7 @@ const StatisticsModal = ({
     <List
       dataSource={sortedData}
       loading={isLoading}
-      renderItem={item => (
+      renderItem={(item) => (
         <List.Item
           key={item.venue}
         >
