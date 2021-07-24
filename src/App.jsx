@@ -1,20 +1,7 @@
 import React, { Component } from 'react';
-import {
-  Row,
-  Col,
-  Layout,
-  BackTop,
-} from 'antd';
-
+import { Row, Col, Layout, BackTop } from 'antd';
 import { Responsive } from './components';
-
-import {
-  SearchBar,
-  StatisticsBar,
-  Result,
-  Filter,
-} from './containers';
-
+import { SearchBar, StatisticsBar, Result, Filter } from './containers';
 import './index.scss';
 
 const { Header, Content, Sider } = Layout;
@@ -56,11 +43,7 @@ export default class App extends Component {
             />
           </Responsive>
           <Responsive minWidth={1080}>
-            <Row
-              type="flex"
-              gutter={16}
-              align="middle"
-            >
+            <Row type="flex" gutter={16} align="middle">
               <Col
                 span={16}
                 style={{
@@ -79,6 +62,19 @@ export default class App extends Component {
               </Col>
               <Col>
                 <StatisticsBar />
+              </Col>
+              <Col>
+                <a
+                  href="https://github.com/sabertazimi/dblp"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 800,
+                  }}
+                >
+                  Get Source Code on GitHub
+                </a>
               </Col>
             </Row>
           </Responsive>
