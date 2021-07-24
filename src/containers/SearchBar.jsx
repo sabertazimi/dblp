@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Input, Icon } from 'antd';
+import { Input } from 'antd';
 
 import * as Actions from '../actions';
 import { VENUES_LIST } from '../api';
@@ -12,10 +12,11 @@ const SearchBar = ({ fetchData, style }) => {
 
   return (
     <Search
+      allowClear
       style={style}
+      enterButton
       placeholder="input search text"
       onSearch={onSearch}
-      enterButton={<Icon type="search" />}
     />
   );
 };
