@@ -1,6 +1,6 @@
 {
   "name": "dblp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An awesome DBLP search application",
   "main": "./src/index.js",
   "scripts": {
