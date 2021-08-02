@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/sabertazimi/dblp/compare/v1.0.1...v1.0.2) (2021-08-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump version to latest ([ebe929e](https://github.com/sabertazimi/dblp/commit/ebe929ed6bcf2cd4e2277af5333267c1aaede5ab))
+
 ### [1.0.1](https://github.com/sabertazimi/dblp/compare/v1.0.0...v1.0.1) (2021-08-02)
 
 
