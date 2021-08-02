@@ -8,8 +8,8 @@
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open",
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint": "stylelint ./src/**/*.scss && eslint --fix --ext .js --ext .jsx ./src",
-    "prelease": "standard-version --dry-run",
-    "release": "standard-version",
+    "prelease": "standard-version --dry-run -s",
+    "release": "standard-version -s",
     "start": "npm run dev"
   },
   "repository": {
