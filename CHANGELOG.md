@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/sabertazimi/dblp/compare/v1.0.2...v1.0.3) (2021-08-09)
+
+
+### Bug Fixes
+
+* **deps-security:** npm audit fix ([72d69ca](https://github.com/sabertazimi/dblp/commit/72d69caaa6e080ee73b7a38a17ccb070c38bf932))
+
+
+### Building Work
+
+* **deps-dev:** bump @babel/core from 7.14.8 to 7.15.0 ([d36b2df](https://github.com/sabertazimi/dblp/commit/d36b2df1c4161c77e08c74d84d237ec4aafd1364))
+* **deps-dev:** bump @babel/eslint-parser from 7.14.9 to 7.15.0 ([90fe1ab](https://github.com/sabertazimi/dblp/commit/90fe1abe509c3741384bce093d6bfee6d1676519))
+* **deps-dev:** bump @babel/preset-env from 7.14.9 to 7.15.0 ([d385d8b](https://github.com/sabertazimi/dblp/commit/d385d8bec87fbf83c93fd155321527f67dcf8f79))
+* **deps-dev:** bump mini-css-extract-plugin from 2.1.0 to 2.2.0 ([3dca17d](https://github.com/sabertazimi/dblp/commit/3dca17d26f1311ebf850d8d7d38039e74f7cafa7))
+* **deps-dev:** bump to latest version ([06fb485](https://github.com/sabertazimi/dblp/commit/06fb4858d544a7729c74dd0c8a76026549cc21c4))
+* **deps-dev:** bump to latest version ([1e810b8](https://github.com/sabertazimi/dblp/commit/1e810b850b6f7e84f1d0373d362b6b5e154077fa))
+* **deps-dev:** bump webpack from 5.48.0 to 5.49.0 ([37a7557](https://github.com/sabertazimi/dblp/commit/37a75578f3075e2a0bed3631b0bbe6ed800f45fc))
+* **deps:** bump redux from 4.1.0 to 4.1.1 ([adb4f07](https://github.com/sabertazimi/dblp/commit/adb4f074ee8cc5095b8f67c78c908029caf5388a))
+
 ### [1.0.2](https://github.com/sabertazimi/dblp/compare/v1.0.1...v1.0.2) (2021-08-02)
 
 
