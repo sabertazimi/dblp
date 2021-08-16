@@ -65,7 +65,7 @@
     "stylelint-webpack-plugin": "^3.0.1",
     "webpack": "^5.50.0",
     "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^4.7.2",
+    "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
