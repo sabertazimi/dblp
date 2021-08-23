@@ -61,7 +61,7 @@
     "standard-version": "^9.3.1",
     "style-loader": "^3.2.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-mass": "^2.2.0",
+    "stylelint-config-mass": "^5.0.2",
     "stylelint-webpack-plugin": "^3.0.1",
     "webpack": "^5.51.1",
     "webpack-bundle-analyzer": "^4.4.2",
