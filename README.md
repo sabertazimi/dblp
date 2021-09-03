@@ -4,7 +4,7 @@
 [![LICENSE](https://img.shields.io/github/license/sabertazimi/dblp?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/dblp/main/LICENSE)
 
 [![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/dblp?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/dblp)
-[![Continuous Integration](https://img.shields.io/github/workflow/status/sabertazimi/dblp/Continuous%20Integration/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/workflow/status/sabertazimi/dblp/CI/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml)
 
 An awesome DBLP search application
 
