@@ -27,6 +27,9 @@ jobs:
         cache: 'npm'
     - name: Installation
       run: npm ci
+    - name: Linting
+      run: |
+          npm run lint
     - name: Building work
       run: |
           npm run build
