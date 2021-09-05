@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/sabertazimi/dblp/compare/v1.0.3...v1.1.0) (2021-09-05)
+
+
+### Bug Fixes
+
+* **deps-dev:** security bump version ([b0c1ae6](https://github.com/sabertazimi/dblp/commit/b0c1ae6b36c0f128f6557bc4411c8223bc9468a0))
+
+
+### Building Work
+
+* **CI:** lint stage ([6ddf0d8](https://github.com/sabertazimi/dblp/commit/6ddf0d868951bf796d9efd57fca0f5211747781e))
+* **CI:** remove redundant stage ([2a643e5](https://github.com/sabertazimi/dblp/commit/2a643e593207b3ff3885e9aad342a6767f929281))
+* **CI:** rename workflow ([89c5476](https://github.com/sabertazimi/dblp/commit/89c54762e5ea68b40080aa64c0400b286aeaddb5))
+* **deps-dev:** bump @babel/core from 7.15.0 to 7.15.5 ([#70](https://github.com/sabertazimi/dblp/issues/70)) ([581f6da](https://github.com/sabertazimi/dblp/commit/581f6da5c5b3f4d463fb46e64a29f7299ba88927))
+* **deps-dev:** bump @babel/eslint-parser from 7.15.0 to 7.15.4 ([#74](https://github.com/sabertazimi/dblp/issues/74)) ([b1f3b33](https://github.com/sabertazimi/dblp/commit/b1f3b33b62cc2f4bbfca4a57a544d381ee8b6df1))
+* **deps-dev:** bump @babel/preset-env from 7.15.0 to 7.15.4 ([#78](https://github.com/sabertazimi/dblp/issues/78)) ([d71b803](https://github.com/sabertazimi/dblp/commit/d71b803e9c54d75b0dae2921e0dbee59d40579af))
+* **deps-dev:** bump autoprefixer from 10.3.1 to 10.3.2 ([6ccddcd](https://github.com/sabertazimi/dblp/commit/6ccddcdc27e3c29a62ec8a3da451c062fca01c1f))
+* **deps-dev:** bump autoprefixer from 10.3.2 to 10.3.3 ([1bb1061](https://github.com/sabertazimi/dblp/commit/1bb10618a97b71b2a0e403591c1b08d3af8e67d0))
+* **deps-dev:** bump autoprefixer from 10.3.3 to 10.3.4 ([#76](https://github.com/sabertazimi/dblp/issues/76)) ([c2b2ff5](https://github.com/sabertazimi/dblp/commit/c2b2ff5ff82e803a126d47afd8a48e400716b067))
+* **deps-dev:** bump clean-webpack-plugin from 3.0.0 to 4.0.0 ([#71](https://github.com/sabertazimi/dblp/issues/71)) ([7b73b06](https://github.com/sabertazimi/dblp/commit/7b73b06e3e2ccf718dcf6f46d5a1af5ff85b7acf))
+* **deps-dev:** bump eslint-plugin-import from 2.24.0 to 2.24.1 ([5ec8884](https://github.com/sabertazimi/dblp/commit/5ec88840c1925cc7ee96f3b2c47a6e6c0b0e0d8e))
+* **deps-dev:** bump eslint-plugin-import from 2.24.1 to 2.24.2 ([1031d53](https://github.com/sabertazimi/dblp/commit/1031d5388227e25629f3d4a584245cfe688c74b5))
+* **deps-dev:** bump eslint-plugin-react from 7.24.0 to 7.25.1 ([59c60ed](https://github.com/sabertazimi/dblp/commit/59c60edd3db55adb2d326b1f489f1eef0c8bdfac))
+* **deps-dev:** bump mini-css-extract-plugin from 2.2.0 to 2.2.2 ([#69](https://github.com/sabertazimi/dblp/issues/69)) ([3002da5](https://github.com/sabertazimi/dblp/commit/3002da57f444b87bea1903cfbfb388e843726195))
+* **deps-dev:** bump stylelint-config-mass from 1.0.2 to 2.1.0 ([d34fd42](https://github.com/sabertazimi/dblp/commit/d34fd423d449ab27e8417b0f8a63c0d99c78bd08))
+* **deps-dev:** bump stylelint-config-mass from 2.1.0 to 2.2.0 ([b63010b](https://github.com/sabertazimi/dblp/commit/b63010bbc4c047372a15b2f633936398c4abefc1))
+* **deps-dev:** bump stylelint-config-mass from 2.2.0 to 5.0.2 ([95bdd54](https://github.com/sabertazimi/dblp/commit/95bdd54cb5d104c1f665c96567ebc3af6678e74f))
+* **deps-dev:** bump stylelint-config-mass from 5.0.2 to 5.1.0 ([#68](https://github.com/sabertazimi/dblp/issues/68)) ([bccf603](https://github.com/sabertazimi/dblp/commit/bccf60382b7cdc56c7bf4e78eb73be94f2791a20))
+* **deps-dev:** bump stylelint-config-mass from 5.1.0 to 5.3.2 ([#72](https://github.com/sabertazimi/dblp/issues/72)) ([a29970f](https://github.com/sabertazimi/dblp/commit/a29970f548b22cfceec069e0abccf761fee4f9aa))
+* **deps-dev:** bump webpack from 5.49.0 to 5.50.0 ([fb82b4b](https://github.com/sabertazimi/dblp/commit/fb82b4b0ef283b242ba552532c4d187719db076f))
+* **deps-dev:** bump webpack from 5.50.0 to 5.51.0 ([81c5020](https://github.com/sabertazimi/dblp/commit/81c5020e8702d64167886001d364bb8fc9f62aa0))
+* **deps-dev:** bump webpack from 5.51.0 to 5.51.1 ([5870120](https://github.com/sabertazimi/dblp/commit/5870120c2ae00d1aa564c9f4dc97c30ab081ca2a))
+* **deps-dev:** bump webpack from 5.51.1 to 5.52.0 ([#77](https://github.com/sabertazimi/dblp/issues/77)) ([38c118d](https://github.com/sabertazimi/dblp/commit/38c118d1e60aa95d18a4f26462d2001a98cd6cb6))
+* **deps-dev:** bump webpack-cli from 4.7.2 to 4.8.0 ([24d1809](https://github.com/sabertazimi/dblp/commit/24d18095a09837f255f5019d014c291d0568101b))
+* **deps-dev:** bump webpack-dev-server from 3.11.2 to 4.0.0 ([ad4514c](https://github.com/sabertazimi/dblp/commit/ad4514c0557d01cd3c2eec4b117a3c7633552312))
+* **deps-dev:** bump webpack-dev-server from 4.0.0 to 4.1.0 ([#73](https://github.com/sabertazimi/dblp/issues/73)) ([76b25c1](https://github.com/sabertazimi/dblp/commit/76b25c185cddb2e7e5d1e61782d28a0c2b18b1a4))
+* **deps:** bump antd from 4.16.11 to 4.16.12 ([136ff9c](https://github.com/sabertazimi/dblp/commit/136ff9c4cf2c738a29bf88a0fe041874f4afaf01))
+* **deps:** bump antd from 4.16.12 to 4.16.13 ([e3c8f07](https://github.com/sabertazimi/dblp/commit/e3c8f07d7adaa873b7d7c3326d3edf172e1869e6))
+* **deps:** bump react-redux from 7.2.4 to 7.2.5 ([#75](https://github.com/sabertazimi/dblp/issues/75)) ([e3cd76b](https://github.com/sabertazimi/dblp/commit/e3cd76b5b1465e5b2c99aeeaf044c84b128d6a4b))
+* **deps:** change versioning strategy ([911d75a](https://github.com/sabertazimi/dblp/commit/911d75adfd0aa9c1f8e75440d01652ee66673ebb))
+
 ### [1.0.3](https://github.com/sabertazimi/dblp/compare/v1.0.2...v1.0.3) (2021-08-09)
 
 
