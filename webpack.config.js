@@ -65,5 +65,5 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  devtool: 'source-map'
+  devtool: devMode ? 'eval-cheap-module-source-map' : false,
 };
