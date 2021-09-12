@@ -3541,7 +3541,7 @@ __metadata:
     standard-version: 9.3.1
     style-loader: 3.2.1
     stylelint: 13.13.1
-    stylelint-config-mass: 5.3.7
+    stylelint-config-mass: 5.3.8
     stylelint-webpack-plugin: 3.0.1
     webpack: 5.52.1
     webpack-bundle-analyzer: 4.4.2
@@ -9740,14 +9740,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-mass@npm:5.3.7":
-  version: 5.3.7
-  resolution: "stylelint-config-mass@npm:5.3.7"
+"stylelint-config-mass@npm:5.3.8":
+  version: 5.3.8
+  resolution: "stylelint-config-mass@npm:5.3.8"
   dependencies:
     stylelint-config-sass-guidelines: ^8.0.0
   peerDependencies:
     stylelint: ^13.13.0
-  checksum: aeadbdd921b1650a3e196687c37cd8ffe6d0496728d418a172973e03bb0d7a5329ec6778402f73ca7b1a8a1e21b081ada22686b163aa7729badf7bcae3c7001a
+  checksum: 04ebad7d55a2cb5678be1f7ba7e9012d60a592fdaa1dc70e272ad5e4d77073fd37fef882b7acdc0e59a6cb4871f27fa64cdae3e6479cef6c0c7ad3a3787b308f
   languageName: node
   linkType: hard
 
