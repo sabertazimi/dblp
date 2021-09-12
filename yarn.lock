@@ -2367,7 +2367,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.3.4":
+"autoprefixer@npm:10.3.4":
   version: 10.3.4
   resolution: "autoprefixer@npm:10.3.4"
   dependencies:
@@ -2454,7 +2454,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-import@npm:^1.13.3":
+"babel-plugin-import@npm:1.13.3":
   version: 1.13.3
   resolution: "babel-plugin-import@npm:1.13.3"
   dependencies:
@@ -2848,7 +2848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-webpack-plugin@npm:^4.0.0":
+"clean-webpack-plugin@npm:4.0.0":
   version: 4.0.0
   resolution: "clean-webpack-plugin@npm:4.0.0"
   dependencies:
@@ -3378,7 +3378,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-env@npm:^7.0.3":
+"cross-env@npm:7.0.3":
   version: 7.0.3
   resolution: "cross-env@npm:7.0.3"
   dependencies:
@@ -3401,7 +3401,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^6.2.0":
+"css-loader@npm:6.2.0":
   version: 6.2.0
   resolution: "css-loader@npm:6.2.0"
   dependencies:
@@ -3510,43 +3510,43 @@ __metadata:
     "@babel/preset-env": 7.15.6
     "@babel/preset-react": 7.14.5
     antd: ^4.16.13
-    autoprefixer: ^10.3.4
+    autoprefixer: 10.3.4
     babel-loader: 8.2.2
-    babel-plugin-import: ^1.13.3
-    clean-webpack-plugin: ^4.0.0
-    cross-env: ^7.0.3
-    css-loader: ^6.2.0
-    eslint: ^7.32.0
-    eslint-config-airbnb: ^18.2.1
-    eslint-config-prettier: ^8.3.0
-    eslint-loader: ^4.0.2
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-react: ^7.25.1
+    babel-plugin-import: 1.13.3
+    clean-webpack-plugin: 4.0.0
+    cross-env: 7.0.3
+    css-loader: 6.2.0
+    eslint: 7.32.0
+    eslint-config-airbnb: 18.2.1
+    eslint-config-prettier: 8.3.0
+    eslint-loader: 4.0.2
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-jsx-a11y: 6.4.1
+    eslint-plugin-react: 7.25.1
     eslint-plugin-react-hooks: ^4.2.0
-    html-loader: ^2.1.2
-    html-webpack-plugin: ^5.3.2
-    mini-css-extract-plugin: ^2.2.2
-    node-sass: ^6.0.1
-    postcss: ^8.3.6
-    postcss-loader: ^6.1.1
-    prettier: ^2.3.2
+    html-loader: 2.1.2
+    html-webpack-plugin: 5.3.2
+    mini-css-extract-plugin: 2.3.0
+    node-sass: 6.0.1
+    postcss: 8.3.6
+    postcss-loader: 6.1.1
+    prettier: 2.4.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-redux: ^7.2.5
     redux: ^4.1.1
     redux-logger: ^3.0.6
     redux-thunk: ^2.3.0
-    sass-loader: ^12.1.0
-    standard-version: ^9.3.1
-    style-loader: ^3.2.1
-    stylelint: ^13.13.1
-    stylelint-config-mass: ^5.3.3
-    stylelint-webpack-plugin: ^3.0.1
-    webpack: ^5.52.0
-    webpack-bundle-analyzer: ^4.4.2
-    webpack-cli: ^4.8.0
-    webpack-dev-server: ^4.1.0
+    sass-loader: 12.1.0
+    standard-version: 9.3.1
+    style-loader: 3.2.1
+    stylelint: 13.13.1
+    stylelint-config-mass: 5.3.6
+    stylelint-webpack-plugin: 3.0.1
+    webpack: 5.52.1
+    webpack-bundle-analyzer: 4.4.2
+    webpack-cli: 4.8.0
+    webpack-dev-server: 4.2.0
   languageName: unknown
   linkType: soft
 
@@ -4128,7 +4128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb@npm:^18.2.1":
+"eslint-config-airbnb@npm:18.2.1":
   version: 18.2.1
   resolution: "eslint-config-airbnb@npm:18.2.1"
   dependencies:
@@ -4145,7 +4145,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.3.0":
+"eslint-config-prettier@npm:8.3.0":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
@@ -4166,7 +4166,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-loader@npm:^4.0.2":
+"eslint-loader@npm:4.0.2":
   version: 4.0.2
   resolution: "eslint-loader@npm:4.0.2"
   dependencies:
@@ -4192,7 +4192,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.24.2":
+"eslint-plugin-import@npm:2.24.2":
   version: 2.24.2
   resolution: "eslint-plugin-import@npm:2.24.2"
   dependencies:
@@ -4217,7 +4217,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.4.1":
+"eslint-plugin-jsx-a11y@npm:6.4.1":
   version: 6.4.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.4.1"
   dependencies:
@@ -4247,7 +4247,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.25.1":
+"eslint-plugin-react@npm:7.25.1":
   version: 7.25.1
   resolution: "eslint-plugin-react@npm:7.25.1"
   dependencies:
@@ -4303,7 +4303,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.32.0":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -5262,7 +5262,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"html-loader@npm:^2.1.2":
+"html-loader@npm:2.1.2":
   version: 2.1.2
   resolution: "html-loader@npm:2.1.2"
   dependencies:
@@ -5298,7 +5298,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:^5.3.2":
+"html-webpack-plugin@npm:5.3.2":
   version: 5.3.2
   resolution: "html-webpack-plugin@npm:5.3.2"
   dependencies:
@@ -6658,7 +6658,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:^2.2.2":
+"mini-css-extract-plugin@npm:2.3.0":
   version: 2.3.0
   resolution: "mini-css-extract-plugin@npm:2.3.0"
   dependencies:
@@ -6957,7 +6957,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"node-sass@npm:^6.0.1":
+"node-sass@npm:6.0.1":
   version: 6.0.1
   resolution: "node-sass@npm:6.0.1"
   dependencies:
@@ -7637,7 +7637,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^6.1.1":
+"postcss-loader@npm:6.1.1":
   version: 6.1.1
   resolution: "postcss-loader@npm:6.1.1"
   dependencies:
@@ -7784,7 +7784,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.3.6":
+"postcss@npm:8.3.6, postcss@npm:^8.2.15":
   version: 8.3.6
   resolution: "postcss@npm:8.3.6"
   dependencies:
@@ -7802,7 +7802,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2":
+"prettier@npm:2.4.0":
   version: 2.4.0
   resolution: "prettier@npm:2.4.0"
   bin:
@@ -9002,7 +9002,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^12.1.0":
+"sass-loader@npm:12.1.0":
   version: 12.1.0
   resolution: "sass-loader@npm:12.1.0"
   dependencies:
@@ -9497,7 +9497,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"standard-version@npm:^9.3.1":
+"standard-version@npm:9.3.1":
   version: 9.3.1
   resolution: "standard-version@npm:9.3.1"
   dependencies:
@@ -9724,7 +9724,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"style-loader@npm:^3.2.1":
+"style-loader@npm:3.2.1":
   version: 3.2.1
   resolution: "style-loader@npm:3.2.1"
   peerDependencies:
@@ -9740,7 +9740,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-mass@npm:^5.3.3":
+"stylelint-config-mass@npm:5.3.6":
   version: 5.3.6
   resolution: "stylelint-config-mass@npm:5.3.6"
   dependencies:
@@ -9791,7 +9791,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-webpack-plugin@npm:^3.0.1":
+"stylelint-webpack-plugin@npm:3.0.1":
   version: 3.0.1
   resolution: "stylelint-webpack-plugin@npm:3.0.1"
   dependencies:
@@ -9808,7 +9808,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^13.13.1":
+"stylelint@npm:13.13.1":
   version: 13.13.1
   resolution: "stylelint@npm:13.13.1"
   dependencies:
@@ -10481,7 +10481,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"webpack-bundle-analyzer@npm:^4.4.2":
+"webpack-bundle-analyzer@npm:4.4.2":
   version: 4.4.2
   resolution: "webpack-bundle-analyzer@npm:4.4.2"
   dependencies:
@@ -10500,7 +10500,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:^4.8.0":
+"webpack-cli@npm:4.8.0":
   version: 4.8.0
   resolution: "webpack-cli@npm:4.8.0"
   dependencies:
@@ -10549,7 +10549,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:^4.1.0":
+"webpack-dev-server@npm:4.2.0":
   version: 4.2.0
   resolution: "webpack-dev-server@npm:4.2.0"
   dependencies:
@@ -10606,7 +10606,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.52.0":
+"webpack@npm:5.52.1":
   version: 5.52.1
   resolution: "webpack@npm:5.52.1"
   dependencies:
