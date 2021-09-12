@@ -10,7 +10,7 @@
     "lint": "stylelint ./src/**/*.scss && eslint --fix --ext .js --ext .jsx ./src",
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
-    "start": "npm run dev"
+    "start": "yarn dev"
   },
   "repository": {
     "type": "git",
@@ -55,6 +55,7 @@
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.2",
     "node-sass": "^6.0.1",
+    "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
     "prettier": "^2.3.2",
     "sass-loader": "^12.1.0",
