@@ -4,6 +4,13 @@
   "dependencyDashboard": false,
   "labels": ["dependencies"],
   "lockFileMaintenance": { "enabled": true },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "automergeStrategy": "squash"
+    }
+  ],
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 20,
   "rangeStrategy": "bump",
