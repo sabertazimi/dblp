@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/sabertazimi/dblp/compare/v1.1.0...v1.2.0) (2021-09-14)
+
+
+### Features
+
+* **yarn:** ship to yarn berry ([60f6dbf](https://github.com/sabertazimi/dblp/commit/60f6dbf1b3387124a11dc16943b38625e66afd0f))
+
+
+### Building Work
+
+* **CI-CodeQL:** add CodeQL analysis ([45ecef9](https://github.com/sabertazimi/dblp/commit/45ecef9126ca5e5e51ad57045fc46fe433a27057))
+* **deps-bot:** enable auto-merge on non-major deps update ([cea2c21](https://github.com/sabertazimi/dblp/commit/cea2c219f05dab49335a01cd951a2fcce3396181))
+* **deps-bot:** setup automerge configuration ([4d18933](https://github.com/sabertazimi/dblp/commit/4d18933795440b96c759154f15048b7d8a8074e6))
+* **deps-bot:** setup renovate bot configuration ([b9eaa04](https://github.com/sabertazimi/dblp/commit/b9eaa04bbbc21fa35326e83b95c47a4093b1a432))
+* **deps-bot:** setup renovate bot configuration ([38bbf71](https://github.com/sabertazimi/dblp/commit/38bbf7124789150c8de47e24d341a753b1517dc9))
+* **deps-dev:** bump stylelint-config-mass from 5.3.2 to 5.3.3 ([#79](https://github.com/sabertazimi/dblp/issues/79)) ([bd71d09](https://github.com/sabertazimi/dblp/commit/bd71d09bc3c3a5f2b82081c253d8d93827f0c3bd))
+* **webpack:** disable production source map ([8e42dfa](https://github.com/sabertazimi/dblp/commit/8e42dfa3b233dc5dc9e072b33676d6e7dd0583b0))
+
 ## [1.1.0](https://github.com/sabertazimi/dblp/compare/v1.0.3...v1.1.0) (2021-09-05)
 
 
