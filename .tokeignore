@@ -56,3 +56,5 @@ LICENSE
 Makefile
 robots.txt
 setup.sh
+
+.yarn/
