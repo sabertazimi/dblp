@@ -14,7 +14,7 @@ module.exports = {
     main: './src/index.jsx'
   },
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: devMode ? '[name].js' : '[name].[contenthash].js',
     path: path.resolve(__dirname, 'build')
   },
   module: {
@@ -54,8 +54,8 @@ module.exports = {
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+      filename: devMode ? '[name].css' : '[name].[contenthash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[contenthash].css'
     }),
     new StyleLintPlugin(),
     devMode &&
