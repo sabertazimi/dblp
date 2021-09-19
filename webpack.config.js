@@ -12,18 +12,18 @@ const devMode = process.env.NODE_ENV !== 'production';
 /** @type {import('webpack').Configuration} */
 module.exports = {
   entry: {
-    main: './src/index.jsx'
+    main: './src/index.jsx',
   },
   output: {
     filename: devMode ? '[name].js' : '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'build'),
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
         test: /\.html$/,
@@ -31,10 +31,10 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              minimize: !devMode
-            }
-          }
-        ]
+              minimize: !devMode,
+            },
+          },
+        ],
       },
       {
         test: /\.(css|scss)$/,
@@ -42,31 +42,31 @@ module.exports = {
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          'sass-loader'
-        ]
-      }
-    ]
+          'sass-loader',
+        ],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       hash: true,
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[contenthash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[contenthash].css'
+      chunkFilename: devMode ? '[id].css' : '[id].[contenthash].css',
     }),
     new ESLintPlugin({ extensions: ['tsx', 'ts', 'jsx', 'js'] }),
     new StyleLintPlugin(),
     devMode &&
       new BundleAnalyzerPlugin({
-        analyzerPort: 3333
-      })
+        analyzerPort: 3333,
+      }),
   ].filter(Boolean),
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   devtool: devMode ? 'eval-cheap-module-source-map' : false,
 };
