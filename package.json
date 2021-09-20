@@ -30,6 +30,7 @@
     "url": "https://github.com/sabertazimi/dblp/issues"
   },
   "homepage": "https://github.com/sabertazimi/dblp",
+  "packageManager": "yarn@3.0.2",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.7",
