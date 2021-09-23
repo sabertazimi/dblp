@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Checkbox,
-  Divider,
-  Row,
-  Col,
-} from 'antd';
+import { Checkbox, Divider, Row, Col } from 'antd';
 
 import { VENUES_LIST, getVenueTitle } from '../api';
 
@@ -16,24 +11,22 @@ const Filter = ({
   onCheckAllChange,
 }) => (
   <>
-    <Divider orientation="left">
-      Venues
-    </Divider>
+    <Divider orientation="left">Venues</Divider>
     <Checkbox
       indeterminate={indeterminate}
       onChange={onCheckAllChange}
       checked={checkAll}
       style={
-        checkAll ? {
-          color: '#1890ff',
-        } : {
-          color: 'rgba(0, 0, 0, 0.65)',
-        }
+        checkAll
+          ? {
+              color: '#1890ff',
+            }
+          : {
+              color: 'rgba(0, 0, 0, 0.65)',
+            }
       }
     >
-      <b>
-        Check All
-      </b>
+      <b>Check All</b>
     </Checkbox>
     <Checkbox.Group
       style={{
@@ -43,17 +36,11 @@ const Filter = ({
       onChange={onVenuesChange}
     >
       <Row type="flex" justify="center" align="middle">
-        {
-          VENUES_LIST.map((venue) => (
-            <Col span={24} key={venue}>
-              <Checkbox
-                value={venue}
-              >
-                { getVenueTitle(venue) }
-              </Checkbox>
-            </Col>
-          ))
-        }
+        {VENUES_LIST.map(venue => (
+          <Col span={24} key={venue}>
+            <Checkbox value={venue}>{getVenueTitle(venue)}</Checkbox>
+          </Col>
+        ))}
       </Row>
     </Checkbox.Group>
   </>

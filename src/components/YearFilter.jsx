@@ -1,17 +1,9 @@
 import React from 'react';
-import {
-  InputNumber,
-  Divider,
-} from 'antd';
+import { InputNumber, Divider } from 'antd';
 
-const YearFilter = ({
-  year,
-  onYearChange,
-}) => (
+const YearFilter = ({ year, onYearChange }) => (
   <>
-    <Divider orientation="left">
-      Year
-    </Divider>
+    <Divider orientation="left">Year</Divider>
     <InputNumber
       min={0}
       max={new Date().getFullYear()}

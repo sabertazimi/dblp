@@ -67,7 +67,7 @@ class StatisticsBar extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   ...state.data,
   ...state.filter,
 });

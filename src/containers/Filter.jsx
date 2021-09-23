@@ -16,12 +16,12 @@ class Filter extends React.Component {
     };
   }
 
-  onYearChange = (value) => {
+  onYearChange = value => {
     const { filterYear } = this.props;
     filterYear(value);
   };
 
-  onVenuesChange = (checkedValues) => {
+  onVenuesChange = checkedValues => {
     const { filterVenue } = this.props;
     filterVenue(checkedValues);
 
@@ -32,7 +32,7 @@ class Filter extends React.Component {
     });
   };
 
-  onCheckAllChange = (event) => {
+  onCheckAllChange = event => {
     const { filterVenue } = this.props;
     filterVenue(event.target.checked ? VENUES_LIST : []);
 
@@ -53,7 +53,7 @@ class Filter extends React.Component {
             <Icon type="clock-circle" />
             <span>Year</span>
           </Menu.Item>
-          {[...Array(9).keys()].map((number) => (
+          {[...Array(9).keys()].map(number => (
             <Menu.Item key={number + 2}>
               <Icon type="ellipsis" />
               <span>{`Venue ${number + 1}`}</span>
@@ -87,16 +87,13 @@ class Filter extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   ...state.filter,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  filterVenue: (venues) => dispatch(Actions.filterVenue(venues)),
-  filterYear: (year) => dispatch(Actions.filterYear(year)),
+const mapDispatchToProps = dispatch => ({
+  filterVenue: venues => dispatch(Actions.filterVenue(venues)),
+  filterYear: year => dispatch(Actions.filterYear(year)),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Filter);
+export default connect(mapStateToProps, mapDispatchToProps)(Filter);

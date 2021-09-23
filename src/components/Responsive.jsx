@@ -40,14 +40,14 @@ export default class Responsive extends Component {
     return window.innerWidth || 0;
   };
 
-  handleResize = (event) => {
+  handleResize = event => {
     if (this.ticking) return;
 
     this.ticking = true;
     this.frameId = requestAnimationFrame(() => this.handleUpdate(event));
   };
 
-  handleUpdate = (event) => {
+  handleUpdate = event => {
     this.ticking = false;
 
     const { onUpdate } = this.props;

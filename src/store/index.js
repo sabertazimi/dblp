@@ -14,11 +14,11 @@ if (process.env.NODE_ENV === 'development') {
   middleware.push(loggerMiddleware);
 }
 
-const configureStore = (preloadedState) => {
+const configureStore = preloadedState => {
   const store = createStore(
     createRootReducer(),
     preloadedState,
-    compose(applyMiddleware(...middleware)),
+    compose(applyMiddleware(...middleware))
   );
 
   return store;

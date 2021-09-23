@@ -1,19 +1,9 @@
 import React from 'react';
-import {
-  Alert,
-  Empty,
-  List,
-} from 'antd';
+import { Alert, Empty, List } from 'antd';
 
 import { getStatisticsData } from '../api';
 
-const StatisticsModal = ({
-  error,
-  isLoading,
-  items,
-  venues,
-  year,
-}) => {
+const StatisticsModal = ({ error, isLoading, items, venues, year }) => {
   if (error) {
     return (
       <Alert
@@ -28,24 +18,20 @@ const StatisticsModal = ({
   const statisticsData = getStatisticsData(items, { venues, year });
 
   if (!statisticsData || !statisticsData.length) {
-    return (<Empty />);
+    return <Empty />;
   }
 
-  const sortedData = statisticsData.sort((a, b) => (
-    b.count - a.count || a.venue.localeCompare(b.venue)
-  ));
+  const sortedData = statisticsData.sort(
+    (a, b) => b.count - a.count || a.venue.localeCompare(b.venue)
+  );
 
   return (
     <List
       dataSource={sortedData}
       loading={isLoading}
-      renderItem={(item) => (
-        <List.Item
-          key={item.venue}
-        >
-          <List.Item.Meta
-            description={item.venue}
-          />
+      renderItem={item => (
+        <List.Item key={item.venue}>
+          <List.Item.Meta description={item.venue} />
           {item.count}
         </List.Item>
       )}
