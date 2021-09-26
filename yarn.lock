@@ -2648,21 +2648,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.3.5":
-  version: 10.3.5
-  resolution: "autoprefixer@npm:10.3.5"
+"autoprefixer@npm:^10.3.6":
+  version: 10.3.6
+  resolution: "autoprefixer@npm:10.3.6"
   dependencies:
     browserslist: ^4.17.1
-    caniuse-lite: ^1.0.30001259
+    caniuse-lite: ^1.0.30001260
     fraction.js: ^4.1.1
-    nanocolors: ^0.1.5
+    nanocolors: ^0.2.8
     normalize-range: ^0.1.2
     postcss-value-parser: ^4.1.0
   peerDependencies:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 0626aece9a59df50f682fcfa5ca29aaf63526ca85a60a7fe08f3da9ff6a730d99ff727068e84849f49c17ab5782658bc2085d932e04a1e49e530c7d357c244a9
+  checksum: 432fdba79e8be1c310acef3bf31e1ec02139222ce5a2134857d5ed12a659eef319cc3f206cb79f5d9b204baa2f08ccfe688b4b227294354dd0fae6976dde0876
   languageName: node
   linkType: hard
 
@@ -3053,7 +3053,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001259":
+"caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001259, caniuse-lite@npm:^1.0.30001260":
   version: 1.0.30001260
   resolution: "caniuse-lite@npm:1.0.30001260"
   dependencies:
@@ -3865,7 +3865,7 @@ __metadata:
     "@babel/preset-react": ^7.14.5
     "@dg-scripts/eslint-config": ^1.1.1
     antd: ^4.16.13
-    autoprefixer: ^10.3.5
+    autoprefixer: ^10.3.6
     babel-loader: ^8.2.2
     babel-plugin-import: ^1.13.3
     clean-webpack-plugin: ^4.0.0
@@ -7464,10 +7464,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"nanocolors@npm:^0.2.2":
-  version: 0.2.3
-  resolution: "nanocolors@npm:0.2.3"
-  checksum: e2167b904cec141dcb0ec869a59ca3027403559c3ba0b546eb1c85e89056fd6d77795e891160ca527119a4d88c52f33d51dc3ddf7825594b7ca8392ffc1ad9d5
+"nanocolors@npm:^0.2.2, nanocolors@npm:^0.2.8":
+  version: 0.2.8
+  resolution: "nanocolors@npm:0.2.8"
+  checksum: c921beed5dea0ec155688d6260fd59f0c8c3073ca3a1cb944489fcaea5f60e22f052db518bf985b230bb38f4fc7258a7b72902fc07522a1aecfb14d37f7ab08b
   languageName: node
   linkType: hard
 
