@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "lint": "stylelint ./src/**/*.scss && eslint --fix --ext .js --ext .jsx ./src",
+    "lint": "stylelint ./src/**/*.scss && eslint --ext .js --ext .jsx ./src",
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
     "start": "yarn dev"
