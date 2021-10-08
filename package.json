@@ -60,7 +60,7 @@
     "stylelint-config-mass": "^5.3.12",
     "stylelint-webpack-plugin": "^3.0.1",
     "typescript": "^4.4.3",
-    "webpack": "^5.56.0",
+    "webpack": "^5.58.1",
     "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.1"
