@@ -16,7 +16,7 @@ An awesome DBLP search application
 - HPCA
 - ISCA
 - MICRO
-- ATC
+- USENIX ATC
 - SC
 - PPOPP
 - OSDI
@@ -55,7 +55,7 @@ An awesome DBLP search application
 - CCS
 - CRYPTO
 - S&P
-- Security
+- USENIX Security
 - EUROCRYPT
 - SIGGRAPH
 - MM
