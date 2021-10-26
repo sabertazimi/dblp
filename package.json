@@ -30,7 +30,7 @@
     "url": "https://github.com/sabertazimi/dblp/issues"
   },
   "homepage": "https://github.com/sabertazimi/dblp",
-  "packageManager": "yarn@3.0.2",
+  "packageManager": "yarn@3.1.0",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
