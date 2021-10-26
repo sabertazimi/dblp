@@ -15,7 +15,7 @@ const SearchBar = ({ fetchData, style }) => {
       allowClear
       style={style}
       enterButton
-      placeholder="input search text"
+      placeholder="Search paper here ..."
       onSearch={onSearch}
     />
   );
