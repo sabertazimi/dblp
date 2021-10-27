@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Row, Col, Layout, BackTop } from 'antd';
+import { Row, Col, Layout, BackTop, Tooltip } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
 import { Responsive } from './components';
 import { SearchBar, StatisticsBar, Result, Filter } from './containers';
 import './index.scss';
@@ -43,7 +44,7 @@ export default class App extends Component {
             />
           </Responsive>
           <Responsive minWidth={1080}>
-            <Row type="flex" gutter={16} align="middle">
+            <Row type="flex" gutter={16} align="middle" justify="center">
               <Col
                 span={16}
                 style={{
@@ -69,11 +70,14 @@ export default class App extends Component {
                   target="_blank"
                   rel="noreferrer"
                   style={{
+                    display: 'block',
+                    fontSize: '1.75rem',
                     color: '#fff',
-                    fontWeight: 800,
                   }}
                 >
-                  Get Source Code on GitHub
+                  <Tooltip title="Get Source Code">
+                    <GithubOutlined />
+                  </Tooltip>
                 </a>
               </Col>
             </Row>
