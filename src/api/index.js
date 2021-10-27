@@ -4,11 +4,11 @@ export const VenuesDB = venuesData;
 export const VENUES_LIST = VenuesDB.map(({ venue }) => venue);
 export const DEFAULT_VENUES_LIST = VENUES_LIST.slice(0, 30);
 
-export const dblpQuery = (keyword, venue) =>
+const dblpQuery = (keyword, venue) =>
   `https://dblp.org/search/publ/api?q=${keyword} venue:${venue}:&format=json&h=999`;
-export const scIdsQuery = title =>
+const scIdsQuery = title =>
   `https://api.semanticscholar.org/graph/v1/paper/search?query=${title}&limit=1`;
-export const scCitationsQuery = paperId =>
+const scCitationsQuery = paperId =>
   `https://api.semanticscholar.org/graph/v1/paper/${paperId}/citations`;
 
 let KEY = 0;
