@@ -9,7 +9,7 @@ const dblpQuery = (keyword, venue) =>
 const scIdsQuery = title =>
   `https://api.semanticscholar.org/graph/v1/paper/search?query=${title}&limit=1`;
 const scCitationsQuery = paperId =>
-  `https://api.semanticscholar.org/graph/v1/paper/${paperId}/citations`;
+  `https://api.semanticscholar.org/graph/v1/paper/${paperId}?fields=citationCount`;
 
 let KEY = 0;
 
@@ -103,7 +103,9 @@ export const fetchPaperCitations = async papers => {
     }
 
     paperCitations = paperCitationsJson.map(paperCitation =>
-      paperCitation && paperCitation.data ? paperCitation.data.length : 0
+      paperCitation && paperCitation.citationCount
+        ? paperCitation.citationCount
+        : 0
     );
   } catch (error) {
     // eslint-disable-next-line no-console
