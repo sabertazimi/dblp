@@ -120,7 +120,7 @@ export const fetchData = (keyword, venues) => async dispatch => {
     );
   } catch (error) {
     // eslint-disable-next-line no-console
-    console.error('Up to API limits');
+    console.error('Up to API limits.');
   }
 
   const paperDataWithCitations = paperData.map((paper, index) => ({
