@@ -26,7 +26,9 @@ const requestError = makeActionCreator(ActionTypes.REQUEST_ERROR, 'error');
 
 let KEY = 0;
 
-export const fetchData = (keyword, venues) => async dispatch => {
+export const fetchData = keyword => async (dispatch, getState) => {
+  const venues = getState().filter.venues;
+
   dispatch(requestData(venues));
 
   const paperResponse = await Promise.all(
