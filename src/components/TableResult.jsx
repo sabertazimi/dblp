@@ -9,8 +9,9 @@ const TableResult = ({ isLoading, dataSource }) => {
       key: 'title',
       sorter: (a, b) =>
         a.title.localeCompare(b.title) ||
-        a.venue.localeCompare(b.venue) ||
+        b.citations - a.citations ||
         b.year.localeCompare(a.year) ||
+        a.venue.localeCompare(b.venue) ||
         a.url.localeCompare(b.url),
     },
     {
@@ -19,6 +20,7 @@ const TableResult = ({ isLoading, dataSource }) => {
       key: 'venue',
       sorter: (a, b) =>
         a.venue.localeCompare(b.venue) ||
+        b.citations - a.citations ||
         b.year.localeCompare(a.year) ||
         a.title.localeCompare(b.title) ||
         a.url.localeCompare(b.url),
@@ -29,6 +31,7 @@ const TableResult = ({ isLoading, dataSource }) => {
       key: 'year',
       sorter: (a, b) =>
         b.year.localeCompare(a.year) ||
+        b.citations - a.citations ||
         a.venue.localeCompare(b.venue) ||
         a.title.localeCompare(b.title) ||
         a.url.localeCompare(b.url),
@@ -38,6 +41,7 @@ const TableResult = ({ isLoading, dataSource }) => {
       dataIndex: 'citations',
       key: 'citations',
       sorter: (a, b) =>
+        b.citations - a.citations ||
         b.year.localeCompare(a.year) ||
         a.venue.localeCompare(b.venue) ||
         a.title.localeCompare(b.title) ||
@@ -54,8 +58,9 @@ const TableResult = ({ isLoading, dataSource }) => {
       ),
       sorter: (a, b) =>
         a.url.localeCompare(b.url) ||
-        a.venue.localeCompare(b.venue) ||
+        b.citations - a.citations ||
         b.year.localeCompare(a.year) ||
+        a.venue.localeCompare(b.venue) ||
         a.title.localeCompare(b.title),
     },
   ];
