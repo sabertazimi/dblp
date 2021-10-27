@@ -34,6 +34,16 @@ const TableResult = ({ isLoading, dataSource }) => {
         a.url.localeCompare(b.url),
     },
     {
+      title: 'Citations',
+      dataIndex: 'citations',
+      key: 'citations',
+      sorter: (a, b) =>
+        b.year.localeCompare(a.year) ||
+        a.venue.localeCompare(b.venue) ||
+        a.title.localeCompare(b.title) ||
+        a.url.localeCompare(b.url),
+    },
+    {
       title: 'Url',
       dataIndex: 'url',
       key: 'url',
