@@ -3,7 +3,7 @@ import { Row, Col, Layout, BackTop, Tooltip } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import { Responsive } from './components';
 import { SearchBar, StatisticsBar, Result, Filter } from './containers';
-import './index.scss';
+import './index.css';
 
 const { Header, Content, Sider } = Layout;
 export default class App extends Component {
