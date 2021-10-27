@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Icon, Menu } from 'antd';
+import { Menu } from 'antd';
+import { ClockCircleOutlined, EllipsisOutlined } from '@ant-design/icons';
 
 import { YearFilter, VenuesFilter } from '../components';
 
@@ -50,17 +51,17 @@ class Filter extends React.Component {
       return (
         <Menu mode="inline">
           <Menu.Item key="1">
-            <Icon type="clock-circle" />
+            <ClockCircleOutlined />
             <span>Year</span>
           </Menu.Item>
           {[...Array(9).keys()].map(number => (
             <Menu.Item key={number + 2}>
-              <Icon type="ellipsis" />
+              <EllipsisOutlined />
               <span>{`Venue ${number + 1}`}</span>
             </Menu.Item>
           ))}
           <Menu.Item key="11">
-            <Icon type="ellipsis" />
+            <EllipsisOutlined />
             <span>Venue 10</span>
           </Menu.Item>
         </Menu>
