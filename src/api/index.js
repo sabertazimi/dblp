@@ -8,8 +8,8 @@ export const dblpQuery = (keyword, venue) =>
   `https://dblp.org/search/publ/api?q=${keyword} venue:${venue}:&format=json&h=999`;
 export const scIdsQuery = title =>
   `https://api.semanticscholar.org/graph/v1/paper/search?query=${title}&limit=1`;
-export const scCitationsQuery = paperid =>
-  `https://api.semanticscholar.org/graph/v1/paper/${paperid}/citations`;
+export const scCitationsQuery = paperId =>
+  `https://api.semanticscholar.org/graph/v1/paper/${paperId}/citations`;
 
 let KEY = 0;
 
@@ -27,26 +27,27 @@ export const fetchDblpPapers = async (keyword, venues) => {
     papersResponse.map(response => (response.ok ? response.json() : null))
   );
 
-  if (papersJson)
-    return papersJson
-      .map(({ result }) => {
-        const { hit } = result.hits;
+  const papers = papersJson
+    ? papersJson
+        .map(({ result }) => {
+          const { hit } = result?.hits;
 
-        if (!hit) {
-          return [];
-        }
+          if (!hit) {
+            return [];
+          }
 
-        return hit.map(({ info }) => ({
-          key: KEY++,
-          title: info.title,
-          venue: info.venue,
-          year: info.year,
-          url: info.ee,
-        }));
-      })
-      .flat();
+          return hit.map(({ info }) => ({
+            key: KEY++,
+            title: info.title,
+            venue: info.venue,
+            year: info.year,
+            url: info.ee,
+          }));
+        })
+        .flat()
+    : null;
 
-  return papersJson;
+  return papers;
 };
 
 export const fetchPaperCitations = async papers => {
