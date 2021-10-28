@@ -1682,7 +1682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^7.2.14":
+"@types/eslint@npm:*, @types/eslint@npm:^7.28.2":
   version: 7.28.2
   resolution: "@types/eslint@npm:7.28.2"
   dependencies:
@@ -3636,7 +3636,7 @@ __metadata:
     cross-env: ^7.0.3
     css-loader: ^6.4.0
     eslint: ^8.1.0
-    eslint-webpack-plugin: ^3.0.1
+    eslint-webpack-plugin: ^3.1.0
     html-loader: ^3.0.0
     html-webpack-plugin: ^5.4.0
     mini-css-extract-plugin: ^2.4.3
@@ -4552,19 +4552,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-webpack-plugin@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "eslint-webpack-plugin@npm:3.0.1"
+"eslint-webpack-plugin@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "eslint-webpack-plugin@npm:3.1.0"
   dependencies:
-    "@types/eslint": ^7.2.14
-    jest-worker: ^27.0.6
+    "@types/eslint": ^7.28.2
+    jest-worker: ^27.3.1
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
-    schema-utils: ^3.1.0
+    schema-utils: ^3.1.1
   peerDependencies:
-    eslint: ^7.0.0
+    eslint: ^7.0.0 || ^8.0.0
     webpack: ^5.0.0
-  checksum: ef9241907d7b99eb7edad48e005c49aa73124875f9c910bfde1645dfe853f2cbbfce363c80b2c2157d00a23545caefa74c138a61c1deb7f8666ee3569a025549
+  checksum: c6858e5f28d0ca5c5982a7a00cad99a25a8e117f90a662c5f550722f31ef8057ef1cf0cf1b89da249032437a61d917ab7623cb1ff4677cb4886aa2b010ecfdb0
   languageName: node
   linkType: hard
 
@@ -6137,7 +6137,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"jest-worker@npm:^27.0.6":
+"jest-worker@npm:^27.0.6, jest-worker@npm:^27.3.1":
   version: 27.3.1
   resolution: "jest-worker@npm:27.3.1"
   dependencies:
