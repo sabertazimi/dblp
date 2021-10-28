@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/sabertazimi/dblp/compare/v1.2.0...v1.3.0) (2021-10-28)
+
+
+### :rocket: Building Work
+
+* **deps-bot:** change PR concurrent limits ([4b079a4](https://github.com/sabertazimi/dblp/commit/4b079a43ed418c072c9788bcf4e522b0e298e2aa))
+* **deps-bot:** remove GitHub dependabot ([24d3c26](https://github.com/sabertazimi/dblp/commit/24d3c26c5b892282938488aa05835af32d369acb))
+* **deps-bot:** widen peerDeps and engines ([008cc09](https://github.com/sabertazimi/dblp/commit/008cc0970a7cf603a112513321bec5fe29daca38))
+* **deps:** bundle bod deps into single PR ([6cdd905](https://github.com/sabertazimi/dblp/commit/6cdd905d8b10100008e5ef761a9e6c6b7277c90f))
+* **eslint:** add `dg-scripts` eslint configuration ([ea39531](https://github.com/sabertazimi/dblp/commit/ea39531d67f4cb52aace28f4b9b5dd92e4156122))
+* **lint:** disable auto fix for linter ([d19f201](https://github.com/sabertazimi/dblp/commit/d19f20160c3a073840b2a395efddc237155dcf61))
+* **webpack-eslint:** remove deprecated `eslint-loader` ([6a6fab9](https://github.com/sabertazimi/dblp/commit/6a6fab973807a770741c5f76d2c0823863775ef4))
+* **webpack:** setup chunk name to `[contenthash]` ([93a7ec2](https://github.com/sabertazimi/dblp/commit/93a7ec22284f0a5f09fa526a029ae43f2f4dfd36))
+* **yarn:** bump yarn from v3.0.2 to v3.1.0 ([c196b81](https://github.com/sabertazimi/dblp/commit/c196b81a2d5f74afaa465daaabe0c15b713df30f))
+
+
+### :zap: Performance
+
+* **API:** reduce redundant paper data fetching ([2d8dace](https://github.com/sabertazimi/dblp/commit/2d8dacede638ed82f9440ac989e0c9a1ab899719))
+
+
+### :sparkles: Features
+
+* **API-citations:** enable citations up to 100+ ([3b8ed83](https://github.com/sabertazimi/dblp/commit/3b8ed833268b34da77d8088233443838d7e29034))
+* **Result:** add paper citations data ([#149](https://github.com/sabertazimi/dblp/issues/149)) ([6bd1c89](https://github.com/sabertazimi/dblp/commit/6bd1c89283b33854a6858283ebfaebcecec72da9))
+
+
+### :bug: Bug Fixes
+
+* **components:** remove redundant components ([162620c](https://github.com/sabertazimi/dblp/commit/162620c7091ce85b3dc73d6c2333cc4cf6a0a6c7))
+* **css:** remove redundant sass support ([582e524](https://github.com/sabertazimi/dblp/commit/582e524cb56fd4e8acd277b89b9c3c5cf9fa0cc2))
+* **Filter-icons:** rectify broken ant-design icons ([de8e530](https://github.com/sabertazimi/dblp/commit/de8e5307c86c3f56ed6dc2329a2c407f54ff5236))
+* **Header-link:** add icon for GitHub link ([c3998f2](https://github.com/sabertazimi/dblp/commit/c3998f229e5598670a61bd40de9790ddf0b83532))
+* **search:** change search bar placeholder word ([5cbb007](https://github.com/sabertazimi/dblp/commit/5cbb0078b1fc7ccb2e407010f09a81ac46f9cde5))
+* **TableResult:** rectify result sorting order ([c6513bc](https://github.com/sabertazimi/dblp/commit/c6513bc6fbb3bb08c7d5748865cf7f9460d7fab8))
+
 ## [1.2.0](https://github.com/sabertazimi/dblp/compare/v1.1.0...v1.2.0) (2021-09-14)
 
 
