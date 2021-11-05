@@ -3661,7 +3661,7 @@ __metadata:
     css-loader: ^6.5.1
     eslint: ^8.1.0
     eslint-webpack-plugin: ^3.1.0
-    html-loader: ^3.0.0
+    html-loader: ^3.0.1
     html-webpack-plugin: ^5.5.0
     mini-css-extract-plugin: ^2.4.3
     postcss: ^8.3.11
@@ -5454,15 +5454,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"html-loader@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "html-loader@npm:3.0.0"
+"html-loader@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "html-loader@npm:3.0.1"
   dependencies:
     html-minifier-terser: ^6.0.2
     parse5: ^6.0.1
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 5e8438da51fbee925350f9ad0121c924064d054fc8675944fbd03606d3243504eb3a46ea263574bef0757b9c7f2b16702c898b9d6dd92b229d07a21dcf4a6383
+  checksum: 9963912f20c14ac2303d262778ea230e66bb7953db004ae55787a55ae4baecc350ce6ddb89ff8bdf5d3cf715ee8460545c2d2109304be3246bbad2123f7c9a57
   languageName: node
   linkType: hard
 
