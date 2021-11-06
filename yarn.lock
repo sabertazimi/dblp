@@ -1840,7 +1840,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/stylelint@npm:^13.13.1":
+"@types/stylelint@npm:^13.13.3":
   version: 13.13.3
   resolution: "@types/stylelint@npm:13.13.3"
   dependencies:
@@ -3676,7 +3676,7 @@ __metadata:
     standard-version: ^9.3.2
     style-loader: ^3.3.1
     stylelint: ^14.0.1
-    stylelint-webpack-plugin: ^3.0.1
+    stylelint-webpack-plugin: ^3.1.0
     typescript: ^4.4.4
     webpack: ^5.61.0
     webpack-bundle-analyzer: ^4.5.0
@@ -9665,20 +9665,20 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-webpack-plugin@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "stylelint-webpack-plugin@npm:3.0.1"
+"stylelint-webpack-plugin@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "stylelint-webpack-plugin@npm:3.1.0"
   dependencies:
-    "@types/stylelint": ^13.13.1
+    "@types/stylelint": ^13.13.3
     globby: ^11.0.4
-    jest-worker: ^27.0.6
+    jest-worker: ^27.3.1
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
-    schema-utils: ^3.1.0
+    schema-utils: ^3.1.1
   peerDependencies:
-    stylelint: ^13.0.0
+    stylelint: ^13.0.0 || ^14.0.0
     webpack: ^5.0.0
-  checksum: 508749710d35856b44011ba71f4ce7055d1d22b243614fe3957bf903302e13a3a52d7989061f38a91c94d841009e4a4b619f6ab82068158e13ff6b3faf0e5a15
+  checksum: a0e8df3f3b0a7dd6dd3532d581ade8492095d7e70beec8c7dbbea4f056f8ebce130e093460d8eb3e04c70e13c21ca1db7224183fbc29f788dc1b087a9e312206
   languageName: node
   linkType: hard
 
