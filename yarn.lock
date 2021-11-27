@@ -3721,7 +3721,7 @@ __metadata:
     react-redux: ^7.2.6
     redux: ^4.1.2
     redux-logger: ^3.0.6
-    redux-thunk: ^2.4.0
+    redux-thunk: ^2.4.1
     standard-version: ^9.3.2
     style-loader: ^3.3.1
     stylelint: ^14.1.0
@@ -8614,12 +8614,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"redux-thunk@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "redux-thunk@npm:2.4.0"
+"redux-thunk@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "redux-thunk@npm:2.4.1"
   peerDependencies:
     redux: ^4
-  checksum: 250cd88087bb4614052a5175fd6bd4c70b6a4479c357af8628b3a1d5f75d5b0a6c01645acc3257d3ed147a949708dd748a50b00402d548c3331038ed4f296edc
+  checksum: af5abb425fb9dccda02e5f387d6f3003997f62d906542a3d35fc9420088f550dc1a018bdc246c7d23ee852b4d4ab8b5c64c5be426e45a328d791c4586a3c6b6e
   languageName: node
   linkType: hard
 
