@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Menu } from 'antd';
 import { ClockCircleOutlined, EllipsisOutlined } from '@ant-design/icons';
 
-import { YearFilter, VenuesFilter } from '../components';
+import { VenuesFilter, YearFilter } from '../components';
 
 import { VENUES_LIST } from '../api';
 import * as Actions from '../actions';

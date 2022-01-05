@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Row, Col, Layout, BackTop, Tooltip } from 'antd';
+import { BackTop, Col, Layout, Row, Tooltip } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import { Responsive } from './components';
-import { SearchBar, StatisticsBar, Result, Filter } from './containers';
+import { Filter, Result, SearchBar, StatisticsBar } from './containers';
 import './index.css';
 
 const { Header, Content, Sider } = Layout;

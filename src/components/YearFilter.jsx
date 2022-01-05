@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputNumber, Divider } from 'antd';
+import { Divider, InputNumber } from 'antd';
 
 const YearFilter = ({ year, onYearChange }) => (
   <>

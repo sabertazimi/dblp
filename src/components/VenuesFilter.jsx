@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, Divider, Row, Col } from 'antd';
+import { Checkbox, Col, Divider, Row } from 'antd';
 
 import { VENUES_LIST, getVenueTitle } from '../api';
 
