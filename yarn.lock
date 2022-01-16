@@ -3795,7 +3795,7 @@ __metadata:
     eslint-webpack-plugin: ^3.1.1
     html-loader: ^3.1.0
     html-webpack-plugin: ^5.5.0
-    mini-css-extract-plugin: ^2.4.6
+    mini-css-extract-plugin: ^2.5.0
     postcss: ^8.4.5
     postcss-loader: ^6.2.1
     prettier: ^2.5.1
@@ -6783,14 +6783,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:^2.4.6":
-  version: 2.4.6
-  resolution: "mini-css-extract-plugin@npm:2.4.6"
+"mini-css-extract-plugin@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "mini-css-extract-plugin@npm:2.5.0"
   dependencies:
     schema-utils: ^4.0.0
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 7eb3dcbf1e46d5a9cdb6ed1c2b687f6ad5a739e420208511b01f59d45d69328fa7ba57aa44c9b3f7beff8e27cd9fe5188ecd636b4c33f9199ea3bdb9f4a5218e
+  checksum: 7afb9a28da385b728eeeda60f39840576913822a903a2bc0155412d7b21265fbb22eadf457c5d10de9996e7b6018ee5c0b52f5a622ef2e07cd345573d667a5b0
   languageName: node
   linkType: hard
 
