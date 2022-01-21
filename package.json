@@ -32,10 +32,10 @@
   "homepage": "https://github.com/sabertazimi/dblp",
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/core": "^7.16.10",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-object-rest-spread": "^7.16.7",
-    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@dg-scripts/eslint-config": "^5.6.1",
     "@dg-scripts/stylelint-config": "^5.6.1",
