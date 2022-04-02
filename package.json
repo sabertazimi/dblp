@@ -66,8 +66,8 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "antd": "^4.19.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-redux": "^7.2.8",
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
