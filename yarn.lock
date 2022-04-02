@@ -1439,16 +1439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
-  version: 7.16.3
-  resolution: "@babel/runtime@npm:7.16.3"
-  dependencies:
-    regenerator-runtime: ^0.13.4
-  checksum: ab8ac887096d76185ddbf291d28fb976cd32473696dc497ad4905b784acbd5aa462533ad83a5c5104e10ead28c2e0e119840ee28ed8eff90dcdde9d57f916eda
-  languageName: node
-  linkType: hard
-
-"@babel/runtime@npm:^7.12.1":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.17.8
   resolution: "@babel/runtime@npm:7.17.8"
   dependencies:
@@ -2548,9 +2539,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:^4.19.4":
-  version: 4.19.4
-  resolution: "antd@npm:4.19.4"
+"antd@npm:^4.19.5":
+  version: 4.19.5
+  resolution: "antd@npm:4.19.5"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -2568,7 +2559,7 @@ __metadata:
     rc-dialog: ~8.6.0
     rc-drawer: ~4.4.2
     rc-dropdown: ~3.3.2
-    rc-field-form: ~1.24.0
+    rc-field-form: ~1.25.0
     rc-image: ~5.2.5
     rc-input: ~0.0.1-alpha.5
     rc-input-number: ~7.3.0
@@ -2598,7 +2589,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: d565c251f6e6a3581d283a362aa73a6ed1dc23816cbb82f11ace836dac30ee660456a2cb2ef878c2789897e10aae9ca85eb8b05a021d26a43b1f167d8342a2b1
+  checksum: 08f543da4712fc069d04f69295ac4d0088138a0e27d14692f4c6a8f9bdfa592eb4e239a0208fcd63871ea4bc84896e3e8fa39ab2c975ac5719a9efdf072332dd
   languageName: node
   linkType: hard
 
@@ -3892,7 +3883,7 @@ __metadata:
     "@babel/preset-react": ^7.16.7
     "@dg-scripts/eslint-config": ^5.8.0
     "@dg-scripts/stylelint-config": ^5.8.0
-    antd: ^4.19.4
+    antd: ^4.19.5
     autoprefixer: ^10.4.4
     babel-loader: ^8.2.4
     babel-plugin-import: ^1.13.3
@@ -3906,10 +3897,10 @@ __metadata:
     mini-css-extract-plugin: ^2.6.0
     postcss: ^8.4.12
     postcss-loader: ^6.2.1
-    prettier: ^2.6.1
+    prettier: ^2.6.2
     react: ^18.0.0
     react-dom: ^18.0.0
-    react-redux: ^8.0.0-beta.3
+    react-redux: ^8.0.0-beta.4
     redux: ^4.1.2
     redux-thunk: ^2.4.1
     standard-version: ^9.3.2
@@ -7982,12 +7973,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.6.1":
-  version: 2.6.1
-  resolution: "prettier@npm:2.6.1"
+"prettier@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "prettier@npm:2.6.2"
   bin:
     prettier: bin-prettier.js
-  checksum: 78be1f8a3ddfad7c3d8a854b6c8941a3bb1ddfca4225c38d778e0fe1029a55368f71b3bbefff82c689015fbb4d391ec44add957f01308ad2725e01a7c1f37cb6
+  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
   languageName: node
   linkType: hard
 
@@ -8216,9 +8207,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-field-form@npm:~1.24.0":
-  version: 1.24.0
-  resolution: "rc-field-form@npm:1.24.0"
+"rc-field-form@npm:~1.25.0":
+  version: 1.25.0
+  resolution: "rc-field-form@npm:1.25.0"
   dependencies:
     "@babel/runtime": ^7.8.4
     async-validator: ^4.0.2
@@ -8226,7 +8217,7 @@ fsevents@~2.3.2:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 9df11592fb9c736170ee1ef33b64a9d8cfc790f3f6a72457f2a1d805939b1f3bc3a161590962bd772fd96e97029d4c3ea36cb202fc5000097719194b6fafe261
+  checksum: 3c4441241b480bb208490ddb61a1a401249b6533839908c532b81752169ba774a88511c811cee1062649ef5119df071736fdc49d558638c75224c12b0925ff70
   languageName: node
   linkType: hard
 
@@ -8659,31 +8650,31 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-is@npm:^18.0.0-rc.0":
+"react-is@npm:^18.0.0":
   version: 18.0.0
   resolution: "react-is@npm:18.0.0"
   checksum: d38f6afee4d8d791cdd69c715841c01a503c9b06da6158e0893447cea6ba50cd262dca9bde84127720cf44fd05c58185eafc32accace4bb2deb03b3cdbeb6b6b
   languageName: node
   linkType: hard
 
-"react-redux@npm:^8.0.0-beta.3":
-  version: 8.0.0-beta.3
-  resolution: "react-redux@npm:8.0.0-beta.3"
+"react-redux@npm:^8.0.0-beta.4":
+  version: 8.0.0-beta.4
+  resolution: "react-redux@npm:8.0.0-beta.4"
   dependencies:
     "@babel/runtime": ^7.12.1
     "@types/hoist-non-react-statics": ^3.3.1
     "@types/use-sync-external-store": ^0.0.3
     hoist-non-react-statics: ^3.3.2
-    react-is: ^18.0.0-rc.0
-    use-sync-external-store: ^1.0.0-rc.0
+    react-is: ^18.0.0
+    use-sync-external-store: ^1.0.0
   peerDependencies:
-    react: ^18.0.0-rc
+    react: ^18.0.0
   peerDependenciesMeta:
     react-dom:
       optional: true
     react-native:
       optional: true
-  checksum: 24501c8a11c41b5a29b5f061febc49bfb8490b6da14c801ee0b65b638a33534e6c2c6aca40efe4a43522d0211ab2bf47cc27064e117c7db25824481096cf7388
+  checksum: 587def905039846ac369ec77c5efd069c646fa900c75893c68bd255c303e01de525bfd0c883000308f78c543fc7b16c71027befd4ea6a173ddb4b4cc31990887
   languageName: node
   linkType: hard
 
@@ -10358,7 +10349,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.0.0-rc.0":
+"use-sync-external-store@npm:^1.0.0":
   version: 1.0.0
   resolution: "use-sync-external-store@npm:1.0.0"
   peerDependencies:
