@@ -1429,7 +1429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.17.8
   resolution: "@babel/runtime@npm:7.17.8"
   dependencies:
@@ -2806,13 +2806,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-import@npm:^1.13.3":
-  version: 1.13.3
-  resolution: "babel-plugin-import@npm:1.13.3"
+"babel-plugin-import@npm:^1.13.5":
+  version: 1.13.5
+  resolution: "babel-plugin-import@npm:1.13.5"
   dependencies:
     "@babel/helper-module-imports": ^7.0.0
-    "@babel/runtime": ^7.0.0
-  checksum: 1be664a34fa6cdffb08485a7094ff1a3fdfd2e95a7d367afdd7a6dcb51842c0bc717c8fdba65538561a4d3aecc39c123e6de1449c5b1b2aa5b13604c17ca7042
+  checksum: 54d6a7e29c012b4a33507eae9deeb5f169ab8f825206b81212d8282045e35a97405a98ec8c7d7ce1a1e703422c8b7b278a4248a64b56ffe6d92e07312ac7de79
   languageName: node
   linkType: hard
 
@@ -2988,7 +2987,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"braces@npm:^3.0.1, braces@npm:~3.0.2":
+"braces@npm:^3.0.2, braces@npm:~3.0.2":
   version: 3.0.2
   resolution: "braces@npm:3.0.2"
   dependencies:
@@ -3867,7 +3866,7 @@ __metadata:
     antd: ^4.19.5
     autoprefixer: ^10.4.4
     babel-loader: ^8.2.4
-    babel-plugin-import: ^1.13.3
+    babel-plugin-import: ^1.13.5
     clean-webpack-plugin: ^4.0.0
     cross-env: ^7.0.3
     css-loader: ^6.7.1
@@ -3881,12 +3880,12 @@ __metadata:
     prettier: ^2.6.2
     react: ^18.0.0
     react-dom: ^18.0.0
-    react-redux: ^8.0.0-beta.4
+    react-redux: ^8.0.0-rc.1
     redux: ^4.1.2
     redux-thunk: ^2.4.1
     standard-version: ^9.3.2
     style-loader: ^3.3.1
-    stylelint: ^14.6.1
+    stylelint: ^14.7.0
     stylelint-webpack-plugin: ^3.2.0
     typescript: ^4.6.3
     webpack: ^5.72.0
@@ -5639,10 +5638,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"html-tags@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "html-tags@npm:3.1.0"
-  checksum: 67587f2d4022390d7bc34b1313773ecb0b0e0c79fb331aa3e20023eb4c862c7188a1ff775d126fcd75f4e4f08f956666a1c57688c4d24d85a77f9d4b1a42f345
+"html-tags@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "html-tags@npm:3.2.0"
+  checksum: a0c9e96ac26c84adad9cc66d15d6711a17f60acda8d987218f1d4cbaacd52864939b230e635cce5a1179f3ddab2a12b9231355617dfbae7945fcfec5e96d2041
   languageName: node
   linkType: hard
 
@@ -6806,13 +6805,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "micromatch@npm:4.0.4"
+"micromatch@npm:^4.0.2, micromatch@npm:^4.0.4, micromatch@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "micromatch@npm:4.0.5"
   dependencies:
-    braces: ^3.0.1
-    picomatch: ^2.2.3
-  checksum: ef3d1c88e79e0a68b0e94a03137676f3324ac18a908c245a9e5936f838079fcc108ac7170a5fadc265a9c2596963462e402841406bda1a4bb7b68805601d631c
+    braces: ^3.0.2
+    picomatch: ^2.3.1
+  checksum: 02a17b671c06e8fefeeb6ef996119c1e597c942e632a21ef589154f23898c9c6a9858526246abb14f8bca6e77734aa9dcf65476fca47cedfb80d9577d52843fc
   languageName: node
   linkType: hard
 
@@ -7625,10 +7624,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.3":
-  version: 2.3.0
-  resolution: "picomatch@npm:2.3.0"
-  checksum: 16818720ea7c5872b6af110760dee856c8e4cd79aed1c7a006d076b1cc09eff3ae41ca5019966694c33fbd2e1cc6ea617ab10e4adac6df06556168f13be3fca2
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "picomatch@npm:2.3.1"
+  checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
   languageName: node
   linkType: hard
 
@@ -7810,13 +7809,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4, postcss-selector-parser@npm:^6.0.6, postcss-selector-parser@npm:^6.0.9":
-  version: 6.0.9
-  resolution: "postcss-selector-parser@npm:6.0.9"
+"postcss-selector-parser@npm:^6.0.10, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4, postcss-selector-parser@npm:^6.0.6":
+  version: 6.0.10
+  resolution: "postcss-selector-parser@npm:6.0.10"
   dependencies:
     cssesc: ^3.0.0
     util-deprecate: ^1.0.2
-  checksum: f8161ab4d3e5c76b8467189c6d164ba0f6b6e74677435f29e34caa1df01e052b582b4ae4f7468b2243c4befdd8bdcdb7685542d1b2fca8deae21b3e849c78802
+  checksum: 46afaa60e3d1998bd7adf6caa374baf857cc58d3ff944e29459c9a9e4680a7fe41597bd5b755fc81d7c388357e9bf67c0251d047c640a09f148e13606b8a8608
   languageName: node
   linkType: hard
 
@@ -8547,9 +8546,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-redux@npm:^8.0.0-beta.4":
-  version: 8.0.0-beta.4
-  resolution: "react-redux@npm:8.0.0-beta.4"
+"react-redux@npm:^8.0.0-rc.1":
+  version: 8.0.0-rc.1
+  resolution: "react-redux@npm:8.0.0-rc.1"
   dependencies:
     "@babel/runtime": ^7.12.1
     "@types/hoist-non-react-statics": ^3.3.1
@@ -8558,13 +8557,21 @@ fsevents@~2.3.2:
     react-is: ^18.0.0
     use-sync-external-store: ^1.0.0
   peerDependencies:
-    react: ^18.0.0
+    "@types/react": ^16.8 || ^17.0 || ^18.0
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+    react-native: ">=0.59"
+    redux: ^4
   peerDependenciesMeta:
+    "@types/react":
+      optional: true
     react-dom:
       optional: true
     react-native:
       optional: true
-  checksum: 587def905039846ac369ec77c5efd069c646fa900c75893c68bd255c303e01de525bfd0c883000308f78c543fc7b16c71027befd4ea6a173ddb4b4cc31990887
+    redux:
+      optional: true
+  checksum: 3537995a500ff44bd241699bdd538d54019f905c2e74a07b0f7bad5f06b9edbdb7f9d26401df0660093c0c6fd75eae9e14d24c173960424eb42a2a5e7671f69e
   languageName: node
   linkType: hard
 
@@ -9768,9 +9775,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^14.6.1":
-  version: 14.6.1
-  resolution: "stylelint@npm:14.6.1"
+"stylelint@npm:^14.7.0":
+  version: 14.7.0
+  resolution: "stylelint@npm:14.7.0"
   dependencies:
     balanced-match: ^2.0.0
     colord: ^2.9.2
@@ -9785,7 +9792,7 @@ resolve@^2.0.0-next.3:
     global-modules: ^2.0.0
     globby: ^11.1.0
     globjoin: ^0.1.4
-    html-tags: ^3.1.0
+    html-tags: ^3.2.0
     ignore: ^5.2.0
     import-lazy: ^4.0.0
     imurmurhash: ^0.1.4
@@ -9793,7 +9800,7 @@ resolve@^2.0.0-next.3:
     known-css-properties: ^0.24.0
     mathml-tag-names: ^2.1.3
     meow: ^9.0.0
-    micromatch: ^4.0.4
+    micromatch: ^4.0.5
     normalize-path: ^3.0.0
     normalize-selector: ^0.2.0
     picocolors: ^1.0.0
@@ -9801,7 +9808,7 @@ resolve@^2.0.0-next.3:
     postcss-media-query-parser: ^0.2.3
     postcss-resolve-nested-selector: ^0.1.1
     postcss-safe-parser: ^6.0.0
-    postcss-selector-parser: ^6.0.9
+    postcss-selector-parser: ^6.0.10
     postcss-value-parser: ^4.2.0
     resolve-from: ^5.0.0
     specificity: ^0.4.1
@@ -9815,7 +9822,7 @@ resolve@^2.0.0-next.3:
     write-file-atomic: ^4.0.1
   bin:
     stylelint: bin/stylelint.js
-  checksum: 8fb3b94bcec5ee7e09e352dd89f4a52ad900125687a671842e28b4489ddba4b12e28d1883bc25f92590e0c8174cb25d073b2cbe37d409faed0f8f8928ed43b87
+  checksum: 206df9b0a88e1be25f8ab236268211e1b3fbb1d7088e94ec9953161601b84214b1b1f3757ede03782141632c4d94f2b741d1307c813fda42af7330a1eac0d1d6
   languageName: node
   linkType: hard
 
