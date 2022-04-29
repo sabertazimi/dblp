@@ -2529,9 +2529,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:^4.20.0":
-  version: 4.20.0
-  resolution: "antd@npm:4.20.0"
+"antd@npm:^4.20.1":
+  version: 4.20.1
+  resolution: "antd@npm:4.20.1"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -2580,7 +2580,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: a3fe70ee45aa399b0866b51e9c540cc832193d7cdb9ce4f6465a0dd79cb9a387e3def30467ec55acf0ef8cf0078029b1e28c8fbdca5b447b7d805465a43879ab
+  checksum: 386cd6b0f59d0081e0953ac42380c9d91dd4d12f41a1e75355af8ef61df7bc2160ea7014932e40453336024c9587903e92ad23d903262296d4f25e1e5b65f7f3
   languageName: node
   linkType: hard
 
@@ -3864,7 +3864,7 @@ __metadata:
     "@babel/preset-react": ^7.16.7
     "@dg-scripts/eslint-config": ^5.9.0
     "@dg-scripts/stylelint-config": ^5.9.0
-    antd: ^4.20.0
+    antd: ^4.20.1
     autoprefixer: ^10.4.5
     babel-loader: ^8.2.5
     babel-plugin-import: ^1.13.5
@@ -3879,16 +3879,16 @@ __metadata:
     postcss: ^8.4.12
     postcss-loader: ^6.2.1
     prettier: ^2.6.2
-    react: ^18.0.0
-    react-dom: ^18.0.0
+    react: ^18.1.0
+    react-dom: ^18.1.0
     react-redux: ^8.0.1
     redux: ^4.2.0
     redux-thunk: ^2.4.1
     standard-version: ^9.3.2
     style-loader: ^3.3.1
-    stylelint: ^14.7.1
+    stylelint: ^14.8.1
     stylelint-webpack-plugin: ^3.2.0
-    typescript: ^4.6.3
+    typescript: ^4.6.4
     webpack: ^5.72.0
     webpack-bundle-analyzer: ^4.5.0
     webpack-cli: ^4.9.2
@@ -8538,15 +8538,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.0.0":
-  version: 18.0.0
-  resolution: "react-dom@npm:18.0.0"
+"react-dom@npm:^18.1.0":
+  version: 18.1.0
+  resolution: "react-dom@npm:18.1.0"
   dependencies:
     loose-envify: ^1.1.0
-    scheduler: ^0.21.0
+    scheduler: ^0.22.0
   peerDependencies:
-    react: ^18.0.0
-  checksum: dd0ba9f2f31dd728076c892a95b2f5a8dfe79136431b0289afb46eec39d0ca6b6f0f40a60fd8aa6ef702c98ce7c26100d3d4dbc35c7c9e87429cd04f84cb58bd
+    react: ^18.1.0
+  checksum: bb0d48eeb0b297c79c2a03978baa29f5b3ff7ba3d070b21e34c9af1a6e7fdf0ca8b8d73e41f9214d91ad40eeb6d1f3559f884cbbc338713374a51320637c23df
   languageName: node
   linkType: hard
 
@@ -8596,12 +8596,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react@npm:^18.0.0":
-  version: 18.0.0
-  resolution: "react@npm:18.0.0"
+"react@npm:^18.1.0":
+  version: 18.1.0
+  resolution: "react@npm:18.1.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 293020b96536b3c7113ee57ca5c990a3f25649d1751b1c7a3aabd16dff0691fe9f1eed1206616d0906d05933536052037340a0c8d0941ff870b0eb469a2f975b
+  checksum: 5bb296b561b43ef2220395da4faac86c14a087c8c80e1a7598a5740f01ee605c11eaf249985c1e2000971c4cd32ccb46d40f00479bbd9fb6b1c7cf857393b7d4
   languageName: node
   linkType: hard
 
@@ -9010,12 +9010,12 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.21.0":
-  version: 0.21.0
-  resolution: "scheduler@npm:0.21.0"
+"scheduler@npm:^0.22.0":
+  version: 0.22.0
+  resolution: "scheduler@npm:0.22.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 4f8285076041ed2c81acdd1faa987f1655fdbd30554bc667c1ea64743fc74fb3a04ca7d27454b3d678735df5a230137a3b84756061b43dc5796e80701b66d124
+  checksum: a8ef5cab769c020cd6382ad9ecc3f72dbde56a50a36639b3a42ad9c11f7724f03700bcad373044059b8067d4a6365154dc7c0ca8027ef20ff4900cf58a0fc2c5
   languageName: node
   linkType: hard
 
@@ -9802,9 +9802,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^14.7.1":
-  version: 14.7.1
-  resolution: "stylelint@npm:14.7.1"
+"stylelint@npm:^14.8.1":
+  version: 14.8.1
+  resolution: "stylelint@npm:14.8.1"
   dependencies:
     balanced-match: ^2.0.0
     colord: ^2.9.2
@@ -9849,7 +9849,7 @@ resolve@^2.0.0-next.3:
     write-file-atomic: ^4.0.1
   bin:
     stylelint: bin/stylelint.js
-  checksum: f369d55288fbd2daa149711f3bffb5a8abfba1373cb085a28b7c689c6b7ecbec192a0a9aa9961b20d7ecf1b9f9a8d8e0b4a32a833d1894963bf57086e294570d
+  checksum: ea357c078cab17e4af5990b5307e14fab79d6eb4b7fa7f146000907886b240ac547c55cab69c4036c2e5599e155c0ee002525886d55dd16d85c9de4eee8f8b0c
   languageName: node
   linkType: hard
 
@@ -10156,23 +10156,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.3":
-  version: 4.6.3
-  resolution: "typescript@npm:4.6.3"
+"typescript@npm:^4.6.4":
+  version: 4.6.4
+  resolution: "typescript@npm:4.6.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 255bb26c8cb846ca689dd1c3a56587af4f69055907aa2c154796ea28ee0dea871535b1c78f85a6212c77f2657843a269c3a742d09d81495b97b914bf7920415b
+  checksum: e7bfcc39cd4571a63a54e5ea21f16b8445268b9900bf55aee0e02ad981be576acc140eba24f1af5e3c1457767c96cea6d12861768fb386cf3ffb34013718631a
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>":
-  version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"
+"typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
+  version: 4.6.4
+  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 6bf45caf847062420592e711bc9c28bf5f9a9a7fa8245343b81493e4ededae33f1774009d1234d911422d1646a2c839f44e1a23ecb111b40a60ac2ea4c1482a8
+  checksum: 1cb434fbc637d347be90e3a0c6cd05e33c38f941713c8786d3031faf1842c2c148ba91d2fac01e7276b0ae3249b8633f1660e32686cc7a8c6a8fd5361dc52c66
   languageName: node
   linkType: hard
 
