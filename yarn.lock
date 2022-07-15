@@ -2583,9 +2583,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:^4.21.5":
-  version: 4.21.5
-  resolution: "antd@npm:4.21.5"
+"antd@npm:^4.21.6":
+  version: 4.21.6
+  resolution: "antd@npm:4.21.6"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -2621,7 +2621,7 @@ __metadata:
     rc-slider: ~10.0.0
     rc-steps: ~4.1.0
     rc-switch: ~3.2.0
-    rc-table: ~7.24.0
+    rc-table: ~7.25.0
     rc-tabs: ~11.16.0
     rc-textarea: ~0.3.0
     rc-tooltip: ~5.1.1
@@ -2634,7 +2634,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 7f17973a265fd16cd76fb516a77f96303d1db94e40ecbf1e5f0ddd31c6a7c0cd5a7b50b110cbfe27b280a13f9fd6bc2bb9a1f00cc4af8de00574d3073876f6eb
+  checksum: c133a0f8af16957e9e2716e0c26cd4062493a0db16f835144f052335d85c88dcc83cedf5246935039ef9d4f61d608eeedb67c5946309e1e68837b741fc404431
   languageName: node
   linkType: hard
 
@@ -3908,7 +3908,7 @@ __metadata:
     "@babel/preset-react": ^7.18.6
     "@dg-scripts/eslint-config": ^5.10.0
     "@dg-scripts/stylelint-config": ^5.10.0
-    antd: ^4.21.5
+    antd: ^4.21.6
     autoprefixer: ^10.4.7
     babel-loader: ^8.2.5
     babel-plugin-import: ^1.13.5
@@ -3921,7 +3921,7 @@ __metadata:
     html-webpack-plugin: ^5.5.0
     mini-css-extract-plugin: ^2.6.1
     postcss: ^8.4.14
-    postcss-loader: ^7.0.0
+    postcss-loader: ^7.0.1
     prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -7744,9 +7744,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "postcss-loader@npm:7.0.0"
+"postcss-loader@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "postcss-loader@npm:7.0.1"
   dependencies:
     cosmiconfig: ^7.0.0
     klona: ^2.0.5
@@ -7754,7 +7754,7 @@ fsevents@~2.3.2:
   peerDependencies:
     postcss: ^7.0.0 || ^8.0.1
     webpack: ^5.0.0
-  checksum: b8e51e99898cae8400de8690752b64af2ca1e3eed7c0d696c9e1ec6fc45dd334c958748247632c48109a519fb59f7545d0b8fe4b52479d982ca3ec4eb8e3b0c9
+  checksum: 2a3cbcaaade598d4919824d384ae34ffbfc14a9c8db6cc3b154582356f4f44a1c9af9e731b81cf1947b089accf7d0ab7a0c51c717946985f89aa1708d2b4304d
   languageName: node
   linkType: hard
 
@@ -8422,9 +8422,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-table@npm:~7.24.0":
-  version: 7.24.1
-  resolution: "rc-table@npm:7.24.1"
+"rc-table@npm:~7.25.0":
+  version: 7.25.2
+  resolution: "rc-table@npm:7.25.2"
   dependencies:
     "@babel/runtime": ^7.10.1
     classnames: ^2.2.5
@@ -8434,7 +8434,7 @@ fsevents@~2.3.2:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 0d10db1c8df54a5bc1c2d370196460fc16605adf5475aad5fa5fbf4d0cbd98d58ed5063af6b2af8d5e43c3658ad417e5b3fb6d41a03d72bf620cee410e5c8310
+  checksum: 4f36ae0baba2091b380013affa859813b5438b8518514a92c5c468af747781b36ab9931f39edaf505fac93ed9c780bf3193f1490ecaa61c45db866a29f91fd2e
   languageName: node
   linkType: hard
 
