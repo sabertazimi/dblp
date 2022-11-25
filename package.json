@@ -52,7 +52,7 @@
     "mini-css-extract-plugin": "^2.7.0",
     "postcss": "^8.4.19",
     "postcss-loader": "^7.0.1",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "standard-version": "^9.3.2",
     "style-loader": "^3.3.1",
     "stylelint": "^14.15.0",
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
-    "antd": "^4.24.3",
+    "antd": "^4.24.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
