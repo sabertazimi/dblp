@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BackTop, Col, Layout, Row, Tooltip } from 'antd';
+import { Col, FloatButton, Layout, Row, Tooltip } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import { Responsive } from './components';
 import { Filter, Result, SearchBar, StatisticsBar } from './containers';
@@ -110,7 +110,7 @@ export default class App extends Component {
               }}
             >
               <Result />
-              <BackTop
+              <FloatButton.BackTop
                 style={{
                   right: '1em',
                   bottom: '1em',

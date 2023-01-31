@@ -108,7 +108,6 @@ export const fetchPaperCitations = async papers => {
         : 0
     );
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error('Up to API limits.');
   }
 

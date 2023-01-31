@@ -42,7 +42,7 @@ class StatisticsBar extends Component {
           Open Statistics Bar
         </Button>
         <Modal
-          visible={visible}
+          open={visible}
           title="Statistics"
           onOk={this.handleExport}
           onCancel={this.handleClose}
