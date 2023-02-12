@@ -10,9 +10,7 @@
       "rangeStrategy": "widen"
     },
     {
-      "matchUpdateTypes": [
-        "major"
-      ],
+      "matchUpdateTypes": ["major"],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "squash",
