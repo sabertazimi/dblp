@@ -1549,9 +1549,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-basic@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "@dg-scripts/eslint-config-basic@npm:5.13.0"
+"@dg-scripts/eslint-config-basic@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "@dg-scripts/eslint-config-basic@npm:5.13.2"
   dependencies:
     eslint-config-standard: ^17.0.0
     eslint-plugin-eslint-comments: ^3.2.0
@@ -1567,74 +1567,74 @@ __metadata:
     yaml-eslint-parser: ^1.1.0
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
-  checksum: a2b6e384cb735884695f4d510da7cca5fc516435830255907cb42e4f9bdaeb5d0be3ca9bd5a0a98d68a1cd9e06499387576c8d309974a90d225d1fc0bcb0c3a8
+  checksum: 6c14582d805b0a83f79622cae06852e752f70d8f86eaf7d603c16a25ca93421adb2024834b48b1f4ae289580657efc6808e6a5f7e9cc16bcce470ea031b0266d
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-react@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "@dg-scripts/eslint-config-react@npm:5.13.0"
+"@dg-scripts/eslint-config-react@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "@dg-scripts/eslint-config-react@npm:5.13.2"
   dependencies:
-    eslint-config-bod: ^5.13.0
+    eslint-config-bod: ^5.13.2
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
-  checksum: 72095eb892bbb95e9a3889b362420cec7ca8b6c1216ab128bd94d59a0e59a0a26594ad5d09ee67a29299e5c3c254e71f98fa35311e1c97a7925caf7581f66301
+  checksum: bb73de49d900945d2857e52cd4ee159d12833bb1c0a752496bd0039d9a89f92bd158f1d431aa31d9dc43c0549d473469f422041db31246c6ab42c0dfd4403e31
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-ts@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "@dg-scripts/eslint-config-ts@npm:5.13.0"
+"@dg-scripts/eslint-config-ts@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "@dg-scripts/eslint-config-ts@npm:5.13.2"
   dependencies:
-    "@dg-scripts/eslint-config-basic": ^5.13.0
+    "@dg-scripts/eslint-config-basic": ^5.13.2
     "@typescript-eslint/eslint-plugin": ^5.51.0
     "@typescript-eslint/parser": ^5.51.0
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
     typescript: ^4.0.0
-  checksum: ba78e322cb1af42d8d8118c489c85631fcbd111b45b8efe28c675e362150cba79f9aa4667ebe9e9eedb60dff9c1f12f102c38e05e02139399188ad25db173394
+  checksum: 2851d0874b57f98bf5a6c553699cdcc364f9e0e33f323b4a07119b80e48190602a6b7e7a599dc561cd7b75e27e7bc7dbf47b6ecc017aa2ea4b0226fed807d403
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-vue@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "@dg-scripts/eslint-config-vue@npm:5.13.0"
+"@dg-scripts/eslint-config-vue@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "@dg-scripts/eslint-config-vue@npm:5.13.2"
   dependencies:
-    "@dg-scripts/eslint-config-ts": ^5.13.0
+    "@dg-scripts/eslint-config-ts": ^5.13.2
     eslint-plugin-vue: ^9.9.0
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
     typescript: ^4.0.0
-  checksum: bd9e703913016cceba487c6edfc5df1472a23bc2752d026be6458943b39808ab9a4c76e539bfdbf24a2ceafcfb374f5dba8ad21f9eac61ed0018265447eab912
+  checksum: 5a8ed409ccaf293980cd7ea936074a0c2d94dda178f06824674f86e7a60529b960d920990bdc1ff4ddedcb63b40681b61afdacbdeef99727b84a64308932089f
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "@dg-scripts/eslint-config@npm:5.13.0"
+"@dg-scripts/eslint-config@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "@dg-scripts/eslint-config@npm:5.13.2"
   dependencies:
-    "@dg-scripts/eslint-config-react": ^5.13.0
-    "@dg-scripts/eslint-config-vue": ^5.13.0
+    "@dg-scripts/eslint-config-react": ^5.13.2
+    "@dg-scripts/eslint-config-vue": ^5.13.2
     eslint-config-prettier: ^8.6.0
     eslint-plugin-prettier: ^4.2.1
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
     prettier: ^2.4.0
     typescript: ^4.0.0
-  checksum: e83a04ed3698ee5cfeb2f9130540966255a7081f6cc04e61eaab691f7e5059a4073fa1f8943e289c49b24e497c4cbf7a1a2dc98640632b75af906ba3da157099
+  checksum: d9d60e8c347c264e46d4ebbb254175634850e1f1016e4bc6c2d5c05a7a9d941e04e970ef438d7b1cfd4b0a0311051d3bede0b89c36e5b2c3db956c72c7da9581
   languageName: node
   linkType: hard
 
-"@dg-scripts/stylelint-config@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "@dg-scripts/stylelint-config@npm:5.13.0"
+"@dg-scripts/stylelint-config@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "@dg-scripts/stylelint-config@npm:5.13.2"
   dependencies:
-    stylelint-config-bod: ^5.13.0
+    stylelint-config-bod: ^5.13.2
     stylelint-prettier: ^2.0.0
   peerDependencies:
     prettier: ^2.4.0
     stylelint: ^13.13.0 || ^14.0.0 || ^15.0.0
-  checksum: b188c296201364dbdcbf308eeba21f0d4e01b912709d87b7b06bcc1b3a45ac9f08d8b573bcc019c6f8c35524c6a23753fd21a042a0f4508a88f1d03a2f233c2e
+  checksum: c1f6e4f5591ca8719a039ee03f98581a91d45857e58212e120e4c555da124a20bff893b6c177fb176c6c513f73bd5e9848be95a77f0240fc528a80bda24dc5a9
   languageName: node
   linkType: hard
 
@@ -4157,8 +4157,8 @@ __metadata:
     "@babel/plugin-proposal-object-rest-spread": ^7.20.7
     "@babel/preset-env": ^7.20.2
     "@babel/preset-react": ^7.18.6
-    "@dg-scripts/eslint-config": ^5.13.0
-    "@dg-scripts/stylelint-config": ^5.13.0
+    "@dg-scripts/eslint-config": ^5.13.2
+    "@dg-scripts/stylelint-config": ^5.13.2
     antd: ^5.2.0
     autoprefixer: ^10.4.13
     babel-loader: ^9.1.2
@@ -4740,9 +4740,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-bod@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "eslint-config-bod@npm:5.13.0"
+"eslint-config-bod@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "eslint-config-bod@npm:5.13.2"
   dependencies:
     "@babel/core": ^7.20.12
     "@babel/eslint-parser": ^7.19.1
@@ -4759,7 +4759,7 @@ __metadata:
     eslint-plugin-testing-library: ^5.10.1
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
-  checksum: d68f540619d645bfa5280733f5fb2ebfc30acbd7e83450b7283c9253e1b3cfd922906bd7e9654912d1dd124cddf45f2db2a45e4e2506ef24cdc1bd178dbae2b6
+  checksum: 32de59730643679e9808a683d3619eddc10d824b9420e6e02b9cc69544f36fa879d53e0c0ed42e9b2ad0b3c8a82c674693918f8c9d3298f0e40ccfb249b5888a
   languageName: node
   linkType: hard
 
@@ -10221,19 +10221,19 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"stylelint-config-bod@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "stylelint-config-bod@npm:5.13.0"
+"stylelint-config-bod@npm:^5.13.2":
+  version: 5.13.2
+  resolution: "stylelint-config-bod@npm:5.13.2"
   dependencies:
     postcss-html: ^1.5.0
     postcss-markdown: ^1.2.0
     stylelint-config-html: ^1.1.0
     stylelint-config-recess-order: ^3.1.0
     stylelint-config-standard: ^30.0.1
-    stylelint-config-standard-scss: ^6.1.0
+    stylelint-config-standard-scss: ^7.0.1
   peerDependencies:
     stylelint: ^13.13.0 || ^14.0.0 || ^15.0.0
-  checksum: 0240346c10f6cb5da97469af29bd3d50de44245412f73942808a63852334faafc69534285580b6f8516260da34cb7e838f7b960b26b053c2dae9eae27e30eb20
+  checksum: 1f4d1bd7da68e8e3441fe616cb5434c5983fbe9dd6a450f97e45343a452fb0f25f9f7e08a67cc62a3e0584d75cf64226b8a4a097823943f764a4d418860f1e25
   languageName: node
   linkType: hard
 
@@ -10258,20 +10258,20 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"stylelint-config-recommended-scss@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "stylelint-config-recommended-scss@npm:8.0.0"
+"stylelint-config-recommended-scss@npm:^9.0.0":
+  version: 9.0.1
+  resolution: "stylelint-config-recommended-scss@npm:9.0.1"
   dependencies:
     postcss-scss: ^4.0.2
-    stylelint-config-recommended: ^9.0.0
-    stylelint-scss: ^4.0.0
+    stylelint-config-recommended: ^10.0.1
+    stylelint-scss: ^4.4.0
   peerDependencies:
     postcss: ^8.3.3
-    stylelint: ^14.10.0
+    stylelint: ^15.0.0
   peerDependenciesMeta:
     postcss:
       optional: true
-  checksum: 9680c6709239229fbf988529b7fd2cb751feca29cecbcf1054ce136807c031e2e089b94aa4d193fc2dc60410774145e6800210ebb5f72af9c553c4fc4a26a0cd
+  checksum: 1dd358947dbf350ecc45855b700ed38349b69e3e6d9ceacbd2006fd45a0b46c96805c76e4944fdabb8a49fbc0e0986477f89ce08fe3cb50cd3057e688a803478
   languageName: node
   linkType: hard
 
@@ -10284,39 +10284,19 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"stylelint-config-recommended@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "stylelint-config-recommended@npm:9.0.0"
-  peerDependencies:
-    stylelint: ^14.10.0
-  checksum: 6d94582cb6ef0ba7d0181f0ff500fb12092e465915730d0a7f6b6e8d16e8c920658f18bb2c670115cd177f5d3b481609ff3a91bcee083d546ae31d94fdc03261
-  languageName: node
-  linkType: hard
-
-"stylelint-config-standard-scss@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "stylelint-config-standard-scss@npm:6.1.0"
+"stylelint-config-standard-scss@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "stylelint-config-standard-scss@npm:7.0.1"
   dependencies:
-    stylelint-config-recommended-scss: ^8.0.0
-    stylelint-config-standard: ^29.0.0
+    stylelint-config-recommended-scss: ^9.0.0
+    stylelint-config-standard: ^30.0.1
   peerDependencies:
     postcss: ^8.3.3
-    stylelint: ^14.14.0
+    stylelint: ^15.0.0
   peerDependenciesMeta:
     postcss:
       optional: true
-  checksum: eac8cc4e5f1b4ec8bba6a7bd84fe1010765f46357483bbe63f74c1ffdb01a2dd650d3751072b35869933facaacbf4adb0dcd7f141d01c5adbf72eaf720d54653
-  languageName: node
-  linkType: hard
-
-"stylelint-config-standard@npm:^29.0.0":
-  version: 29.0.0
-  resolution: "stylelint-config-standard@npm:29.0.0"
-  dependencies:
-    stylelint-config-recommended: ^9.0.0
-  peerDependencies:
-    stylelint: ^14.14.0
-  checksum: 9540e5153383e5aa477d36b7a191b8768cb584d91de4382926be9c0c12863ca9235d45b87d663b27aef11610c9d6c6666536f86cc843eb36e4fdada0b4749376
+  checksum: 99aa0241c1ec07a36975489746f1eb15268df03ddcc5ec3370c72f507872135a1214360df7ad4f60162145b910700ee4e8b4604ee4a1c158f69eda2fd07eede4
   languageName: node
   linkType: hard
 
@@ -10355,18 +10335,18 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "stylelint-scss@npm:4.0.0"
+"stylelint-scss@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "stylelint-scss@npm:4.4.0"
   dependencies:
-    lodash: ^4.17.15
+    lodash: ^4.17.21
     postcss-media-query-parser: ^0.2.3
     postcss-resolve-nested-selector: ^0.1.1
     postcss-selector-parser: ^6.0.6
     postcss-value-parser: ^4.1.0
   peerDependencies:
-    stylelint: ^14.0.0
-  checksum: 98f835547b7f60dcd1f3725d4d67dafaae89fd38e7fb62fb59afba5e8511b8552ca658908ced7421a83b2a6ef4174f575625e4e56113ec9a54aa42435ceae5cc
+    stylelint: ^14.5.1 || ^15.0.0
+  checksum: f206bb9014d59af5ccc16f7c0d81bc9126c908f09f3aba296695a200f31c354386d6e2d6177821af761bcfc10fe4be41f3d00d6b2057561710b06d0c30407cc0
   languageName: node
   linkType: hard
 
