@@ -1726,26 +1726,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/schemas@npm:^29.4.0":
-  version: 29.4.0
-  resolution: "@jest/schemas@npm:29.4.0"
+"@jest/schemas@npm:^29.4.3":
+  version: 29.4.3
+  resolution: "@jest/schemas@npm:29.4.3"
   dependencies:
     "@sinclair/typebox": ^0.25.16
-  checksum: 005c90b7b641af029133fa390c0c8a75b63edf651da6253d7c472a8f15ddd18aa139edcd4236e57f974006e39c67217925768115484dbd7bfed2eba224de8b7d
+  checksum: ac754e245c19dc39e10ebd41dce09040214c96a4cd8efa143b82148e383e45128f24599195ab4f01433adae4ccfbe2db6574c90db2862ccd8551a86704b5bebd
   languageName: node
   linkType: hard
 
-"@jest/types@npm:^29.4.1":
-  version: 29.4.1
-  resolution: "@jest/types@npm:29.4.1"
+"@jest/types@npm:^29.4.3":
+  version: 29.4.3
+  resolution: "@jest/types@npm:29.4.3"
   dependencies:
-    "@jest/schemas": ^29.4.0
+    "@jest/schemas": ^29.4.3
     "@types/istanbul-lib-coverage": ^2.0.0
     "@types/istanbul-reports": ^3.0.0
     "@types/node": "*"
     "@types/yargs": ^17.0.8
     chalk: ^4.0.0
-  checksum: 0aa0b6a210b3474289e5dcaa8e7abb2238dba8d0baf2eb5a3f080fb95e9a39e71e8abc96811d4ef7011f5d993755bb54515e9d827d7ebc2a2d4d9579d84f5a04
+  checksum: 1756f4149d360f98567f56f434144f7af23ed49a2c42889261a314df6b6654c2de70af618fb2ee0ee39cadaf10835b885845557184509503646c9cb9dcc02bac
   languageName: node
   linkType: hard
 
@@ -4181,7 +4181,7 @@ __metadata:
     standard-version: ^9.3.2
     style-loader: ^3.3.1
     stylelint: ^15.1.0
-    stylelint-webpack-plugin: ^4.0.0
+    stylelint-webpack-plugin: ^4.1.0
     typescript: ^4.9.5
     webpack: ^5.75.0
     webpack-bundle-analyzer: ^4.8.0
@@ -6821,17 +6821,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"jest-util@npm:^29.4.1":
-  version: 29.4.1
-  resolution: "jest-util@npm:29.4.1"
+"jest-util@npm:^29.4.3":
+  version: 29.4.3
+  resolution: "jest-util@npm:29.4.3"
   dependencies:
-    "@jest/types": ^29.4.1
+    "@jest/types": ^29.4.3
     "@types/node": "*"
     chalk: ^4.0.0
     ci-info: ^3.2.0
     graceful-fs: ^4.2.9
     picomatch: ^2.2.3
-  checksum: 10a0e6c448ace1386f728ee3b7669f67878bb0c2e668a902d11140cc3f75c89a18f4142a37a24ccb587ede20dad86d497b3e8df4f26848a9be50a44779d92bc9
+  checksum: 606b3e6077895baf8fb4ad4d08c134f37a6b81d5ba77ae654c942b1ae4b7294ab3b5a0eb93db34f129407b367970cf3b76bf5c80897b30f215f2bc8bf20a5f3f
   languageName: node
   linkType: hard
 
@@ -6846,15 +6846,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"jest-worker@npm:^29.4.1":
-  version: 29.4.1
-  resolution: "jest-worker@npm:29.4.1"
+"jest-worker@npm:^29.4.1, jest-worker@npm:^29.4.2":
+  version: 29.4.3
+  resolution: "jest-worker@npm:29.4.3"
   dependencies:
     "@types/node": "*"
-    jest-util: ^29.4.1
+    jest-util: ^29.4.3
     merge-stream: ^2.0.0
     supports-color: ^8.0.0
-  checksum: c3b3eaa09d7ac88e11800a63e96a90ba27b7d609335c73842ee5f8e899e9fd6a6aa68009f54dabb6d6e561c98127def369fc86c8f528639ddfb74dd130f4be9f
+  checksum: c99ae66f257564613e72c5797c3a68f21a22e1c1fb5f30d14695ff5b508a0d2405f22748f13a3df8d1015b5e16abb130170f81f047ff68f58b6b1d2ff6ebc51b
   languageName: node
   linkType: hard
 
@@ -10350,19 +10350,19 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"stylelint-webpack-plugin@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "stylelint-webpack-plugin@npm:4.0.0"
+"stylelint-webpack-plugin@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "stylelint-webpack-plugin@npm:4.1.0"
   dependencies:
     globby: ^11.1.0
-    jest-worker: ^29.4.1
+    jest-worker: ^29.4.2
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
     schema-utils: ^4.0.0
   peerDependencies:
-    stylelint: ^13.0.0 || ^14.0.0
+    stylelint: ^13.0.0 || ^14.0.0 || ^15.0.0
     webpack: ^5.0.0
-  checksum: efa099e59b59aa6302012a93990fb7dd57685a8cf3532a86273bb4f4a09f7dce85340d42925c328fa1964374b813f96e91d0e09d536acf98b8e7cf0c6ca938c7
+  checksum: d09c8c4abffe90eb2df09ce5c71dc33a86f28ca4e8acb0e4544a9a5a77f35de69fb4c8789cb567cf333e33ec8694f1f71ba60210139646095d664ad145cc537c
   languageName: node
   linkType: hard
 
