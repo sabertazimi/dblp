@@ -1,6 +1,75 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [1.4.0](https://github.com/sabertazimi/dblp/compare/v1.3.0...v1.4.0) (2023-03-08)
+
+
+### :sparkles: Features
+
+* **React-18:** add support for React concurrent features ([#273](https://github.com/sabertazimi/dblp/issues/273)) ([e1225c8](https://github.com/sabertazimi/dblp/commit/e1225c82da172dfe16e4e1abc3beabd6ab21c838))
+
+
+### :bug: Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#268](https://github.com/sabertazimi/dblp/issues/268)) ([9f420f1](https://github.com/sabertazimi/dblp/commit/9f420f16818c67f37a8915fec7a8f09dd3cc3c04))
+* **deps:** update dependencies (non-major) ([#271](https://github.com/sabertazimi/dblp/issues/271)) ([e627dc3](https://github.com/sabertazimi/dblp/commit/e627dc34776bf1f68bc9d431b3c47b1851d0a935))
+* **deps:** update dependencies (non-major) ([#275](https://github.com/sabertazimi/dblp/issues/275)) ([535f22f](https://github.com/sabertazimi/dblp/commit/535f22f4f9aa173cb7910a7651d5c06ee988d265))
+* **deps:** update dependencies (non-major) ([#288](https://github.com/sabertazimi/dblp/issues/288)) ([4a129c3](https://github.com/sabertazimi/dblp/commit/4a129c3c92fd18d78afff8c0995bb3179e764f4e))
+* **deps:** update dependencies (non-major) ([#296](https://github.com/sabertazimi/dblp/issues/296)) ([210bff2](https://github.com/sabertazimi/dblp/commit/210bff25cd446c4e1f5e8ca31408ed6592f96314))
+* **deps:** update dependencies (non-major) ([#304](https://github.com/sabertazimi/dblp/issues/304)) ([d69e2e3](https://github.com/sabertazimi/dblp/commit/d69e2e32d4d4a23a02ef32b6f5ebede2177cd436))
+* **deps:** update dependencies (non-major) ([#306](https://github.com/sabertazimi/dblp/issues/306)) ([dc71c08](https://github.com/sabertazimi/dblp/commit/dc71c086864396636c543a9f9cf33a748bc9af46))
+* **deps:** update dependencies (non-major) ([#314](https://github.com/sabertazimi/dblp/issues/314)) ([8df4796](https://github.com/sabertazimi/dblp/commit/8df4796639373e6608e0c9cec4394df2f112f37a))
+* **deps:** update dependencies (non-major) ([#319](https://github.com/sabertazimi/dblp/issues/319)) ([c15304d](https://github.com/sabertazimi/dblp/commit/c15304dd88811015d32b51edb4f8fc890c148437))
+* **deps:** update dependencies (non-major) ([#322](https://github.com/sabertazimi/dblp/issues/322)) ([b7df6d9](https://github.com/sabertazimi/dblp/commit/b7df6d99aee63fb705bdb3cf7b2c7cd2277f0697))
+* **deps:** update dependencies (non-major) ([#324](https://github.com/sabertazimi/dblp/issues/324)) ([9812bfd](https://github.com/sabertazimi/dblp/commit/9812bfde9b1b3364d396411f798e691edf129a99))
+* **deps:** update dependencies (non-major) ([#349](https://github.com/sabertazimi/dblp/issues/349)) ([7631fb2](https://github.com/sabertazimi/dblp/commit/7631fb2cc60e493de5f09b96bc33f738b903ad4f))
+* **deps:** update dependencies (non-major) ([#352](https://github.com/sabertazimi/dblp/issues/352)) ([80c1fbf](https://github.com/sabertazimi/dblp/commit/80c1fbff947d5158f9d64ec8c571a925ffd54a1a))
+* **deps:** update dependencies (non-major) ([#356](https://github.com/sabertazimi/dblp/issues/356)) ([c45d984](https://github.com/sabertazimi/dblp/commit/c45d9848aa483267b161d01e38784967fdf98a1d))
+* **deps:** update dependencies (non-major) ([#360](https://github.com/sabertazimi/dblp/issues/360)) ([6106c90](https://github.com/sabertazimi/dblp/commit/6106c9057b601dfbcd96dfb9fb76ae2458d49aa6))
+* **deps:** update dependencies (non-major) ([#371](https://github.com/sabertazimi/dblp/issues/371)) ([e792dbc](https://github.com/sabertazimi/dblp/commit/e792dbc8e24f70c7c52b74a72ef8661c6fa0b116))
+* **deps:** update dependencies (non-major) ([#375](https://github.com/sabertazimi/dblp/issues/375)) ([0b3d509](https://github.com/sabertazimi/dblp/commit/0b3d509c8d1ac04ce332b6a378b797a039b1e35b))
+* **deps:** update dependency @ant-design/icons to v5 ([#364](https://github.com/sabertazimi/dblp/issues/364)) ([4d1038d](https://github.com/sabertazimi/dblp/commit/4d1038da1201e82b4e8cea1970960f050c0093a5))
+* **deps:** update dependency antd to ^4.17.2 ([#185](https://github.com/sabertazimi/dblp/issues/185)) ([2ff8fd6](https://github.com/sabertazimi/dblp/commit/2ff8fd6b258f0dbe43efd7dd20b2516438d4409d))
+* **deps:** update dependency antd to ^4.17.3 ([#191](https://github.com/sabertazimi/dblp/issues/191)) ([0d830ee](https://github.com/sabertazimi/dblp/commit/0d830eef02383f1a9a24a3fca033e71880d43d11))
+* **deps:** update dependency antd to ^4.17.4 ([#198](https://github.com/sabertazimi/dblp/issues/198)) ([9c68382](https://github.com/sabertazimi/dblp/commit/9c683821f0a074a770cf7a2ef741583ff9af7da5))
+* **deps:** update dependency antd to ^4.18.2 ([#205](https://github.com/sabertazimi/dblp/issues/205)) ([ec052e8](https://github.com/sabertazimi/dblp/commit/ec052e8a07791f695d6ab3a7d7b754edf9ac57be))
+* **deps:** update dependency antd to ^4.18.3 ([#214](https://github.com/sabertazimi/dblp/issues/214)) ([3e684ff](https://github.com/sabertazimi/dblp/commit/3e684ffec3869031e54d5744bbf0215ef57ec7ea))
+* **deps:** update dependency antd to ^4.18.4 ([#222](https://github.com/sabertazimi/dblp/issues/222)) ([8216322](https://github.com/sabertazimi/dblp/commit/82163223e583a2742f91abf2dca934fabcd56f47))
+* **deps:** update dependency antd to ^4.18.5 ([#227](https://github.com/sabertazimi/dblp/issues/227)) ([ba60f8b](https://github.com/sabertazimi/dblp/commit/ba60f8b94902e0356a52e20aa9b9a40018c0dba8))
+* **deps:** update dependency antd to ^4.18.6 ([#236](https://github.com/sabertazimi/dblp/issues/236)) ([cd80407](https://github.com/sabertazimi/dblp/commit/cd80407733f33448cf40e686c319ed536fbc13b0))
+* **deps:** update dependency antd to ^4.18.7 ([#241](https://github.com/sabertazimi/dblp/issues/241)) ([0fc7c49](https://github.com/sabertazimi/dblp/commit/0fc7c49c3a8b936528bc3360598e0e44fbbf53e6))
+* **deps:** update dependency antd to ^4.18.8 ([#245](https://github.com/sabertazimi/dblp/issues/245)) ([41a0e03](https://github.com/sabertazimi/dblp/commit/41a0e03c33d6f4173235ecccfad2afcf02b839ad))
+* **deps:** update dependency antd to ^4.18.9 ([#249](https://github.com/sabertazimi/dblp/issues/249)) ([be14c5a](https://github.com/sabertazimi/dblp/commit/be14c5ae17d6f93da81bc81a7685bc5807c6773b))
+* **deps:** update dependency antd to ^4.19.1 ([#257](https://github.com/sabertazimi/dblp/issues/257)) ([fe26944](https://github.com/sabertazimi/dblp/commit/fe26944b785069bd37aa64398917fa6ad7848015))
+* **deps:** update dependency antd to ^4.19.2 ([#259](https://github.com/sabertazimi/dblp/issues/259)) ([8826ee8](https://github.com/sabertazimi/dblp/commit/8826ee8df20bd5d7bcd54199d24cd7e287a7ee5f))
+* **deps:** update dependency antd to ^4.19.4 ([#270](https://github.com/sabertazimi/dblp/issues/270)) ([9d9a2c0](https://github.com/sabertazimi/dblp/commit/9d9a2c055b15f83ea15fbd451e262b39e978f4e8))
+* **deps:** update dependency antd to ^4.20.0 ([#287](https://github.com/sabertazimi/dblp/issues/287)) ([8a253e8](https://github.com/sabertazimi/dblp/commit/8a253e8ca4596ea071fffda49334314d9c50292f))
+* **deps:** update dependency antd to ^4.20.2 ([#292](https://github.com/sabertazimi/dblp/issues/292)) ([6cfecb3](https://github.com/sabertazimi/dblp/commit/6cfecb3580cb7246a546beb10a622b1102b08a40))
+* **deps:** update dependency antd to ^4.20.5 ([#297](https://github.com/sabertazimi/dblp/issues/297)) ([7ea08a2](https://github.com/sabertazimi/dblp/commit/7ea08a2232a5a6d285a0d787611ca70f3d3d1d9f))
+* **deps:** update dependency antd to ^4.20.6 ([#302](https://github.com/sabertazimi/dblp/issues/302)) ([79e5e5e](https://github.com/sabertazimi/dblp/commit/79e5e5e20a3343ef01b5dcd21606e83349a565c7))
+* **deps:** update dependency antd to ^4.21.5 ([#313](https://github.com/sabertazimi/dblp/issues/313)) ([7ce0653](https://github.com/sabertazimi/dblp/commit/7ce0653daef64be770381f7a0c2da00eee0bef6f))
+* **deps:** update dependency antd to ^4.22.7 ([#325](https://github.com/sabertazimi/dblp/issues/325)) ([7ed06e7](https://github.com/sabertazimi/dblp/commit/7ed06e77e5f260c814b7dc34112e4af924e19934))
+* **deps:** update dependency antd to ^4.23.0 ([#330](https://github.com/sabertazimi/dblp/issues/330)) ([6435939](https://github.com/sabertazimi/dblp/commit/6435939d9ededee93549e8deca84cf93e67c2357))
+* **deps:** update dependency antd to ^4.23.2 ([#333](https://github.com/sabertazimi/dblp/issues/333)) ([b7348ab](https://github.com/sabertazimi/dblp/commit/b7348ab2b258a7874f505e8ad7cf7febf4387d0a))
+* **deps:** update dependency antd to ^4.23.4 ([#336](https://github.com/sabertazimi/dblp/issues/336)) ([186af19](https://github.com/sabertazimi/dblp/commit/186af19dd4e0e521643a30df93c667a4cdba4c15))
+* **deps:** update dependency antd to ^4.24.2 ([#347](https://github.com/sabertazimi/dblp/issues/347)) ([732629d](https://github.com/sabertazimi/dblp/commit/732629df02dc1a8112a3eddb8c6ee4a87ef1076b))
+* **deps:** update dependency antd to ^5.2.3 ([#380](https://github.com/sabertazimi/dblp/issues/380)) ([29b6d33](https://github.com/sabertazimi/dblp/commit/29b6d33761aa639787a67ac88dcc0ebf243c333d))
+* **deps:** update dependency antd to v5 ([#351](https://github.com/sabertazimi/dblp/issues/351)) ([29143e2](https://github.com/sabertazimi/dblp/commit/29143e27b35ea7b96251325ec96d514f00df22a9))
+* **deps:** update dependency react-redux to ^7.2.6 ([#151](https://github.com/sabertazimi/dblp/issues/151)) ([45011c2](https://github.com/sabertazimi/dblp/commit/45011c22fc226fe02614bb280fd112f33e274914))
+* **deps:** update dependency react-redux to ^8.0.0 ([#280](https://github.com/sabertazimi/dblp/issues/280)) ([077e3e4](https://github.com/sabertazimi/dblp/commit/077e3e4391b2232ab4e3a74f7981a64e75483c52))
+* **deps:** update dependency redux to ^4.1.2 ([#152](https://github.com/sabertazimi/dblp/issues/152)) ([c5ccdd3](https://github.com/sabertazimi/dblp/commit/c5ccdd3edb8e6f550d62d977eb410ec1995d6f05))
+* **deps:** update dependency redux-thunk to ^2.4.0 ([#158](https://github.com/sabertazimi/dblp/issues/158)) ([caca40f](https://github.com/sabertazimi/dblp/commit/caca40fa2801f28aed3b28e557e7dfe4353f9c97))
+* **deps:** update dependency redux-thunk to ^2.4.1 ([#182](https://github.com/sabertazimi/dblp/issues/182)) ([884ee65](https://github.com/sabertazimi/dblp/commit/884ee656acb8146f9c44b4882eaceac576f942dc))
+* **deps:** update react monorepo to v18 ([#272](https://github.com/sabertazimi/dblp/issues/272)) ([7140997](https://github.com/sabertazimi/dblp/commit/71409974f6a83c3511f956666f32d11754baba82))
+* **redux:** drop `redux-logger` ([#274](https://github.com/sabertazimi/dblp/issues/274)) ([0943408](https://github.com/sabertazimi/dblp/commit/094340860d52171c241a8a8e262cbf2deda586fe))
+
+
+### :rocket: Building Work
+
+* change release tool ([66287c0](https://github.com/sabertazimi/dblp/commit/66287c0321b9821aaa6b4804bfdf9dbc66dc34ad))
+* **deps-bot:** disable lockfile maintenance ([072035b](https://github.com/sabertazimi/dblp/commit/072035b5723a7743f43a8a82ac9f84fe625627d8))
+* **webpack:** rectify dev mode judgement ([2a93fa4](https://github.com/sabertazimi/dblp/commit/2a93fa4b5f7b96fa72df1635ce09d34ba978ef26))
 
 ## [1.3.0](https://github.com/sabertazimi/dblp/compare/v1.2.0...v1.3.0) (2021-10-28)
 
