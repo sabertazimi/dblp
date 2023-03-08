@@ -8,8 +8,8 @@
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open",
     "format": "prettier --write src/**/*.{js,jsx,css}",
     "lint": "stylelint ./src/**/*.css && eslint --ext .js --ext .jsx ./src",
-    "prelease": "standard-version --dry-run -s",
-    "release": "standard-version -s",
+    "changeset": "commit-and-tag-version --dry-run -s",
+    "release": "commit-and-tag-version -s",
     "start": "yarn dev"
   },
   "repository": {
@@ -42,6 +42,7 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
+    "commit-and-tag-version": "^11.1.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "eslint": "^8.35.0",
@@ -52,7 +53,6 @@
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
     "prettier": "^2.8.4",
-    "standard-version": "^9.3.2",
     "style-loader": "^3.3.1",
     "stylelint": "^15.2.0",
     "stylelint-webpack-plugin": "^4.1.0",
