@@ -51,7 +51,7 @@
     "html-webpack-plugin": "^5.5.2",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.24",
-    "postcss-loader": "^7.3.2",
+    "postcss-loader": "^7.3.3",
     "prettier": "^2.8.8",
     "style-loader": "^3.3.3",
     "stylelint": "^15.7.0",
