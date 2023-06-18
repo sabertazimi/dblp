@@ -42,7 +42,7 @@
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
-    "commit-and-tag-version": "^11.2.1",
+    "commit-and-tag-version": "^11.2.2",
     "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "eslint": "^8.43.0",
