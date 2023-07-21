@@ -3076,9 +3076,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:^5.7.0":
-  version: 5.7.0
-  resolution: "antd@npm:5.7.0"
+"antd@npm:^5.7.2":
+  version: 5.7.2
+  resolution: "antd@npm:5.7.2"
   dependencies:
     "@ant-design/colors": ^7.0.0
     "@ant-design/cssinjs": ^1.10.1
@@ -3101,9 +3101,9 @@ __metadata:
     rc-drawer: ~6.2.0
     rc-dropdown: ~4.1.0
     rc-field-form: ~1.34.0
-    rc-image: ~7.0.0-2
+    rc-image: ~7.0.0
     rc-input: ~1.1.0
-    rc-input-number: ~8.0.0
+    rc-input-number: ~8.0.2
     rc-mentions: ~2.5.0
     rc-menu: ~9.10.0
     rc-motion: ^2.7.3
@@ -3116,7 +3116,7 @@ __metadata:
     rc-segmented: ~2.2.0
     rc-select: ~14.5.0
     rc-slider: ~10.1.0
-    rc-steps: ~6.0.0
+    rc-steps: ~6.0.1
     rc-switch: ~4.1.0
     rc-table: ~7.32.1
     rc-tabs: ~12.9.0
@@ -3131,7 +3131,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 3915344b8ff92e2e789e4f34338ba62953cfc97a7be2eff420a91f8a6d03d5133c2b60419b4acd39e09faafa71f24281616834e4ab3527733bff3fc09efc0de9
+  checksum: 38565a6443bf9b801da8c5e9cbaae5b4856aee1e5948e3c0e6ef6948cd0eaaed0f0261724c22e73ec0fc21342585f6f986031bf16e406da847fe0aea69f9ff70
   languageName: node
   linkType: hard
 
@@ -4452,10 +4452,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-functions-list@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "css-functions-list@npm:3.1.0"
-  checksum: 8a7c9d4ae57cb2f01500263e65a21372048d359ca7aa6430a32a736fe2a421decfebe45e579124b9a158ec68aba2eadcd733e568495a7698240d9607d31f681b
+"css-functions-list@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "css-functions-list@npm:3.2.0"
+  checksum: fe912ea852fad500aef9a4f04db9a0371c7b0eb1ac1a45fbd8df0156ae0538cee7492ebd620b9bb502fe5bf2b5ed3bf3c16b6659cf67c7144eff0b597bcc3891
   languageName: node
   linkType: hard
 
@@ -4563,7 +4563,7 @@ __metadata:
     "@babel/preset-react": ^7.22.5
     "@dg-scripts/eslint-config": ^5.14.0
     "@dg-scripts/stylelint-config": ^5.14.0
-    antd: ^5.7.0
+    antd: ^5.7.2
     autoprefixer: ^10.4.14
     babel-loader: ^9.1.3
     clean-webpack-plugin: ^4.0.0
@@ -4575,7 +4575,7 @@ __metadata:
     html-loader: ^4.2.0
     html-webpack-plugin: ^5.5.3
     mini-css-extract-plugin: ^2.7.6
-    postcss: ^8.4.26
+    postcss: ^8.4.27
     postcss-loader: ^7.3.3
     prettier: ^3.0.0
     react: ^18.2.0
@@ -4584,10 +4584,10 @@ __metadata:
     redux: ^4.2.1
     redux-thunk: ^2.4.2
     style-loader: ^3.3.3
-    stylelint: ^15.10.1
+    stylelint: ^15.10.2
     stylelint-webpack-plugin: ^4.1.1
     typescript: ^5.1.6
-    webpack: ^5.88.1
+    webpack: ^5.88.2
     webpack-bundle-analyzer: ^4.9.0
     webpack-cli: ^5.1.4
     webpack-dev-server: ^4.15.1
@@ -8982,14 +8982,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.0, postcss@npm:^8.4.21, postcss@npm:^8.4.24, postcss@npm:^8.4.26":
-  version: 8.4.26
-  resolution: "postcss@npm:8.4.26"
+"postcss@npm:^8.4.0, postcss@npm:^8.4.21, postcss@npm:^8.4.25, postcss@npm:^8.4.27":
+  version: 8.4.27
+  resolution: "postcss@npm:8.4.27"
   dependencies:
     nanoid: ^3.3.6
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: 1cf08ee10d58cbe98f94bf12ac49a5e5ed1588507d333d2642aacc24369ca987274e1f60ff4cbf0081f70d2ab18a5cd3a4a273f188d835b8e7f3ba381b184e57
+  checksum: 1cdd0c298849df6cd65f7e646a3ba36870a37b65f55fd59d1a165539c263e9b4872a402bf4ed1ca1bc31f58b68b2835545e33ea1a23b161a1f8aa6d5ded81e78
   languageName: node
   linkType: hard
 
@@ -9276,7 +9276,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-image@npm:~7.0.0-2":
+"rc-image@npm:~7.0.0":
   version: 7.0.0
   resolution: "rc-image@npm:7.0.0"
   dependencies:
@@ -9293,9 +9293,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-input-number@npm:~8.0.0":
-  version: 8.0.1
-  resolution: "rc-input-number@npm:8.0.1"
+"rc-input-number@npm:~8.0.2":
+  version: 8.0.3
+  resolution: "rc-input-number@npm:8.0.3"
   dependencies:
     "@babel/runtime": ^7.10.1
     "@rc-component/mini-decimal": ^1.0.1
@@ -9305,7 +9305,7 @@ fsevents@~2.3.2:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 841d77157dd1e11f355dc444f8cce72848d7a557a00291bbe3a6058c451d0af5c10597683362538e9e2eac090c528a6649edaae5fc6abed2523a8c0735afdc84
+  checksum: d567919037db72dd2df04868ae909e1d74959e3956bded722931accefcdfa48d05946489dfd10e39f63599045cc89351108e7bbff869cc4415a53b6f06837d48
   languageName: node
   linkType: hard
 
@@ -9534,9 +9534,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-steps@npm:~6.0.0":
-  version: 6.0.0
-  resolution: "rc-steps@npm:6.0.0"
+"rc-steps@npm:~6.0.1":
+  version: 6.0.1
+  resolution: "rc-steps@npm:6.0.1"
   dependencies:
     "@babel/runtime": ^7.16.7
     classnames: ^2.2.3
@@ -9544,7 +9544,7 @@ fsevents@~2.3.2:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 22cec1477fdd7c92e480d980c88ba8175e897e4dcd06c6c11fcdb8175ebede19b9367d8d62d1ee21ec5dfd9d8ab7724c3665582a51dde86c36ecdc810550bb1b
+  checksum: b75d6667df6b0c020dc13a595b5c1c9a739ec569242e600d5950f3a8240249b845ad715a3253e658fe02b0ac904a55a0603bb11702f262a3159835b269b9de75
   languageName: node
   linkType: hard
 
@@ -10975,9 +10975,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^15.10.1":
-  version: 15.10.1
-  resolution: "stylelint@npm:15.10.1"
+"stylelint@npm:^15.10.2":
+  version: 15.10.2
+  resolution: "stylelint@npm:15.10.2"
   dependencies:
     "@csstools/css-parser-algorithms": ^2.3.0
     "@csstools/css-tokenizer": ^2.1.1
@@ -10986,7 +10986,7 @@ fsevents@~2.3.2:
     balanced-match: ^2.0.0
     colord: ^2.9.3
     cosmiconfig: ^8.2.0
-    css-functions-list: ^3.1.0
+    css-functions-list: ^3.2.0
     css-tree: ^2.3.1
     debug: ^4.3.4
     fast-glob: ^3.3.0
@@ -11006,7 +11006,7 @@ fsevents@~2.3.2:
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
     picocolors: ^1.0.0
-    postcss: ^8.4.24
+    postcss: ^8.4.25
     postcss-resolve-nested-selector: ^0.1.1
     postcss-safe-parser: ^6.0.0
     postcss-selector-parser: ^6.0.13
@@ -11021,7 +11021,7 @@ fsevents@~2.3.2:
     write-file-atomic: ^5.0.1
   bin:
     stylelint: bin/stylelint.mjs
-  checksum: 8eeae81fe4ed2dfc580d7c401806dbb058c14631abfafd0821db32f1e649aee62e3d39dda3462c6122826df91bd9799409be926e91b55b007622f51e44eb94c1
+  checksum: 1a7dc0385bddc604f6633340dd3eb58dfc8860e677576d7ad688a94064140d73fd70ea21038994a9f8884457098ee297ce625bbddd9477cde35faa4bf7aff848
   languageName: node
   linkType: hard
 
@@ -11743,9 +11743,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.88.1":
-  version: 5.88.1
-  resolution: "webpack@npm:5.88.1"
+"webpack@npm:^5.88.2":
+  version: 5.88.2
+  resolution: "webpack@npm:5.88.2"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^1.0.0
@@ -11776,7 +11776,7 @@ fsevents@~2.3.2:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 726e7e05ab2e7c142609a673dd6aa1a711ed97f349418a2a393d650c5ddad172d191257f60e1e37f6b2a77261571c202aabd5ce9240791a686774f0801cf5ec2
+  checksum: 79476a782da31a21f6dd38fbbd06b68da93baf6a62f0d08ca99222367f3b8668f5a1f2086b7bb78e23172e31fa6df6fa7ab09b25e827866c4fc4dc2b30443ce2
   languageName: node
   linkType: hard
 
