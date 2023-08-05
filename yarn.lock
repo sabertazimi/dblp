@@ -56,9 +56,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:^5.2.2, @ant-design/icons@npm:^5.2.4":
-  version: 5.2.4
-  resolution: "@ant-design/icons@npm:5.2.4"
+"@ant-design/icons@npm:^5.2.2, @ant-design/icons@npm:^5.2.5":
+  version: 5.2.5
+  resolution: "@ant-design/icons@npm:5.2.5"
   dependencies:
     "@ant-design/colors": ^7.0.0
     "@ant-design/icons-svg": ^4.3.0
@@ -69,7 +69,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 6f2f2fa01ffcb4048b923d591f2136c753eabaa6b99fcbd28dc04a4cb9ef0759e7805a725907a15440aab6f965b2ea9f9970b48a986dc5b80c31d78587eeb66c
+  checksum: b21c99a783d4796de6e86a9057637cb7f5e059999d5d169dc889ad98523c64fe062ba26f81c40174b20acb3644ac2d12765e50f9a96a8ae1ad66e2b8bb29d813
   languageName: node
   linkType: hard
 
@@ -4556,7 +4556,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dblp@workspace:."
   dependencies:
-    "@ant-design/icons": ^5.2.4
+    "@ant-design/icons": ^5.2.5
     "@babel/core": ^7.22.9
     "@babel/plugin-proposal-class-properties": ^7.18.6
     "@babel/plugin-proposal-object-rest-spread": ^7.20.7
