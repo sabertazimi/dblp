@@ -11,8 +11,6 @@ const scIdsQuery = title =>
 const scCitationsQuery = paperId =>
   `https://api.semanticscholar.org/graph/v1/paper/${paperId}?fields=citationCount`;
 
-let KEY = 0;
-
 export const fetchDblpPapers = async (keyword, venues) => {
   const papersResponse = await Promise.all(
     venues.map(venue =>
@@ -37,7 +35,7 @@ export const fetchDblpPapers = async (keyword, venues) => {
           }
 
           return hit.map(({ info }) => ({
-            key: KEY++,
+            key: info.key,
             title: info.title,
             venue: info.venue.replaceAll('.', ''),
             year: info.year,

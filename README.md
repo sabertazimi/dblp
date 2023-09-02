@@ -59,6 +59,7 @@ An awesome DBLP search application.
 - USENIX Security
 - EUROCRYPT
 - SIGGRAPH
+- TOG
 - MM
 - CHI
 - VR
