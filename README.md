@@ -6,7 +6,7 @@
 [![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/dblp?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/dblp)
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/dblp/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/dblp/actions/workflows/ci.yml)
 
-An awesome DBLP search application
+An awesome DBLP search application.
 
 ## Venues Support
 
@@ -18,7 +18,7 @@ An awesome DBLP search application
 - MICRO
 - USENIX ATC
 - SC
-- PPOPP
+- PPoPP
 - OSDI
 - SOSP
 - PVLDB
@@ -39,6 +39,7 @@ An awesome DBLP search application
 - ICDE
 - ICSE
 - KDD
+- TKDE
 - SIGIR
 - FAST
 - NSDI
@@ -70,6 +71,31 @@ An awesome DBLP search application
 - CAV
 - WWW
 - RTSS
+
+## Local Development
+
+### Environment
+
+- [Node.js](https://nodejs.org): 18.0+.
+- [Yarn](https://yarnpkg.com): 3.0+.
+
+### Installation
+
+```sh
+yarn
+```
+
+### Development
+
+```sh
+yarn start
+```
+
+### Build
+
+```sh
+yarn build
+```
 
 ## Contact
 
