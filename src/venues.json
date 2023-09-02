@@ -28,22 +28,23 @@
     "venue": "SOSP"
   },
   {
-    "venue": "PVLDB"
+    "venue": "Proc VLDB Endow",
+    "title": "PVLDB"
   },
   {
     "venue": "SIGMOD Conference",
     "title": "SIGMOD"
   },
   {
-    "venue": "IEEE Trans. Parallel Distributed Syst.",
+    "venue": "IEEE Trans Parallel Distributed Syst",
     "title": "TPDS"
   },
   {
-    "venue": "ACM Trans. Comput. Syst.",
+    "venue": "ACM Trans Comput Syst",
     "title": "TOCS"
   },
   {
-    "venue": "ACM Trans. Storage",
+    "venue": "ACM Trans Storage",
     "title": "TOS"
   },
   {
@@ -80,7 +81,7 @@
     "venue": "SPAA"
   },
   {
-    "venue": "ACM Trans. Archit. Code Optim.",
+    "venue": "ACM Trans Archit Code Optim",
     "title": "TACO"
   },
   {
@@ -93,7 +94,7 @@
     "venue": "KDD"
   },
   {
-    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "venue": "IEEE Trans Knowl Data Eng",
     "title": "TKDE"
   },
   {
@@ -153,7 +154,7 @@
     "venue": "EUROCRYPT"
   },
   {
-    "venue": "ACM Trans. Graph.",
+    "venue": "ACM Trans Graph",
     "title": "SIGGRAPH"
   },
   {

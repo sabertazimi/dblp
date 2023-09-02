@@ -39,7 +39,7 @@ export const fetchDblpPapers = async (keyword, venues) => {
           return hit.map(({ info }) => ({
             key: KEY++,
             title: info.title,
-            venue: info.venue,
+            venue: info.venue.replaceAll('.', ''),
             year: info.year,
             url: info.ee,
           }));
