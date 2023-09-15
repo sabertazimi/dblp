@@ -104,26 +104,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.16.0, @babel/core@npm:^7.22.17, @babel/core@npm:^7.22.8":
-  version: 7.22.17
-  resolution: "@babel/core@npm:7.22.17"
+"@babel/core@npm:^7.16.0, @babel/core@npm:^7.22.19, @babel/core@npm:^7.22.8":
+  version: 7.22.19
+  resolution: "@babel/core@npm:7.22.19"
   dependencies:
     "@ampproject/remapping": ^2.2.0
     "@babel/code-frame": ^7.22.13
     "@babel/generator": ^7.22.15
     "@babel/helper-compilation-targets": ^7.22.15
-    "@babel/helper-module-transforms": ^7.22.17
+    "@babel/helper-module-transforms": ^7.22.19
     "@babel/helpers": ^7.22.15
     "@babel/parser": ^7.22.16
     "@babel/template": ^7.22.15
-    "@babel/traverse": ^7.22.17
-    "@babel/types": ^7.22.17
+    "@babel/traverse": ^7.22.19
+    "@babel/types": ^7.22.19
     convert-source-map: ^1.7.0
     debug: ^4.1.0
     gensync: ^1.0.0-beta.2
     json5: ^2.2.3
     semver: ^6.3.1
-  checksum: 355216a342d1b3952d7c040dd4c99ecef6b3501ba99a713703c1fec1ae73bc92a48a0c1234562bdbb4fd334b2e452f5a6c3bb282f0e613fa89e1518c91d1aea1
+  checksum: d603f6f00b20c1edff6a6c9d32c559d4d09ee873380317271b57322bfb9da4349e59df53a21c65e9e5a1136f52bf612389d798640454e6fd9246a5c6d76b0c5c
   languageName: node
   linkType: hard
 
@@ -291,18 +291,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-transforms@npm:^7.22.15, @babel/helper-module-transforms@npm:^7.22.17, @babel/helper-module-transforms@npm:^7.22.5, @babel/helper-module-transforms@npm:^7.22.9":
-  version: 7.22.17
-  resolution: "@babel/helper-module-transforms@npm:7.22.17"
+"@babel/helper-module-transforms@npm:^7.22.15, @babel/helper-module-transforms@npm:^7.22.19, @babel/helper-module-transforms@npm:^7.22.5, @babel/helper-module-transforms@npm:^7.22.9":
+  version: 7.22.19
+  resolution: "@babel/helper-module-transforms@npm:7.22.19"
   dependencies:
     "@babel/helper-environment-visitor": ^7.22.5
     "@babel/helper-module-imports": ^7.22.15
     "@babel/helper-simple-access": ^7.22.5
     "@babel/helper-split-export-declaration": ^7.22.6
-    "@babel/helper-validator-identifier": ^7.22.15
+    "@babel/helper-validator-identifier": ^7.22.19
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: 458021c74093e66179765fcc9d1c1cb694f7bdf98656f23486901d35636495c38aab4661547fac2142e13d887987d1ea30cc9fe42968376a51a99bcd207b4989
+  checksum: ee1278a6850bb5c0efff35c4c20a13469a84d1bdc999a5e1c5aaf87d848b76cba464904c3c34bbbabcbe83e4632a5d7c64ac006de710c5d63c7b2c2473c33f77
   languageName: node
   linkType: hard
 
@@ -382,10 +382,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-validator-identifier@npm:^7.19.1, @babel/helper-validator-identifier@npm:^7.22.15, @babel/helper-validator-identifier@npm:^7.22.5":
-  version: 7.22.15
-  resolution: "@babel/helper-validator-identifier@npm:7.22.15"
-  checksum: eb0bee4bda664c0959924bc1ad5611eacfce806f46612202dd164fef1df8fef1a11682a1e7615288987100e9fb304982b6e2a4ff07ffe842ab8765b95ed1118c
+"@babel/helper-validator-identifier@npm:^7.19.1, @babel/helper-validator-identifier@npm:^7.22.19, @babel/helper-validator-identifier@npm:^7.22.5":
+  version: 7.22.19
+  resolution: "@babel/helper-validator-identifier@npm:7.22.19"
+  checksum: cf1f94d35cdb2d0f519b31954d1c54929fb31cf8af70fed12b3a1e777c296fabe747e56d9ae3d181c1c96f33ac66aff9501189542554b6fe0508748a38c1c17f
   languageName: node
   linkType: hard
 
@@ -1646,9 +1646,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.22.15, @babel/traverse@npm:^7.22.17":
-  version: 7.22.17
-  resolution: "@babel/traverse@npm:7.22.17"
+"@babel/traverse@npm:^7.22.15, @babel/traverse@npm:^7.22.19":
+  version: 7.22.19
+  resolution: "@babel/traverse@npm:7.22.19"
   dependencies:
     "@babel/code-frame": ^7.22.13
     "@babel/generator": ^7.22.15
@@ -1657,21 +1657,21 @@ __metadata:
     "@babel/helper-hoist-variables": ^7.22.5
     "@babel/helper-split-export-declaration": ^7.22.6
     "@babel/parser": ^7.22.16
-    "@babel/types": ^7.22.17
+    "@babel/types": ^7.22.19
     debug: ^4.1.0
     globals: ^11.1.0
-  checksum: 1153ca166a0a9b3fddf67f7f7c8c5b4f88aa2c2c00261ff2fc8424a63bc93250ed3fd08b04bd526ad19e797aeb6f22161120646a570cbfe5ff2a5d2f5d28af01
+  checksum: 119154fdfffd0fd560d2d5263ae2d740bcd3c75a6c432786f6ccdb28c9b0776f0fe21a16320c81a3e065c37249fb217dfec4201e44058462d26accfcdcd6c9bb
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.22.10, @babel/types@npm:^7.22.15, @babel/types@npm:^7.22.17, @babel/types@npm:^7.22.5, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
-  version: 7.22.17
-  resolution: "@babel/types@npm:7.22.17"
+"@babel/types@npm:^7.22.10, @babel/types@npm:^7.22.15, @babel/types@npm:^7.22.19, @babel/types@npm:^7.22.5, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
+  version: 7.22.19
+  resolution: "@babel/types@npm:7.22.19"
   dependencies:
     "@babel/helper-string-parser": ^7.22.5
-    "@babel/helper-validator-identifier": ^7.22.15
+    "@babel/helper-validator-identifier": ^7.22.19
     to-fast-properties: ^2.0.0
-  checksum: 7382220f6eb2548f2c867a98916c3aa8a6063498d5372e5d21d8d184ba354033defb72aeba5858c1b2b42177058b896a34a7dcbae5eccd47fb0104721efa909d
+  checksum: 2d69740e69b55ba36ece0c17d5afb7b7213b34297157df39ef9ba24965aff677c56f014413052ecc5b2fbbf26910c63e5bb24a969df84d7a17153750cf75915e
   languageName: node
   linkType: hard
 
@@ -3076,9 +3076,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "antd@npm:5.9.0"
+"antd@npm:^5.9.1":
+  version: 5.9.1
+  resolution: "antd@npm:5.9.1"
   dependencies:
     "@ant-design/colors": ^7.0.0
     "@ant-design/cssinjs": ^1.16.0
@@ -3110,7 +3110,7 @@ __metadata:
     rc-motion: ^2.9.0
     rc-notification: ~5.1.1
     rc-pagination: ~3.6.1
-    rc-picker: ~3.13.2
+    rc-picker: ~3.14.1
     rc-progress: ~3.5.1
     rc-rate: ~2.12.0
     rc-resize-observer: ^1.3.1
@@ -3119,7 +3119,7 @@ __metadata:
     rc-slider: ~10.2.1
     rc-steps: ~6.0.1
     rc-switch: ~4.1.0
-    rc-table: ~7.33.1
+    rc-table: ~7.34.0
     rc-tabs: ~12.12.1
     rc-textarea: ~1.3.4
     rc-tooltip: ~6.0.1
@@ -3132,7 +3132,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 1f4891de5f667e964c2756ce2e37382df42e31ca893925066fa2d677ebd05f0be38a38e42d5ee8ec97aa39406f3f05c19dcd5b2ef48f2ec1f74bd7bbf3e83355
+  checksum: f84e80231489d70fb5b3d14813cf23ae4ed905568104670a6691d9068280d4cb3da41507c07e943fc4e1dc81450709115f791a84d3bbd5e063098353a41d0873
   languageName: node
   linkType: hard
 
@@ -4557,14 +4557,14 @@ __metadata:
   resolution: "dblp@workspace:."
   dependencies:
     "@ant-design/icons": ^5.2.6
-    "@babel/core": ^7.22.17
+    "@babel/core": ^7.22.19
     "@babel/plugin-proposal-class-properties": ^7.18.6
     "@babel/plugin-proposal-object-rest-spread": ^7.20.7
     "@babel/preset-env": ^7.22.15
     "@babel/preset-react": ^7.22.15
     "@dg-scripts/eslint-config": ^5.14.0
     "@dg-scripts/stylelint-config": ^5.14.0
-    antd: ^5.9.0
+    antd: ^5.9.1
     autoprefixer: ^10.4.15
     babel-loader: ^9.1.3
     clean-webpack-plugin: ^4.0.0
@@ -9450,9 +9450,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-picker@npm:~3.13.2":
-  version: 3.13.2
-  resolution: "rc-picker@npm:3.13.2"
+"rc-picker@npm:~3.14.1":
+  version: 3.14.1
+  resolution: "rc-picker@npm:3.14.1"
   dependencies:
     "@babel/runtime": ^7.10.1
     "@rc-component/trigger": ^1.5.0
@@ -9474,7 +9474,7 @@ fsevents@~2.3.2:
       optional: true
     moment:
       optional: true
-  checksum: 5cd6b69cb6275362306246f311eb7dbf64196aa97dc78d22bcb3fe1473ee202ba27c48905e7176ab1c3cc0556297b54140b62ceee9de73457e99964614ecf78d
+  checksum: 33aadfcf7335cafa57577d76f52b0400d46602671d49407dab88c73333e7eafc9852ff605a59a1c9f0bc3b392dee2eff8bbf4940a74b30ee40079568f5b75610
   languageName: node
   linkType: hard
 
@@ -9596,20 +9596,20 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-table@npm:~7.33.1":
-  version: 7.33.1
-  resolution: "rc-table@npm:7.33.1"
+"rc-table@npm:~7.34.0":
+  version: 7.34.0
+  resolution: "rc-table@npm:7.34.0"
   dependencies:
     "@babel/runtime": ^7.10.1
     "@rc-component/context": ^1.4.0
     classnames: ^2.2.5
     rc-resize-observer: ^1.1.0
     rc-util: ^5.36.0
-    rc-virtual-list: ^3.10.4
+    rc-virtual-list: ^3.10.7
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: f252aef1eb48f42bfcef45322eb9f76df5a4079cb4a0770a71d4137b9500bd9b7dd5f298c5daae28f19b6c43c256e863a22540ca8eb29d858157f1f120dde95c
+  checksum: 59d79e7cea76892941635d33541b72fcb2edbee0235e5e87e23e7bd803ffc66c1384ecf5b54a72ae589f8a0414c434488d19b0f7ab560a0f309f2c8abe6a0fbf
   languageName: node
   linkType: hard
 
@@ -9720,9 +9720,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"rc-virtual-list@npm:^3.10.4, rc-virtual-list@npm:^3.5.1, rc-virtual-list@npm:^3.5.2":
-  version: 3.10.5
-  resolution: "rc-virtual-list@npm:3.10.5"
+"rc-virtual-list@npm:^3.10.7, rc-virtual-list@npm:^3.5.1, rc-virtual-list@npm:^3.5.2":
+  version: 3.10.7
+  resolution: "rc-virtual-list@npm:3.10.7"
   dependencies:
     "@babel/runtime": ^7.20.0
     classnames: ^2.2.6
@@ -9731,7 +9731,7 @@ fsevents@~2.3.2:
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: 0d8d8a20eba339eb639a898e43df6ec0210f10f21ba3e760bacff6352f15b2d725fd37fd4eb6348b9e6cddb1dd29761671c48e5f604e9f55bdc52453822023f2
+  checksum: 67ae42308c28b7283468a9e4d8186bb957bffe00c2efe84ded2204c4082f3e67575b6ab460e4d6c11d350c27cf1f5944c49a9346fd816a35a9ef263161c36c47
   languageName: node
   linkType: hard
 
