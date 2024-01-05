@@ -22,12 +22,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/colors@npm:^7.0.0, @ant-design/colors@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "@ant-design/colors@npm:7.0.1"
+"@ant-design/colors@npm:^7.0.0, @ant-design/colors@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "@ant-design/colors@npm:7.0.2"
   dependencies:
-    "@ctrl/tinycolor": "npm:^4.0.2"
-  checksum: 9255452029e7a3ddb2d6c40fc2c833425567632fbe81d5d41f6ea2e938cdc87b4be59bae631b9656aa064abecb9835109a4675936b703063d9ae4d1b7a7bf190
+    "@ctrl/tinycolor": "npm:^3.6.1"
+  checksum: 631cb0229a136834b50df22fe46eda048306399bc742d42d7a75b23a1e4c8859b7544be691c3d0d47b2f77ca0e06df6bfb95b5c23737525d1a2f0471e2a3d609
   languageName: node
   linkType: hard
 
@@ -1723,10 +1723,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ctrl/tinycolor@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@ctrl/tinycolor@npm:4.0.2"
-  checksum: d5b362b530ff106ed96c5c08ac8bd608fea74a5aab67ea7f3d1af045073a645eae3228268b9f5516eb6005648d5da86a3ce6126f119b7352624be0f59e1948d5
+"@ctrl/tinycolor@npm:^3.6.1":
+  version: 3.6.1
+  resolution: "@ctrl/tinycolor@npm:3.6.1"
+  checksum: f3c77b2d29076402d6b94632975cea1ce11942b05ca65d9108c951ff4d61965184dd7e480296e6625cb6df9e7de8b7938ce36a88cf1794c3b8ac83c908af468e
   languageName: node
   linkType: hard
 
@@ -2104,18 +2104,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rc-component/color-picker@npm:~1.5.0":
-  version: 1.5.0
-  resolution: "@rc-component/color-picker@npm:1.5.0"
+"@rc-component/color-picker@npm:~1.5.1":
+  version: 1.5.1
+  resolution: "@rc-component/color-picker@npm:1.5.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.6"
-    "@ctrl/tinycolor": "npm:^4.0.2"
+    "@ctrl/tinycolor": "npm:^3.6.1"
     classnames: "npm:^2.2.6"
     rc-util: "npm:^5.38.1"
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 73633138075e964c653bd8041dad84e0b90328fb98cfc049ba919050f65c560034afcf82a01548a09616712b5d40de71186762ec35c0a9b904bf7b7198e4dc4c
+  checksum: b8997f4844e6dcd6b5e66a2ed2d17d0906642a155a0e8d6e276d1b9c0bb052d7336a3ca1dd990e9ed7e10345cb266eeb7e56c7030b6be0e0aca211b04e5876a1
   languageName: node
   linkType: hard
 
@@ -3126,21 +3126,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:^5.12.6":
-  version: 5.12.6
-  resolution: "antd@npm:5.12.6"
+"antd@npm:^5.12.8":
+  version: 5.12.8
+  resolution: "antd@npm:5.12.8"
   dependencies:
-    "@ant-design/colors": "npm:^7.0.1"
+    "@ant-design/colors": "npm:^7.0.2"
     "@ant-design/cssinjs": "npm:^1.18.2"
     "@ant-design/icons": "npm:^5.2.6"
     "@ant-design/react-slick": "npm:~1.0.2"
-    "@babel/runtime": "npm:^7.23.6"
-    "@ctrl/tinycolor": "npm:^4.0.2"
-    "@rc-component/color-picker": "npm:~1.5.0"
+    "@ctrl/tinycolor": "npm:^3.6.1"
+    "@rc-component/color-picker": "npm:~1.5.1"
     "@rc-component/mutate-observer": "npm:^1.1.0"
     "@rc-component/tour": "npm:~1.11.1"
     "@rc-component/trigger": "npm:^1.18.2"
-    classnames: "npm:^2.5.0"
+    classnames: "npm:^2.5.1"
     copy-to-clipboard: "npm:^3.3.3"
     dayjs: "npm:^1.11.10"
     qrcode.react: "npm:^3.1.0"
@@ -3181,7 +3180,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 9eff9895d18d487c44b48b183306f35c9981f39e8b3adbdbe8c692c46f20e78d5f46db92f0db1c5995255ae7736eed7454976b63cf4c9ef1fd2e872b8545db47
+  checksum: 1fe4a5a3baa4456cfe9eed1d3f161535467a533eacf27f9959fb9e54021e9ae507e61d797afaf698baba48cdf73677a03c06fe1d66f6d6cf2c90d7c771efa86d
   languageName: node
   linkType: hard
 
@@ -3877,7 +3876,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.3, classnames@npm:^2.2.5, classnames@npm:^2.2.6, classnames@npm:^2.3.1, classnames@npm:^2.3.2, classnames@npm:^2.5.0":
+"classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.3, classnames@npm:^2.2.5, classnames@npm:^2.2.6, classnames@npm:^2.3.1, classnames@npm:^2.3.2, classnames@npm:^2.5.1":
   version: 2.5.1
   resolution: "classnames@npm:2.5.1"
   checksum: 58eb394e8817021b153bb6e7d782cfb667e4ab390cb2e9dac2fc7c6b979d1cc2b2a733093955fc5c94aa79ef5c8c89f11ab77780894509be6afbb91dddd79d15
@@ -4646,7 +4645,7 @@ __metadata:
     "@babel/preset-react": "npm:^7.23.3"
     "@dg-scripts/eslint-config": "npm:^5.14.1"
     "@dg-scripts/stylelint-config": "npm:^5.14.1"
-    antd: "npm:^5.12.6"
+    antd: "npm:^5.12.8"
     autoprefixer: "npm:^10.4.16"
     babel-loader: "npm:^9.1.3"
     clean-webpack-plugin: "npm:^4.0.0"
@@ -4658,7 +4657,7 @@ __metadata:
     html-loader: "npm:^4.2.0"
     html-webpack-plugin: "npm:^5.6.0"
     mini-css-extract-plugin: "npm:^2.7.6"
-    postcss: "npm:^8.4.32"
+    postcss: "npm:^8.4.33"
     postcss-loader: "npm:^7.3.4"
     prettier: "npm:^3.1.1"
     react: "npm:^18.2.0"
@@ -9101,14 +9100,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.0, postcss@npm:^8.4.21, postcss@npm:^8.4.32":
-  version: 8.4.32
-  resolution: "postcss@npm:8.4.32"
+"postcss@npm:^8.4.0, postcss@npm:^8.4.21, postcss@npm:^8.4.32, postcss@npm:^8.4.33":
+  version: 8.4.33
+  resolution: "postcss@npm:8.4.33"
   dependencies:
     nanoid: "npm:^3.3.7"
     picocolors: "npm:^1.0.0"
     source-map-js: "npm:^1.0.2"
-  checksum: 28084864122f29148e1f632261c408444f5ead0e0b9ea9bd9729d0468818ebe73fe5dc0075acd50c1365dbe639b46a79cba27d355ec857723a24bc9af0f18525
+  checksum: e22a4594c255f26117f38419fb494d7ecab0f596cd409f7aadc8a6173abf180ed7ea970cd13fd366ab12b5840be901d2a09b25197700c2ebcb5a8077326bf519
   languageName: node
   linkType: hard
 

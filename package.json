@@ -50,7 +50,7 @@
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.7.6",
-    "postcss": "^8.4.32",
+    "postcss": "^8.4.33",
     "postcss-loader": "^7.3.4",
     "prettier": "^3.1.1",
     "style-loader": "^3.3.3",
@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
-    "antd": "^5.12.6",
+    "antd": "^5.12.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.0.4",
