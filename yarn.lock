@@ -4658,7 +4658,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.7.7"
     postcss: "npm:^8.4.33"
     postcss-loader: "npm:^7.3.4"
-    prettier: "npm:^3.2.0"
+    prettier: "npm:^3.2.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-redux: "npm:^9.1.0"
@@ -9126,12 +9126,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "prettier@npm:3.2.0"
+"prettier@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "prettier@npm:3.2.1"
   bin:
     prettier: bin/prettier.cjs
-  checksum: eb2eb63038ca9aaf86bda7dc49b879a278bc8344d28236fef08a8f185e8ce721a40155acc4a494e8f91ecbcdd9a132fd326516f791c61cbfa9037c1f74d6d029
+  checksum: a26d26a74ba5cbf23a9741074ceef4f53a08ced03c42449dc9615ecd08ada9d19d5247ad2b0dfb15b2c8e57ec9f516074627b85b9f03270b08c184c64e7d8f64
   languageName: node
   linkType: hard
 
