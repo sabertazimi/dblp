@@ -3145,9 +3145,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "antd@npm:5.14.0"
+"antd@npm:^5.14.1":
+  version: 5.14.1
+  resolution: "antd@npm:5.14.1"
   dependencies:
     "@ant-design/colors": "npm:^7.0.2"
     "@ant-design/cssinjs": "npm:^1.18.4"
@@ -3177,7 +3177,7 @@ __metadata:
     rc-motion: "npm:^2.9.0"
     rc-notification: "npm:~5.3.0"
     rc-pagination: "npm:~4.0.4"
-    rc-picker: "npm:~4.0.0-alpha.43"
+    rc-picker: "npm:~4.1.1"
     rc-progress: "npm:~3.5.1"
     rc-rate: "npm:~2.12.0"
     rc-resize-observer: "npm:^1.4.0"
@@ -3199,7 +3199,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10/c9cdfb4cf922d37a63f4ec54fa285047414411679b374d24211fbfb96d316029869e80dde0cc96ee15af267a65aa57475321d5f7e2f91e43239a17e4d4163a18
+  checksum: 10/a80132b4c0a719b7cada9e7c70c6720c73d9b9e907d6ddd64580933c44ab735f77c68327cdacb5354b692c330b42cb7a15d30bd26dc18932c2a6cf51f9456ff5
   languageName: node
   linkType: hard
 
@@ -4690,7 +4690,7 @@ __metadata:
     "@babel/preset-react": "npm:^7.23.3"
     "@dg-scripts/eslint-config": "npm:^5.14.2"
     "@dg-scripts/stylelint-config": "npm:^5.14.2"
-    antd: "npm:^5.14.0"
+    antd: "npm:^5.14.1"
     autoprefixer: "npm:^10.4.17"
     babel-loader: "npm:^9.1.3"
     clean-webpack-plugin: "npm:^4.0.0"
@@ -4714,7 +4714,7 @@ __metadata:
     stylelint: "npm:^16.2.1"
     stylelint-webpack-plugin: "npm:^5.0.0"
     typescript: "npm:^5.3.3"
-    webpack: "npm:^5.90.1"
+    webpack: "npm:^5.90.2"
     webpack-bundle-analyzer: "npm:^4.10.1"
     webpack-cli: "npm:^5.1.4"
     webpack-dev-server: "npm:^4.15.1"
@@ -9683,9 +9683,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-picker@npm:~4.0.0-alpha.43":
-  version: 4.0.0-alpha.43
-  resolution: "rc-picker@npm:4.0.0-alpha.43"
+"rc-picker@npm:~4.1.1":
+  version: 4.1.1
+  resolution: "rc-picker@npm:4.1.1"
   dependencies:
     "@babel/runtime": "npm:^7.10.1"
     "@rc-component/trigger": "npm:^1.5.0"
@@ -9709,7 +9709,7 @@ __metadata:
       optional: true
     moment:
       optional: true
-  checksum: 10/1d243417f40cd71ddf94e6740e139201b3f23ae79a1aa1b595880bc0586559c9a912ca6ca5ea488e8fa6ed1d98757756df3055b060641d588fbdac0fbd09fa60
+  checksum: 10/295408870476e3fd87c7b663ea85265ec808317338f20eaca133e52a5098df358fb75a61ec0cc43f3f2034548d33bba967fb6c90d345a3e197fb799eeafc6af6
   languageName: node
   linkType: hard
 
@@ -12092,9 +12092,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.90.1":
-  version: 5.90.1
-  resolution: "webpack@npm:5.90.1"
+"webpack@npm:^5.90.2":
+  version: 5.90.2
+  resolution: "webpack@npm:5.90.2"
   dependencies:
     "@types/eslint-scope": "npm:^3.7.3"
     "@types/estree": "npm:^1.0.5"
@@ -12125,7 +12125,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 10/6ad23518123f1742238177920cefa61152d981f986adac5901236845c86ba9bb375a3ba75e188925c856c3d2a76a2ba119e95b8a608a51424968389041089075
+  checksum: 10/4eaeed1255c9c7738921c4ce4facdb3b78dbfcb3441496942f6d160a41fbcebd24fb2c6dbb64739b357c5ff78e5a298f6c82eca482438b95130a3ba4e16d084a
   languageName: node
   linkType: hard
 
