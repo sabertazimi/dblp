@@ -18,22 +18,24 @@ jobs:
         with:
           submodules: true
           fetch-depth: 1
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
       - name: Setup Node environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
         run: |
-          yarn
+          pnpm install
       - name: Run linter tests
         run: |
-          yarn lint
+          pnpm lint
       - name: Build application
         run: |
-          yarn build
+          pnpm build
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
