@@ -1,5 +1,5 @@
-import React from 'react';
-import { List } from 'antd';
+import React from 'react'
+import { List } from 'antd'
 
 const ListResult = ({ isLoading, dataSource }) => (
   <List
@@ -15,6 +15,6 @@ const ListResult = ({ isLoading, dataSource }) => (
       </List.Item>
     )}
   />
-);
+)
 
-export default ListResult;
+export default ListResult

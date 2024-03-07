@@ -1,5 +1,5 @@
-import React from 'react';
-import { Table } from 'antd';
+import React from 'react'
+import { Table } from 'antd'
 
 const TableResult = ({ isLoading, dataSource }) => {
   const columns = [
@@ -63,7 +63,7 @@ const TableResult = ({ isLoading, dataSource }) => {
         a.venue.localeCompare(b.venue) ||
         a.title.localeCompare(b.title),
     },
-  ];
+  ]
 
   return (
     <Table
@@ -81,7 +81,7 @@ const TableResult = ({ isLoading, dataSource }) => {
         showSizeChanger: true,
       }}
     />
-  );
-};
+  )
+}
 
-export default TableResult;
+export default TableResult

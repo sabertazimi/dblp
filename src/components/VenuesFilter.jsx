@@ -1,7 +1,7 @@
-import React from 'react';
-import { Checkbox, Col, Divider, Row } from 'antd';
+import React from 'react'
+import { Checkbox, Col, Divider, Row } from 'antd'
 
-import { VENUES_LIST, getVenueTitle } from '../api';
+import { VENUES_LIST, getVenueTitle } from '../api'
 
 const Filter = ({
   venues,
@@ -44,6 +44,6 @@ const Filter = ({
       </Row>
     </Checkbox.Group>
   </>
-);
+)
 
-export default Filter;
+export default Filter

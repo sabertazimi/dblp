@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
-import { Col, FloatButton, Layout, Row, Tooltip } from 'antd';
-import { GithubOutlined } from '@ant-design/icons';
-import { Responsive } from './components';
-import { Filter, Result, SearchBar, StatisticsBar } from './containers';
-import './index.css';
+import React, { Component } from 'react'
+import { Col, FloatButton, Layout, Row, Tooltip } from 'antd'
+import { GithubOutlined } from '@ant-design/icons'
+import { Responsive } from './components'
+import { Filter, Result, SearchBar, StatisticsBar } from './containers'
+import './index.css'
 
-const { Header, Content, Sider } = Layout;
+const { Header, Content, Sider } = Layout
 export default class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       collapsed: false,
-    };
-    this.onCollapse = this.onCollapse.bind(this);
+    }
+    this.onCollapse = this.onCollapse.bind(this)
   }
 
   onCollapse(collapsed) {
-    this.setState({ collapsed });
+    this.setState({ collapsed })
   }
 
   render() {
-    const { collapsed } = this.state;
+    const { collapsed } = this.state
 
     return (
       <Layout>
@@ -120,6 +120,6 @@ export default class App extends Component {
           </Layout>
         </Layout>
       </Layout>
-    );
+    )
   }
 }

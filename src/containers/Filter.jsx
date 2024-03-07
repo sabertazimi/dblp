@@ -1,51 +1,51 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { Menu } from 'antd';
-import { ClockCircleOutlined, EllipsisOutlined } from '@ant-design/icons';
+import React from 'react'
+import { connect } from 'react-redux'
+import { Menu } from 'antd'
+import { ClockCircleOutlined, EllipsisOutlined } from '@ant-design/icons'
 
-import { VenuesFilter, YearFilter } from '../components';
+import { VenuesFilter, YearFilter } from '../components'
 
-import { VENUES_LIST } from '../api';
-import * as Actions from '../actions';
+import { VENUES_LIST } from '../api'
+import * as Actions from '../actions'
 
 class Filter extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       indeterminate: true,
       checkAll: false,
-    };
+    }
   }
 
   onYearChange = value => {
-    const { filterYear } = this.props;
-    filterYear(value);
-  };
+    const { filterYear } = this.props
+    filterYear(value)
+  }
 
   onVenuesChange = checkedValues => {
-    const { filterVenue } = this.props;
-    filterVenue(checkedValues);
+    const { filterVenue } = this.props
+    filterVenue(checkedValues)
 
     this.setState({
       indeterminate:
         !!checkedValues.length && checkedValues.length < VENUES_LIST.length,
       checkAll: checkedValues.length === VENUES_LIST.length,
-    });
-  };
+    })
+  }
 
   onCheckAllChange = event => {
-    const { filterVenue } = this.props;
-    filterVenue(event.target.checked ? VENUES_LIST : []);
+    const { filterVenue } = this.props
+    filterVenue(event.target.checked ? VENUES_LIST : [])
 
     this.setState({
       indeterminate: false,
       checkAll: event.target.checked,
-    });
-  };
+    })
+  }
 
   render() {
-    const { year, venues, collapsed } = this.props;
-    const { indeterminate, checkAll } = this.state;
+    const { year, venues, collapsed } = this.props
+    const { indeterminate, checkAll } = this.state
 
     if (collapsed) {
       return (
@@ -65,7 +65,7 @@ class Filter extends React.Component {
             <span>Venue 10</span>
           </Menu.Item>
         </Menu>
-      );
+      )
     }
 
     return (
@@ -84,17 +84,17 @@ class Filter extends React.Component {
           onCheckAllChange={this.onCheckAllChange}
         />
       </div>
-    );
+    )
   }
 }
 
 const mapStateToProps = state => ({
   ...state.filter,
-});
+})
 
 const mapDispatchToProps = dispatch => ({
   filterVenue: venues => dispatch(Actions.filterVenue(venues)),
   filterYear: year => dispatch(Actions.filterYear(year)),
-});
+})
 
-export default connect(mapStateToProps, mapDispatchToProps)(Filter);
+export default connect(mapStateToProps, mapDispatchToProps)(Filter)

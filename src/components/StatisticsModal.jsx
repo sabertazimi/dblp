@@ -1,7 +1,7 @@
-import React from 'react';
-import { Alert, Empty, List } from 'antd';
+import React from 'react'
+import { Alert, Empty, List } from 'antd'
 
-import { getStatisticsData } from '../api';
+import { getStatisticsData } from '../api'
 
 const StatisticsModal = ({ error, isLoading, items, venues, year }) => {
   if (error) {
@@ -12,18 +12,18 @@ const StatisticsModal = ({ error, isLoading, items, venues, year }) => {
         type="error"
         showIcon
       />
-    );
+    )
   }
 
-  const statisticsData = getStatisticsData(items, { venues, year });
+  const statisticsData = getStatisticsData(items, { venues, year })
 
   if (!statisticsData || !statisticsData.length) {
-    return <Empty />;
+    return <Empty />
   }
 
   const sortedData = statisticsData.sort(
     (a, b) => b.count - a.count || a.venue.localeCompare(b.venue)
-  );
+  )
 
   return (
     <List
@@ -36,7 +36,7 @@ const StatisticsModal = ({ error, isLoading, items, venues, year }) => {
         </List.Item>
       )}
     />
-  );
-};
+  )
+}
 
-export default StatisticsModal;
+export default StatisticsModal

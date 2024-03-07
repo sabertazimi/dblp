@@ -1,15 +1,15 @@
-import venuesData from '../venues.json';
+import venuesData from '../venues.json'
 
-export const VenuesDB = venuesData;
-export const VENUES_LIST = VenuesDB.map(({ venue }) => venue);
-export const DEFAULT_VENUES_LIST = VENUES_LIST.slice(0, 30);
+export const VenuesDB = venuesData
+export const VENUES_LIST = VenuesDB.map(({ venue }) => venue)
+export const DEFAULT_VENUES_LIST = VENUES_LIST.slice(0, 30)
 
 const dblpQuery = (keyword, venue) =>
-  `https://dblp.org/search/publ/api?q=${keyword} venue:${venue}:&format=json&h=999`;
+  `https://dblp.org/search/publ/api?q=${keyword} venue:${venue}:&format=json&h=999`
 const scIdsQuery = title =>
-  `https://api.semanticscholar.org/graph/v1/paper/search?query=${title}&limit=1`;
+  `https://api.semanticscholar.org/graph/v1/paper/search?query=${title}&limit=1`
 const scCitationsQuery = paperId =>
-  `https://api.semanticscholar.org/graph/v1/paper/${paperId}?fields=citationCount`;
+  `https://api.semanticscholar.org/graph/v1/paper/${paperId}?fields=citationCount`
 
 export const fetchDblpPapers = async (keyword, venues) => {
   const papersResponse = await Promise.all(
@@ -19,19 +19,19 @@ export const fetchDblpPapers = async (keyword, venues) => {
         mode: 'cors',
       })
     )
-  );
+  )
 
   const papersJson = await Promise.all(
     papersResponse.map(response => (response.ok ? response.json() : null))
-  );
+  )
 
   const papers = papersJson
     ? papersJson
         .map(({ result }) => {
-          const { hit } = result?.hits;
+          const { hit } = result?.hits
 
           if (!hit) {
-            return [];
+            return []
           }
 
           return hit.map(({ info }) => ({
@@ -40,16 +40,16 @@ export const fetchDblpPapers = async (keyword, venues) => {
             venue: info.venue.replaceAll('.', ''),
             year: info.year,
             url: info.ee,
-          }));
+          }))
         })
         .flat()
-    : null;
+    : null
 
-  return papers;
-};
+  return papers
+}
 
 export const fetchPaperCitations = async papers => {
-  let paperCitations = Array(papers.length).fill(0);
+  let paperCitations = Array(papers.length).fill(0)
 
   try {
     const paperIdsResponse = await Promise.all(
@@ -63,19 +63,19 @@ export const fetchPaperCitations = async papers => {
           },
         })
       )
-    );
+    )
 
     const paperIdsJson = await Promise.all(
       paperIdsResponse.map(response => (response.ok ? response.json() : {}))
-    );
+    )
 
     if (!paperIdsJson) {
-      return paperCitations;
+      return paperCitations
     }
 
     const paperIds = paperIdsJson.map(paper =>
       paper && paper.data[0] ? paper.data[0].paperId : '0'
-    );
+    )
 
     const paperCitationsResponse = await Promise.all(
       paperIds.map(paperId =>
@@ -88,34 +88,34 @@ export const fetchPaperCitations = async papers => {
           },
         })
       )
-    );
+    )
 
     const paperCitationsJson = await Promise.all(
       paperCitationsResponse.map(response =>
         response.ok ? response.json() : {}
       )
-    );
+    )
 
     if (!paperCitationsJson) {
-      return paperCitations;
+      return paperCitations
     }
 
     paperCitations = paperCitationsJson.map(paperCitation =>
       paperCitation && paperCitation.citationCount
         ? paperCitation.citationCount
         : 0
-    );
+    )
   } catch (error) {
-    console.error('Up to API limits.');
+    console.error('Up to API limits.')
   }
 
-  return paperCitations;
-};
+  return paperCitations
+}
 
 const getVenueItem = venueName =>
-  VenuesDB.find(({ venue }) => venue === venueName);
+  VenuesDB.find(({ venue }) => venue === venueName)
 
-export const getVenueTitle = venue => getVenueItem(venue).title || venue;
+export const getVenueTitle = venue => getVenueItem(venue).title || venue
 
 export const getFilteredData = (items, { venues, year }) =>
   items
@@ -125,22 +125,22 @@ export const getFilteredData = (items, { venues, year }) =>
     .map(item => ({
       ...item,
       venue: getVenueTitle(item.venue),
-    }));
+    }))
 
 export const getStatisticsData = (items, { venues, year }) => {
-  const filteredItems = getFilteredData(items, { venues, year });
-  const statisticsData = {};
+  const filteredItems = getFilteredData(items, { venues, year })
+  const statisticsData = {}
 
   filteredItems.forEach(({ venue }) => {
     if (!statisticsData[venue]) {
-      statisticsData[venue] = 0;
+      statisticsData[venue] = 0
     }
 
-    statisticsData[venue] += 1;
-  });
+    statisticsData[venue] += 1
+  })
 
   return Object.keys(statisticsData).map(key => ({
     venue: key,
     count: statisticsData[key],
-  }));
-};
+  }))
+}

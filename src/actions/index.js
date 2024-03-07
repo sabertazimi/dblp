@@ -1,45 +1,42 @@
-import * as ActionTypes from '../constants';
-import { fetchDblpPapers, fetchPaperCitations } from '../api';
+import * as ActionTypes from '../constants'
+import { fetchDblpPapers, fetchPaperCitations } from '../api'
 
 const makeActionCreator =
   (type, ...argNames) =>
   (...args) => {
-    const action = { type };
-    action.payload = {};
+    const action = { type }
+    action.payload = {}
 
     argNames.forEach((argName, index) => {
-      action.payload[argNames[index]] = args[index];
-    });
+      action.payload[argNames[index]] = args[index]
+    })
 
-    return action;
-  };
+    return action
+  }
 
-export const filterVenue = makeActionCreator(
-  ActionTypes.FILTER_VENUE,
-  'venues'
-);
-export const filterYear = makeActionCreator(ActionTypes.FILTER_YEAR, 'year');
+export const filterVenue = makeActionCreator(ActionTypes.FILTER_VENUE, 'venues')
+export const filterYear = makeActionCreator(ActionTypes.FILTER_YEAR, 'year')
 
-const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query');
-const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'items');
-const requestError = makeActionCreator(ActionTypes.REQUEST_ERROR, 'error');
+const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query')
+const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'items')
+const requestError = makeActionCreator(ActionTypes.REQUEST_ERROR, 'error')
 
 export const fetchData = keyword => async (dispatch, getState) => {
-  const venues = getState().filter.venues;
+  const venues = getState().filter.venues
 
-  dispatch(requestData(venues));
+  dispatch(requestData(venues))
 
-  const papers = await fetchDblpPapers(keyword, venues);
-  if (!papers) dispatch(requestError(new Error('Bad Request')));
+  const papers = await fetchDblpPapers(keyword, venues)
+  if (!papers) dispatch(requestError(new Error('Bad Request')))
 
-  const paperCitations = await fetchPaperCitations(papers);
+  const paperCitations = await fetchPaperCitations(papers)
 
   const papersDataWithCitations = papers.map((paper, index) => ({
     ...paper,
     citations: paperCitations[index],
-  }));
+  }))
 
   setTimeout(() => {
-    dispatch(receiveData(papersDataWithCitations));
-  }, 255);
-};
+    dispatch(receiveData(papersDataWithCitations))
+  }, 255)
+}

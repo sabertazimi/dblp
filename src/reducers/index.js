@@ -1,16 +1,16 @@
-import { combineReducers } from 'redux';
-import * as ActionTypes from '../constants';
-import { DEFAULT_VENUES_LIST } from '../api';
+import { combineReducers } from 'redux'
+import * as ActionTypes from '../constants'
+import { DEFAULT_VENUES_LIST } from '../api'
 
 const createReducer =
   (initialState, handlers) =>
   (state = initialState, action) => {
     if (Object.prototype.hasOwnProperty.call(handlers, action.type)) {
-      return handlers[action.type](state, action);
+      return handlers[action.type](state, action)
     }
 
-    return state;
-  };
+    return state
+  }
 
 const filter = createReducer(
   {
@@ -19,23 +19,23 @@ const filter = createReducer(
   },
   {
     [ActionTypes.FILTER_VENUE]: (state, { payload }) => {
-      const { venues } = payload;
+      const { venues } = payload
 
       return {
         ...state,
         venues,
-      };
+      }
     },
     [ActionTypes.FILTER_YEAR]: (state, { payload }) => {
-      const { year } = payload;
+      const { year } = payload
 
       return {
         ...state,
         year,
-      };
+      }
     },
   }
-);
+)
 
 const data = createReducer(
   {
@@ -51,31 +51,31 @@ const data = createReducer(
       items: [],
     }),
     [ActionTypes.RECEIVE_DATA]: (state, { payload }) => {
-      const { items } = payload;
+      const { items } = payload
 
       return {
         ...state,
         error: null,
         isLoading: false,
         items,
-      };
+      }
     },
     [ActionTypes.REQUEST_ERROR]: (state, { payload }) => {
-      const { error } = payload;
+      const { error } = payload
 
       return {
         ...state,
         error,
         items: [],
-      };
+      }
     },
   }
-);
+)
 
 const createRootReducer = () =>
   combineReducers({
     filter,
     data,
-  });
+  })
 
-export default createRootReducer;
+export default createRootReducer

@@ -1,10 +1,10 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { Alert } from 'antd';
+import React from 'react'
+import { connect } from 'react-redux'
+import { Alert } from 'antd'
 
-import { ListResult, Responsive, TableResult } from '../components';
+import { ListResult, Responsive, TableResult } from '../components'
 
-import { getFilteredData } from '../api';
+import { getFilteredData } from '../api'
 
 const Result = ({ error, isLoading, items, venues, year }) => {
   if (error) {
@@ -15,17 +15,17 @@ const Result = ({ error, isLoading, items, venues, year }) => {
         type="error"
         showIcon
       />
-    );
+    )
   }
 
-  const dataSource = getFilteredData(items, { venues, year });
+  const dataSource = getFilteredData(items, { venues, year })
   const sortedDataSource = dataSource.sort(
     (a, b) =>
       b.year.localeCompare(a.year) ||
       a.venue.localeCompare(b.venue) ||
       a.title.localeCompare(b.title) ||
       a.url.localeCompare(b.url)
-  );
+  )
 
   return (
     <>
@@ -36,12 +36,12 @@ const Result = ({ error, isLoading, items, venues, year }) => {
         <TableResult isLoading={isLoading} dataSource={dataSource} />
       </Responsive>
     </>
-  );
-};
+  )
+}
 
 const mapStateToProps = state => ({
   ...state.data,
   ...state.filter,
-});
+})
 
-export default connect(mapStateToProps)(Result);
+export default connect(mapStateToProps)(Result)
