@@ -1,9 +1,8 @@
 import * as ActionTypes from '../constants'
 import { fetchDblpPapers, fetchPaperCitations } from '../api'
 
-const makeActionCreator =
-  (type, ...argNames) =>
-  (...args) => {
+function makeActionCreator(type, ...argNames) {
+  return (...args) => {
     const action = { type }
     action.payload = {}
 
@@ -13,6 +12,7 @@ const makeActionCreator =
 
     return action
   }
+}
 
 export const filterVenue = makeActionCreator(ActionTypes.FILTER_VENUE, 'venues')
 export const filterYear = makeActionCreator(ActionTypes.FILTER_YEAR, 'year')
@@ -21,22 +21,25 @@ const requestData = makeActionCreator(ActionTypes.REQUEST_DATA, 'query')
 const receiveData = makeActionCreator(ActionTypes.RECEIVE_DATA, 'items')
 const requestError = makeActionCreator(ActionTypes.REQUEST_ERROR, 'error')
 
-export const fetchData = keyword => async (dispatch, getState) => {
-  const venues = getState().filter.venues
+export function fetchData(keyword) {
+  return async (dispatch, getState) => {
+    const venues = getState().filter.venues
 
-  dispatch(requestData(venues))
+    dispatch(requestData(venues))
 
-  const papers = await fetchDblpPapers(keyword, venues)
-  if (!papers) dispatch(requestError(new Error('Bad Request')))
+    const papers = await fetchDblpPapers(keyword, venues)
+    if (!papers)
+      dispatch(requestError(new Error('Bad Request')))
 
-  const paperCitations = await fetchPaperCitations(papers)
+    const paperCitations = await fetchPaperCitations(papers)
 
-  const papersDataWithCitations = papers.map((paper, index) => ({
-    ...paper,
-    citations: paperCitations[index],
-  }))
+    const papersDataWithCitations = papers.map((paper, index) => ({
+      ...paper,
+      citations: paperCitations[index],
+    }))
 
-  setTimeout(() => {
-    dispatch(receiveData(papersDataWithCitations))
-  }, 255)
+    setTimeout(() => {
+      dispatch(receiveData(papersDataWithCitations))
+    }, 255)
+  }
 }

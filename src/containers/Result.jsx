@@ -6,7 +6,7 @@ import { ListResult, Responsive, TableResult } from '../components'
 
 import { getFilteredData } from '../api'
 
-const Result = ({ error, isLoading, items, venues, year }) => {
+function ResultComponent({ error, isLoading, items, venues, year }) {
   if (error) {
     return (
       <Alert
@@ -21,10 +21,10 @@ const Result = ({ error, isLoading, items, venues, year }) => {
   const dataSource = getFilteredData(items, { venues, year })
   const sortedDataSource = dataSource.sort(
     (a, b) =>
-      b.year.localeCompare(a.year) ||
-      a.venue.localeCompare(b.venue) ||
-      a.title.localeCompare(b.title) ||
-      a.url.localeCompare(b.url)
+      b.year.localeCompare(a.year)
+      || a.venue.localeCompare(b.venue)
+      || a.title.localeCompare(b.title)
+      || a.url.localeCompare(b.url),
   )
 
   return (
@@ -39,9 +39,12 @@ const Result = ({ error, isLoading, items, venues, year }) => {
   )
 }
 
-const mapStateToProps = state => ({
-  ...state.data,
-  ...state.filter,
-})
+function mapStateToProps(state) {
+  return {
+    ...state.data,
+    ...state.filter,
+  }
+}
 
-export default connect(mapStateToProps)(Result)
+const Result = connect(mapStateToProps)(ResultComponent)
+export default Result

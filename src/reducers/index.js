@@ -2,15 +2,14 @@ import { combineReducers } from 'redux'
 import * as ActionTypes from '../constants'
 import { DEFAULT_VENUES_LIST } from '../api'
 
-const createReducer =
-  (initialState, handlers) =>
-  (state = initialState, action) => {
-    if (Object.prototype.hasOwnProperty.call(handlers, action.type)) {
+function createReducer(initialState, handlers) {
+  return (state = initialState, action) => {
+    if (Object.prototype.hasOwnProperty.call(handlers, action.type))
       return handlers[action.type](state, action)
-    }
 
     return state
   }
+}
 
 const filter = createReducer(
   {
@@ -34,7 +33,7 @@ const filter = createReducer(
         year,
       }
     },
-  }
+  },
 )
 
 const data = createReducer(
@@ -69,13 +68,14 @@ const data = createReducer(
         items: [],
       }
     },
-  }
+  },
 )
 
-const createRootReducer = () =>
-  combineReducers({
+function createRootReducer() {
+  return combineReducers({
     filter,
     data,
   })
+}
 
 export default createRootReducer

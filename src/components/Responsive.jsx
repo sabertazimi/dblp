@@ -9,8 +9,9 @@ import React, { Component } from 'react'
 const fitsMaxWidth = (width, maxWidth) => !maxWidth || width <= maxWidth
 const fitsMinWidth = (width, minWidth) => !minWidth || width >= minWidth
 
-const isVisible = (width, { maxWidth, minWidth }) =>
-  fitsMinWidth(width, minWidth) && fitsMaxWidth(width, maxWidth)
+function isVisible(width, { maxWidth, minWidth }) {
+  return fitsMinWidth(width, minWidth) && fitsMaxWidth(width, maxWidth)
+}
 
 export default class Responsive extends Component {
   constructor(props) {
@@ -33,21 +34,21 @@ export default class Responsive extends Component {
   getWidth = () => {
     const { getWidth: gw } = this.props
 
-    if (gw) {
+    if (gw)
       return gw()
-    }
 
     return window.innerWidth || 0
   }
 
-  handleResize = event => {
-    if (this.ticking) return
+  handleResize = (event) => {
+    if (this.ticking)
+      return
 
     this.ticking = true
     this.frameId = requestAnimationFrame(() => this.handleUpdate(event))
   }
 
-  handleUpdate = event => {
+  handleUpdate = (event) => {
     this.ticking = false
 
     const { onUpdate } = this.props
@@ -55,22 +56,19 @@ export default class Responsive extends Component {
     const width = this.getWidth()
     const nextVisible = isVisible(width, this.props)
 
-    if (visible !== nextVisible) {
+    if (visible !== nextVisible)
       this.setState({ visible: nextVisible })
-    }
 
-    if (onUpdate) {
+    if (onUpdate)
       onUpdate(event, { ...this.props, width })
-    }
   }
 
   render() {
     const { children } = this.props
     const { visible } = this.state
 
-    if (visible) {
+    if (visible)
       return <>{children}</>
-    }
 
     return null
   }

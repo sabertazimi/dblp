@@ -4,7 +4,7 @@ import { Button, Modal } from 'antd'
 
 import { StatisticsModal } from '../components'
 
-class StatisticsBar extends Component {
+class StatisticsBarComponent extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -67,9 +67,12 @@ class StatisticsBar extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  ...state.data,
-  ...state.filter,
-})
+function mapStateToProps(state) {
+  return {
+    ...state.data,
+    ...state.filter,
+  }
+}
 
-export default connect(mapStateToProps)(StatisticsBar)
+const StatisticsBar = connect(mapStateToProps)(StatisticsBarComponent)
+export default StatisticsBar

@@ -6,7 +6,7 @@ import * as Actions from '../actions'
 
 const { Search } = Input
 
-const SearchBar = ({ fetchData, style }) => {
+function SearchBarComponent({ fetchData, style }) {
   const onSearch = value => value && fetchData(value)
 
   return (
@@ -20,8 +20,11 @@ const SearchBar = ({ fetchData, style }) => {
   )
 }
 
-const mapDispatchToProps = dispatch => ({
-  fetchData: keyword => dispatch(Actions.fetchData(keyword)),
-})
+function mapDispatchToProps(dispatch) {
+  return {
+    fetchData: keyword => dispatch(Actions.fetchData(keyword)),
+  }
+}
 
-export default connect(null, mapDispatchToProps)(SearchBar)
+const SearchBar = connect(null, mapDispatchToProps)(SearchBarComponent)
+export default SearchBar
