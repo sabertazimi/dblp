@@ -5,11 +5,11 @@ import createRootReducer from '../reducers'
 const middleware = []
 middleware.push(thunkMiddleware)
 
-const configureStore = preloadedState => {
+function configureStore(preloadedState) {
   const store = createStore(
     createRootReducer(),
     preloadedState,
-    compose(applyMiddleware(...middleware))
+    compose(applyMiddleware(...middleware)),
   )
 
   return store

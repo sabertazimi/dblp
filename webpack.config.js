@@ -1,13 +1,13 @@
-const path = require('path');
+const path = require('node:path')
+const process = require('node:process')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-
-const devMode = process.env.NODE_ENV === 'development';
+const devMode = process.env.NODE_ENV === 'development'
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
@@ -57,15 +57,19 @@ module.exports = {
       filename: devMode ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[contenthash].css',
     }),
-    new ESLintPlugin({ extensions: ['tsx', 'ts', 'jsx', 'js'] }),
+    new ESLintPlugin({
+      extensions: ['tsx', 'ts', 'jsx', 'js'],
+      configType: 'flat',
+      eslintPath: 'eslint/use-at-your-own-risk',
+    }),
     new StyleLintPlugin(),
-    devMode &&
-      new BundleAnalyzerPlugin({
-        analyzerPort: 3333,
-      }),
+    devMode
+    && new BundleAnalyzerPlugin({
+      analyzerPort: 3333,
+    }),
   ].filter(Boolean),
   resolve: {
     extensions: ['.js', '.jsx'],
   },
   devtool: devMode ? 'eval-cheap-module-source-map' : false,
-};
+}
