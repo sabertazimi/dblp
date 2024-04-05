@@ -54,7 +54,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "commit-and-tag-version": "^12.2.0",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.11.0",
+    "css-loader": "^7.0.0",
     "eslint": "^8.57.0",
     "eslint-webpack-plugin": "^4.1.0",
     "html-loader": "^5.0.0",
