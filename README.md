@@ -78,24 +78,24 @@ An awesome DBLP search application.
 ### Environment
 
 - [Node.js](https://nodejs.org): 18.0+.
-- [Yarn](https://yarnpkg.com): 3.0+.
+- [Pnpm](https://pnpm.io): 3.0+.
 
 ### Installation
 
 ```sh
-yarn
+pnpm install
 ```
 
 ### Development
 
 ```sh
-yarn start
+pnpm start
 ```
 
 ### Build
 
 ```sh
-yarn build
+pnpm build
 ```
 
 ## Contact
