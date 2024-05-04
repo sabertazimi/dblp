@@ -33,7 +33,7 @@
     "start": "pnpm dev"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.3.6",
+    "@ant-design/icons": "^5.3.7",
     "antd": "^5.17.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
