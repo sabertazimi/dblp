@@ -50,10 +50,10 @@ importers:
         version: 5.21.1(@typescript-eslint/parser@7.7.0(eslint@8.57.0)(typescript@5.5.2))(@vue/compiler-sfc@3.4.21)(eslint@8.57.0)(prettier@3.3.2)(typescript@5.5.2)
       '@dg-scripts/stylelint-config':
         specifier: ^5.21.1
-        version: 5.21.1(postcss@8.4.38)(prettier@3.3.2)(stylelint@16.6.1(typescript@5.5.2))
+        version: 5.21.1(postcss@8.4.39)(prettier@3.3.2)(stylelint@16.6.1(typescript@5.5.2))
       autoprefixer:
         specifier: ^10.4.19
-        version: 10.4.19(postcss@8.4.38)
+        version: 10.4.19(postcss@8.4.39)
       babel-loader:
         specifier: ^9.1.3
         version: 9.1.3(@babel/core@7.24.7)(webpack@5.92.1(webpack-cli@5.1.4))
@@ -85,11 +85,11 @@ importers:
         specifier: ^2.9.0
         version: 2.9.0(webpack@5.92.1(webpack-cli@5.1.4))
       postcss:
-        specifier: ^8.4.38
-        version: 8.4.38
+        specifier: ^8.4.39
+        version: 8.4.39
       postcss-loader:
         specifier: ^8.1.1
-        version: 8.1.1(postcss@8.4.38)(typescript@5.5.2)(webpack@5.92.1(webpack-cli@5.1.4))
+        version: 8.1.1(postcss@8.4.39)(typescript@5.5.2)(webpack@5.92.1(webpack-cli@5.1.4))
       prettier:
         specifier: ^3.3.2
         version: 3.3.2
@@ -3779,8 +3779,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.4.38:
-    resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
+  postcss@8.4.39:
+    resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -5997,11 +5997,11 @@ snapshots:
       - svelte-eslint-parser
       - vitest
 
-  '@dg-scripts/stylelint-config@5.21.1(postcss@8.4.38)(prettier@3.3.2)(stylelint@16.6.1(typescript@5.5.2))':
+  '@dg-scripts/stylelint-config@5.21.1(postcss@8.4.39)(prettier@3.3.2)(stylelint@16.6.1(typescript@5.5.2))':
     dependencies:
       prettier: 3.3.2
       stylelint: 16.6.1(typescript@5.5.2)
-      stylelint-config-bod: 5.21.1(postcss@8.4.38)(stylelint@16.6.1(typescript@5.5.2))
+      stylelint-config-bod: 5.21.1(postcss@8.4.39)(stylelint@16.6.1(typescript@5.5.2))
       stylelint-prettier: 5.0.0(prettier@3.3.2)(stylelint@16.6.1(typescript@5.5.2))
     transitivePeerDependencies:
       - postcss
@@ -6679,7 +6679,7 @@ snapshots:
       '@vue/shared': 3.4.21
       estree-walker: 2.0.2
       magic-string: 0.30.8
-      postcss: 8.4.38
+      postcss: 8.4.39
       source-map-js: 1.2.0
 
   '@vue/compiler-ssr@3.4.21':
@@ -6945,14 +6945,14 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  autoprefixer@10.4.19(postcss@8.4.38):
+  autoprefixer@10.4.19(postcss@8.4.39):
     dependencies:
       browserslist: 4.23.0
       caniuse-lite: 1.0.30001600
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.1
-      postcss: 8.4.38
+      postcss: 8.4.39
       postcss-value-parser: 4.2.0
 
   babel-loader@9.1.3(@babel/core@7.24.7)(webpack@5.92.1(webpack-cli@5.1.4)):
@@ -7411,12 +7411,12 @@ snapshots:
 
   css-loader@7.1.2(webpack@5.92.1(webpack-cli@5.1.4)):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.38)
-      postcss: 8.4.38
-      postcss-modules-extract-imports: 3.1.0(postcss@8.4.38)
-      postcss-modules-local-by-default: 4.0.5(postcss@8.4.38)
-      postcss-modules-scope: 3.2.0(postcss@8.4.38)
-      postcss-modules-values: 4.0.0(postcss@8.4.38)
+      icss-utils: 5.1.0(postcss@8.4.39)
+      postcss: 8.4.39
+      postcss-modules-extract-imports: 3.1.0(postcss@8.4.39)
+      postcss-modules-local-by-default: 4.0.5(postcss@8.4.39)
+      postcss-modules-scope: 3.2.0(postcss@8.4.39)
+      postcss-modules-values: 4.0.0(postcss@8.4.39)
       postcss-value-parser: 4.2.0
       semver: 7.6.0
     optionalDependencies:
@@ -8564,9 +8564,9 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  icss-utils@5.1.0(postcss@8.4.38):
+  icss-utils@5.1.0(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   ignore@5.3.1: {}
 
@@ -9272,14 +9272,14 @@ snapshots:
     dependencies:
       htmlparser2: 8.0.2
       js-tokens: 8.0.3
-      postcss: 8.4.38
-      postcss-safe-parser: 6.0.0(postcss@8.4.38)
+      postcss: 8.4.39
+      postcss-safe-parser: 6.0.0(postcss@8.4.39)
 
-  postcss-loader@8.1.1(postcss@8.4.38)(typescript@5.5.2)(webpack@5.92.1(webpack-cli@5.1.4)):
+  postcss-loader@8.1.1(postcss@8.4.39)(typescript@5.5.2)(webpack@5.92.1(webpack-cli@5.1.4)):
     dependencies:
       cosmiconfig: 9.0.0(typescript@5.5.2)
       jiti: 1.21.0
-      postcss: 8.4.38
+      postcss: 8.4.39
       semver: 7.6.0
     optionalDependencies:
       webpack: 5.92.1(webpack-cli@5.1.4)
@@ -9291,60 +9291,60 @@ snapshots:
       mdast-util-from-markdown: 0.8.5
       mdast-util-frontmatter: 0.2.0
       micromark-extension-frontmatter: 0.2.2
-      postcss: 8.4.38
-      postcss-safe-parser: 6.0.0(postcss@8.4.38)
+      postcss: 8.4.39
+      postcss-safe-parser: 6.0.0(postcss@8.4.39)
     transitivePeerDependencies:
       - supports-color
 
   postcss-media-query-parser@0.2.3: {}
 
-  postcss-modules-extract-imports@3.1.0(postcss@8.4.38):
+  postcss-modules-extract-imports@3.1.0(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
-  postcss-modules-local-by-default@4.0.5(postcss@8.4.38):
+  postcss-modules-local-by-default@4.0.5(postcss@8.4.39):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.38)
-      postcss: 8.4.38
+      icss-utils: 5.1.0(postcss@8.4.39)
+      postcss: 8.4.39
       postcss-selector-parser: 6.1.0
       postcss-value-parser: 4.2.0
 
-  postcss-modules-scope@3.2.0(postcss@8.4.38):
+  postcss-modules-scope@3.2.0(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
       postcss-selector-parser: 6.1.0
 
-  postcss-modules-values@4.0.0(postcss@8.4.38):
+  postcss-modules-values@4.0.0(postcss@8.4.39):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.38)
-      postcss: 8.4.38
+      icss-utils: 5.1.0(postcss@8.4.39)
+      postcss: 8.4.39
 
   postcss-resolve-nested-selector@0.1.1: {}
 
-  postcss-safe-parser@6.0.0(postcss@8.4.38):
+  postcss-safe-parser@6.0.0(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
-  postcss-safe-parser@7.0.0(postcss@8.4.38):
+  postcss-safe-parser@7.0.0(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
-  postcss-scss@4.0.9(postcss@8.4.38):
+  postcss-scss@4.0.9(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   postcss-selector-parser@6.1.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sorting@8.0.2(postcss@8.4.38):
+  postcss-sorting@8.0.2(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.4.38:
+  postcss@8.4.39:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -10152,7 +10152,7 @@ snapshots:
     dependencies:
       webpack: 5.92.1(webpack-cli@5.1.4)
 
-  stylelint-config-bod@5.21.1(postcss@8.4.38)(stylelint@16.6.1(typescript@5.5.2)):
+  stylelint-config-bod@5.21.1(postcss@8.4.39)(stylelint@16.6.1(typescript@5.5.2)):
     dependencies:
       postcss-html: 1.6.0
       postcss-markdown: 1.2.0
@@ -10160,7 +10160,7 @@ snapshots:
       stylelint-config-html: 1.1.0(postcss-html@1.6.0)(stylelint@16.6.1(typescript@5.5.2))
       stylelint-config-recess-order: 5.0.1(stylelint@16.6.1(typescript@5.5.2))
       stylelint-config-standard: 36.0.0(stylelint@16.6.1(typescript@5.5.2))
-      stylelint-config-standard-scss: 13.1.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.5.2))
+      stylelint-config-standard-scss: 13.1.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.5.2))
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -10175,26 +10175,26 @@ snapshots:
       stylelint: 16.6.1(typescript@5.5.2)
       stylelint-order: 6.0.4(stylelint@16.6.1(typescript@5.5.2))
 
-  stylelint-config-recommended-scss@14.0.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.5.2)):
+  stylelint-config-recommended-scss@14.0.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.5.2)):
     dependencies:
-      postcss-scss: 4.0.9(postcss@8.4.38)
+      postcss-scss: 4.0.9(postcss@8.4.39)
       stylelint: 16.6.1(typescript@5.5.2)
       stylelint-config-recommended: 14.0.0(stylelint@16.6.1(typescript@5.5.2))
       stylelint-scss: 6.2.0(stylelint@16.6.1(typescript@5.5.2))
     optionalDependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   stylelint-config-recommended@14.0.0(stylelint@16.6.1(typescript@5.5.2)):
     dependencies:
       stylelint: 16.6.1(typescript@5.5.2)
 
-  stylelint-config-standard-scss@13.1.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.5.2)):
+  stylelint-config-standard-scss@13.1.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.5.2)):
     dependencies:
       stylelint: 16.6.1(typescript@5.5.2)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.5.2))
+      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.5.2))
       stylelint-config-standard: 36.0.0(stylelint@16.6.1(typescript@5.5.2))
     optionalDependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   stylelint-config-standard@36.0.0(stylelint@16.6.1(typescript@5.5.2)):
     dependencies:
@@ -10203,8 +10203,8 @@ snapshots:
 
   stylelint-order@6.0.4(stylelint@16.6.1(typescript@5.5.2)):
     dependencies:
-      postcss: 8.4.38
-      postcss-sorting: 8.0.2(postcss@8.4.38)
+      postcss: 8.4.39
+      postcss-sorting: 8.0.2(postcss@8.4.39)
       stylelint: 16.6.1(typescript@5.5.2)
 
   stylelint-prettier@5.0.0(prettier@3.3.2)(stylelint@16.6.1(typescript@5.5.2)):
@@ -10261,9 +10261,9 @@ snapshots:
       micromatch: 4.0.7
       normalize-path: 3.0.0
       picocolors: 1.0.1
-      postcss: 8.4.38
+      postcss: 8.4.39
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 7.0.0(postcss@8.4.38)
+      postcss-safe-parser: 7.0.0(postcss@8.4.39)
       postcss-selector-parser: 6.1.0
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
