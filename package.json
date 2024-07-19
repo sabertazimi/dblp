@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
-    "antd": "^5.19.1",
+    "antd": "^5.19.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
@@ -42,7 +42,7 @@
     "redux-thunk": "^3.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.8",
+    "@babel/core": "^7.24.9",
     "@babel/plugin-transform-class-properties": "^7.24.7",
     "@babel/plugin-transform-object-rest-spread": "^7.24.7",
     "@babel/preset-env": "^7.24.8",
