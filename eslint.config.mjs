@@ -4,5 +4,6 @@ export default eslintConfig.append({
   files: ['**/*.js?(x)'],
   rules: {
     'react/prop-types': 'off',
+    'security/detect-object-injection': 'off',
   },
 })

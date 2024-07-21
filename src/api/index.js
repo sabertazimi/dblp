@@ -105,7 +105,7 @@ export async function fetchPaperCitations(papers) {
         ? paperCitation.citationCount
         : 0,
     )
-  } catch (error) {
+  } catch {
     console.error('Up to API limits.')
   }
 
