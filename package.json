@@ -1,7 +1,7 @@
 {
   "name": "dblp",
   "version": "1.4.1",
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@9.7.0",
   "description": "An awesome DBLP search application",
   "author": "sabertazimi",
   "license": "MIT",
@@ -60,7 +60,7 @@
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.9.0",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.41",
     "postcss-loader": "^8.1.1",
     "prettier": "^3.3.3",
     "style-loader": "^4.0.0",
