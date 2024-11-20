@@ -51,7 +51,7 @@ export async function fetchDblpPapers(keyword, venues) {
 }
 
 export async function fetchPaperCitations(papers) {
-  let paperCitations = Array(papers.length).fill(0)
+  let paperCitations = Array.from({ length: papers.length }).fill(0)
 
   try {
     const paperIdsResponse = await Promise.all(

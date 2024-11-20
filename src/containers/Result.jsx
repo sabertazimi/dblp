@@ -1,8 +1,4 @@
-import React from 'react'
 import { connect } from 'react-redux'
-import { Alert } from 'antd'
-
-import { ListResult, Responsive, TableResult } from '../components'
 
 import { getFilteredData } from '../api'
 

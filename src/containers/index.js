@@ -1,6 +1,6 @@
-import SearchBar from './SearchBar'
-import StatisticsBar from './StatisticsBar'
 import Filter from './Filter'
 import Result from './Result'
+import SearchBar from './SearchBar'
+import StatisticsBar from './StatisticsBar'
 
-export { SearchBar, StatisticsBar, Filter, Result }
+export { Filter, Result, SearchBar, StatisticsBar }

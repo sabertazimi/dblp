@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import * as ActionTypes from '../constants'
 import { DEFAULT_VENUES_LIST } from '../api'
+import * as ActionTypes from '../constants'
 
 function createReducer(initialState, handlers) {
   return (state = initialState, action) => {

@@ -1,5 +1,5 @@
-import * as ActionTypes from '../constants'
 import { fetchDblpPapers, fetchPaperCitations } from '../api'
+import * as ActionTypes from '../constants'
 
 function makeActionCreator(type, ...argNames) {
   return (...args) => {

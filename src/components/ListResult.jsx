@@ -1,6 +1,3 @@
-import React from 'react'
-import { List } from 'antd'
-
 function ListResult({ isLoading, dataSource }) {
   return (
     <List
