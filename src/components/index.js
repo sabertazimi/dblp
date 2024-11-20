@@ -1,15 +1,15 @@
-import Responsive from './Responsive'
-import YearFilter from './YearFilter'
-import VenuesFilter from './VenuesFilter'
 import ListResult from './ListResult'
-import TableResult from './TableResult'
+import Responsive from './Responsive'
 import StatisticsModal from './StatisticsModal'
+import TableResult from './TableResult'
+import VenuesFilter from './VenuesFilter'
+import YearFilter from './YearFilter'
 
 export {
-  Responsive,
-  YearFilter,
-  VenuesFilter,
   ListResult,
-  TableResult,
+  Responsive,
   StatisticsModal,
+  TableResult,
+  VenuesFilter,
+  YearFilter,
 }

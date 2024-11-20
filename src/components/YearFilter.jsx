@@ -1,6 +1,3 @@
-import React from 'react'
-import { Divider, InputNumber } from 'antd'
-
 function YearFilter({ year, onYearChange }) {
   return (
     <>

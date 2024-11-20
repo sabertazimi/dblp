@@ -1,7 +1,4 @@
-import React from 'react'
-import { Checkbox, Col, Divider, Row } from 'antd'
-
-import { VENUES_LIST, getVenueTitle } from '../api'
+import { getVenueTitle, VENUES_LIST } from '../api'
 
 function Filter({
   venues,

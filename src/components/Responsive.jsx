@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 // const onlyMobile = { minWidth: 320, maxWidth: 767 };
 // const onlyTablet = { minWidth: 768, maxWidth: 991 };

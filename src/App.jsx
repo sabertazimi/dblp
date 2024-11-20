@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
-import { Col, FloatButton, Layout, Row, Tooltip } from 'antd'
-import { GithubOutlined } from '@ant-design/icons'
-import { Responsive } from './components'
-import { Filter, Result, SearchBar, StatisticsBar } from './containers'
+import { Layout } from 'antd'
+import { Component } from 'react'
 import './index.css'
 
+/* eslint-disable no-unused-vars -- used in JSX */
+/* eslint-disable unused-imports/no-unused-vars -- used in JSX */
 const { Header, Content, Sider } = Layout
+/* eslint-enable no-unused-vars -- reopen */
+/* eslint-enable unused-imports/no-unused-vars -- reopen */
+
 export default class App extends Component {
   constructor(props) {
     super(props)

@@ -1,12 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Menu } from 'antd'
-import { ClockCircleOutlined, EllipsisOutlined } from '@ant-design/icons'
 
-import { VenuesFilter, YearFilter } from '../components'
+import * as Actions from '../actions'
 
 import { VENUES_LIST } from '../api'
-import * as Actions from '../actions'
 
 class FilterComponent extends React.Component {
   constructor(props) {
@@ -54,7 +51,7 @@ class FilterComponent extends React.Component {
             <ClockCircleOutlined />
             <span>Year</span>
           </Menu.Item>
-          {[...Array(9).keys()].map(number => (
+          {[...Array.from({ length: 9 }).keys()].map(number => (
             <Menu.Item key={number + 2}>
               <EllipsisOutlined />
               <span>{`Venue ${number + 1}`}</span>
