@@ -2,11 +2,7 @@ import { Layout } from 'antd'
 import { Component } from 'react'
 import './index.css'
 
-/* eslint-disable no-unused-vars -- used in JSX */
-/* eslint-disable unused-imports/no-unused-vars -- used in JSX */
 const { Header, Content, Sider } = Layout
-/* eslint-enable no-unused-vars -- reopen */
-/* eslint-enable unused-imports/no-unused-vars -- reopen */
 
 export default class App extends Component {
   constructor(props) {
