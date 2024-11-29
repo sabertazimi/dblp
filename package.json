@@ -55,7 +55,7 @@
     "commit-and-tag-version": "^12.5.0",
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
-    "eslint": "^9.15.0",
+    "eslint": "^9.16.0",
     "eslint-webpack-plugin": "^4.2.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
