@@ -30,21 +30,21 @@ export async function fetchDblpPapers(keyword, venues) {
 
   const papers = papersJson
     ? papersJson
-      .map(({ result }) => {
-        const { hit } = result?.hits
+        .map(({ result }) => {
+          const { hit } = result?.hits
 
-        if (!hit)
-          return []
+          if (!hit)
+            return []
 
-        return hit.map(({ info }) => ({
-          key: info.key,
-          title: info.title,
-          venue: info.venue.replaceAll('.', ''),
-          year: info.year,
-          url: info.ee,
-        }))
-      })
-      .flat()
+          return hit.map(({ info }) => ({
+            key: info.key,
+            title: info.title,
+            venue: info.venue.replaceAll('.', ''),
+            year: info.year,
+            url: info.ee,
+          }))
+        })
+        .flat()
     : null
 
   return papers
