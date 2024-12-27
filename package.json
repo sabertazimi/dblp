@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
-    "antd": "^5.22.5",
+    "antd": "^5.22.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
