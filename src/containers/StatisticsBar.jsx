@@ -1,5 +1,7 @@
+import { Button, Modal } from 'antd'
 import { Component } from 'react'
 import { connect } from 'react-redux'
+import { StatisticsModal } from '../components'
 
 class StatisticsBarComponent extends Component {
   constructor(props) {

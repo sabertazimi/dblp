@@ -1,3 +1,4 @@
+import { Checkbox, Col, Divider, Row } from 'antd'
 import { getVenueTitle, VENUES_LIST } from '../api'
 
 function Filter({

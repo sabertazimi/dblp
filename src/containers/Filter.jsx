@@ -1,11 +1,12 @@
-import React from 'react'
+import { ClockCircleOutlined, EllipsisOutlined } from '@ant-design/icons'
+import { Menu } from 'antd'
+import { Component } from 'react'
 import { connect } from 'react-redux'
-
 import * as Actions from '../actions'
-
 import { VENUES_LIST } from '../api'
+import { VenuesFilter, YearFilter } from '../components'
 
-class FilterComponent extends React.Component {
+class FilterComponent extends Component {
   constructor(props) {
     super(props)
     this.state = {

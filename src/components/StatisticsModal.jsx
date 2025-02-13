@@ -1,3 +1,4 @@
+import { Alert, Empty, List } from 'antd'
 import { getStatisticsData } from '../api'
 
 function StatisticsModal({ error, isLoading, items, venues, year }) {
