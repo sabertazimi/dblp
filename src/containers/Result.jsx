@@ -1,6 +1,7 @@
+import { Alert } from 'antd'
 import { connect } from 'react-redux'
-
 import { getFilteredData } from '../api'
+import { ListResult, Responsive, TableResult } from '../components'
 
 function ResultComponent({ error, isLoading, items, venues, year }) {
   if (error) {

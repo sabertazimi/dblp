@@ -1,3 +1,5 @@
+import { Table } from 'antd'
+
 function TableResult({ isLoading, dataSource }) {
   const columns = [
     {
