@@ -50,7 +50,7 @@
     "@dg-scripts/eslint-config": "^5.21.5",
     "@dg-scripts/stylelint-config": "^5.21.5",
     "autoprefixer": "^10.4.20",
-    "babel-loader": "^9.2.1",
+    "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "commit-and-tag-version": "^12.5.0",
     "cross-env": "^7.0.3",
