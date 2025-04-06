@@ -64,7 +64,7 @@
     "postcss-loader": "^8.1.1",
     "prettier": "^3.5.3",
     "style-loader": "^4.0.0",
-    "stylelint": "^16.17.0",
+    "stylelint": "^16.18.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "typescript": "^5.8.3",
     "webpack": "^5.98.0",
