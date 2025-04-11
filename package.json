@@ -1,7 +1,7 @@
 {
   "name": "dblp",
   "version": "1.4.1",
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.8.0",
   "description": "An awesome DBLP search application",
   "author": "sabertazimi",
   "license": "MIT",
@@ -52,7 +52,7 @@
     "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
-    "commit-and-tag-version": "^12.5.0",
+    "commit-and-tag-version": "^12.5.1",
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
     "eslint": "^9.24.0",
@@ -67,7 +67,7 @@
     "stylelint": "^16.18.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "typescript": "^5.8.3",
-    "webpack": "^5.98.0",
+    "webpack": "^5.99.5",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
