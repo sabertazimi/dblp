@@ -1,7 +1,7 @@
 {
   "name": "dblp",
   "version": "1.4.1",
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.16.1",
   "description": "An awesome DBLP search application",
   "author": "sabertazimi",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "start": "pnpm dev"
   },
   "dependencies": {
-    "@ant-design/icons": "^6.0.1",
+    "@ant-design/icons": "^6.0.2",
     "antd": "^5.27.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -64,7 +64,7 @@
     "postcss-loader": "^8.2.0",
     "prettier": "^3.6.2",
     "style-loader": "^4.0.0",
-    "stylelint": "^16.23.1",
+    "stylelint": "^16.24.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "typescript": "^5.9.2",
     "webpack": "^5.101.3",
