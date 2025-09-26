@@ -1,7 +1,7 @@
 {
   "name": "dblp",
   "version": "1.4.1",
-  "packageManager": "pnpm@10.17.0",
+  "packageManager": "pnpm@10.17.1",
   "description": "An awesome DBLP search application",
   "author": "sabertazimi",
   "license": "MIT",
