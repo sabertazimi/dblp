@@ -1,7 +1,7 @@
 {
   "name": "dblp",
   "version": "1.4.1",
-  "packageManager": "pnpm@10.18.0",
+  "packageManager": "pnpm@10.18.2",
   "description": "An awesome DBLP search application",
   "author": "sabertazimi",
   "license": "MIT",
@@ -67,7 +67,7 @@
     "stylelint": "^16.25.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "typescript": "^5.9.3",
-    "webpack": "^5.102.0",
+    "webpack": "^5.102.1",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
